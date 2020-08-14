@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".content.aluno.ui.home.ProfileAlunoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_profile_aluno"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginRight="130dp"
+            android:gravity="center"
+            android:src="@mipmap/student_profile"/>
+
+        <Button
+            android:id="@+id/btn_habilita_ed_perfil_aluno"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/editar_perfil_user"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"></Button>
+
+        <EditText
+            android:id="@+id/txt_recebe_email_aluno"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/aluno_email"
+            android:enabled="false"/>
+
+        <EditText
+            android:id="@+id/txt_recebe_nome_aluno"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/aluno_nome"
+            android:enabled="false"/>
+
+        <EditText
+            android:id="@+id/txt_recebe_materia_aluno"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/aluno_turma"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btn_atualiza_perfil_aluno"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/baseThemeColor"
+            android:text="@string/btn_aluno_atualiza_perfil"
+            android:textColor="@color/cor_branca"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

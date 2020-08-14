@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".content.professor.ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_profile_professor"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginRight="110dp"
+            android:gravity="center"
+            android:src="@mipmap/teacher_profile"/>
+
+        <Button
+            android:id="@+id/btn_habilita_ed_perfil_professor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/editar_perfil_user"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginEnd="5dp"
+            android:text="Editar"
+            android:textColor="@color/baseThemeColor"
+            android:layout_marginRight="5dp"></Button>
+
+        <EditText
+            android:id="@+id/txt_recebe_email_professor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/professor_email"
+            android:enabled="false"/>
+
+        <EditText
+            android:id="@+id/txt_recebe_nome_professor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/professor_nome"
+            android:enabled="false"/>
+
+        <EditText
+            android:id="@+id/txt_recebe_materia_professor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/professor_materia"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btn_atualiza_perfil_professor"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/baseThemeColor"
+            android:text="@string/btn_professor_atualiza_perfil"
+            android:textColor="@color/cor_branca"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

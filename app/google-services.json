@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "376914141923",
+    "firebase_url": "https://tcc--thuani.firebaseio.com",
+    "project_id": "tcc--thuani",
+    "storage_bucket": "tcc--thuani.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376914141923:android:cb9953f824033189badbd6",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376914141923-djgsmc5bkcoop9ld2urs10n375dg3hl1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsGxljJYKFHGs2ZZpNdw1iIMGpA8NFVA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376914141923-djgsmc5bkcoop9ld2urs10n375dg3hl1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

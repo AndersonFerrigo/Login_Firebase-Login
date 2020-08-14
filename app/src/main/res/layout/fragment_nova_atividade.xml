@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".content.professor.ui.nova_atividades.NovaAtividadeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <ImageView
+            android:id="@+id/img_group_cadastrar_atividade"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/team"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Spinner
+            android:id="@+id/spin_turma_atividade"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/edt_titulo_cadastrar_atividade"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/titulo_cadastro_atividades"/>
+
+        <EditText
+            android:id="@+id/edt_conteudo_cadastrar_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:lines="10"
+            android:hint="@string/description_cadastro_atividades"/>
+
+        <TextView
+            android:id="@+id/txt_receive_archive"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Nenhum arquivo selecionado."
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_procurar_cadastrar_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="380dp"
+            android:text="@string/btn_procurar_conteudo_cadastro_atividades"
+            android:drawableLeft="@mipmap/internet"
+            />
+
+        <ProgressBar
+            android:id="@+id/simpleProgressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="300dp"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/btn_adicionar_nova_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/btn_adicionar_conteudo_cadastro_atividades" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

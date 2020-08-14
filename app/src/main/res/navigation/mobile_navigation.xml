@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myapplication.content.professor.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_nova_atividade"
+        android:name="com.example.myapplication.content.professor.ui.nova_atividades.NovaAtividadeFragment"
+        android:label="@string/menu_nova_atividade"
+        tools:layout="@layout/fragment_nova_atividade" />
+
+    <fragment
+        android:id="@+id/nav_novo_conteudo"
+        android:name="com.example.myapplication.content.professor.ui.novo_conteudo.NovoConteudoFragment"
+        android:label="@string/menu_novo_conteudo"
+        tools:layout="@layout/fragment_novo_conteudo" />
+
+    <fragment
+        android:id="@+id/nav_atividades_recebidas"
+        android:name="com.example.myapplication.content.professor.ui.atividades_recebidas_aluno.AtividadesRecebidasAlunoFragment"
+        android:label="@string/menu_atividades_recebidas"
+        tools:layout="@layout/fragment_atividades_recebidas_aluno" />
+
+    <fragment
+        android:id="@+id/nav_duvidas_atividades"
+        android:name="com.example.myapplication.content.professor.ui.duvidas_alunos_atividades.DuvidasAlunosAtividadesFragment"
+        android:label="@string/menu_duvidas_atividades_recebidas"
+        tools:layout="@layout/duvidas_alunos_atividades_fragment" />
+
+    <fragment
+        android:id="@+id/nav_duvidas_conteudo"
+        android:name="com.example.myapplication.content.professor.ui.duvidas_alunos_conteudos.DuvidasAlunosConteudoFragment"
+        android:label="@string/menu_duvidas_conteudos_recebidas"
+        tools:layout="@layout/duvidas_alunos_conteudo_fragment" />
+</navigation>

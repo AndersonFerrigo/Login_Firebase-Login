@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">376914141923-djgsmc5bkcoop9ld2urs10n375dg3hl1.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://tcc--thuani.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">376914141923</string>
+    <string name="google_api_key" translatable="false">AIzaSyBsGxljJYKFHGs2ZZpNdw1iIMGpA8NFVA8</string>
+    <string name="google_app_id" translatable="false">1:376914141923:android:cb9953f824033189badbd6</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBsGxljJYKFHGs2ZZpNdw1iIMGpA8NFVA8</string>
+    <string name="google_storage_bucket" translatable="false">tcc--thuani.appspot.com</string>
+    <string name="project_id" translatable="false">tcc--thuani</string>
+</resources>

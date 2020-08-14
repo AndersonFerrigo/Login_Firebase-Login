@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name">Home School</string>
+
+    <!-- Cadastro -->
+    <string name="cadastro">Cadastro</string>
+    <string name="user_Cadastro">Nome Completo</string>
+    <string name="email_Cadastro">Email</string>
+    <string name="senha_Cadastro">Senha</string>
+    <string name="registrar">Registrar</string>
+    <string name="voltar">Voltar</string>
+
+    <!-- Hint Spinner -->
+    <string name="hint_spinner_perfil">Escolha um perfil</string>
+    <string name="hint_spinner_turma_aluno">Escolha sua turma</string>
+    <string name="hint_spinner_materia_professor">Escolha uma materia</string>
+
+
+    <!-- Lista do perfil referente ao cadastro  -->
+    <string-array name="perfilUsuario">
+        <item>Escolha um perfil</item>
+        <item>Professor</item>
+        <item>Aluno</item>
+    </string-array>
+
+    <!-- Lista de turmas da escola refrente ao cadastro de novas atividades, conteudo e alunos-->
+    <string-array name="turmas_escola">
+        <item>Escolha uma turma</item>
+        <item>1° Ano Fundamantal</item>
+        <item>2° Ano Fundamantal</item>
+        <item>3° Ano Fundamantal</item>
+        <item>4° Ano Fundamantal</item>
+        <item>5° Ano Fundamantal</item>
+        <item>6° Ano Fundamantal</item>
+        <item>7° Ano Fundamantal</item>
+        <item>8° Ano Fundamantal</item>
+        <item>9° Ano Fundamantal</item>
+        <item>1° Ano Médio</item>
+        <item>2° Ano Médio</item>
+        <item>3° Ano Médio</item>
+    </string-array>
+
+    <!-- Lista de materias da escola refrente ao cadastro de novos professores -->
+    <string-array name="materias_escola">
+        <item>Escolha uma matéria</item>
+        <item>Português</item>
+        <item>Matemática</item>
+        <item>História</item>
+        <item>Geografia</item>
+        <item>Filosofia</item>
+        <item>Sociologia</item>
+        <item>Física</item>
+        <item>Química</item>
+        <item>Biologia</item>
+        <item>Inglês</item>
+        <item>Espanhol</item>
+        <item>Ciências</item>
+    </string-array>
+
+    <!-- Login-->
+    <string name="login">Login</string>
+    <string name="email_Login">Email</string>
+    <string name="senha_Login">Senha</string>
+    <string name="logar">Logar</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="esqueci_a_senha">Esqueci a senha</string>
+
+    <!-- Resetar Senha -->
+    <string name="resetar_senha">Resetar Senha</string>
+    <string name="btn_resetar_senha">Resetar</string>
+    <string name="btn_retornar_login">Voltar</string>
+    <string name="txt_email_resetar_senha">Email</string>
+
+
+    <!-- Perfil -->
+    <string name="perfil">Perfil</string>
+    <string name="email_Perfil">Email</string>
+    <string name="id">ID</string>
+    <string name="logout">Logout</string>
+
+    <!-- Cadastro de novas atividades-->
+    <string name="description_cadastro_atividades">Atividade</string>
+    <string name="titulo_cadastro_atividades">Título</string>
+    <string name="conteudo_cadastro_atividades">Digite aqui o conteúdo</string>
+    <string name="caminho_arquivo_atividades">Nenhum arquivo selecionado.</string>
+    <string name="btn_procurar_conteudo_cadastro_atividades">Procurar</string>
+    <string name="btn_adicionar_conteudo_cadastro_atividades">Adicionar</string>
+    <string name="title_activity_main_professor_content">MainProfessorContentActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title_teacher">Professor</string>
+    <string name="nav_header_subtitle_teacher">professor@homeschool.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Log Out</string>
+
+    <string name="nav_header_title_aluno">Aluno</string>
+    <string name="nav_header_subtitle_aluno">aluno@homeschool.com</string>
+
+    <string name="menu_home">Perfil</string>
+    <string name="menu_nova_atividade">Adicionar Atividade</string>
+    <string name="menu_novo_conteudo">Adicionar Conteudo</string>
+    <string name="menu_atividades_recebidas">Atividades Recebidas</string>
+    <string name="menu_duvidas_atividades_recebidas">Atividades</string>
+    <string name="menu_duvidas_conteudos_recebidas">Conteudos</string>
+    <string name="title_activity_main_aluno_content">MainAlunoContentActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+
+    <!-- Professor -->
+    <!-- Home Screen Professor -->
+
+    <string name="professor_email">Email</string>
+    <string name="professor_nome">Nome</string>
+    <string name="professor_materia">Matéria</string>
+    <string name="btn_professor_atualiza_perfil">Atualizar</string>
+
+
+
+    <!-- Cadastro de novos conteudos-->
+    <string name="description_cadastro_conteudo">Conteudo</string>
+    <string name="titulo_cadastro_conteudo">Título</string>
+    <string name="conteudo_cadastro_conteudo">Digite aqui o conteúdo</string>
+    <string name="caminho_arquivo_conteudo">Nenhum arquivo selecionado.</string>
+    <string name="btn_procurar_conteudo_cadastro_conteudo">Procurar</string>
+    <string name="btn_adicionar_conteudo_cadastro_conteudo">Adicionar</string>
+
+    <!-- Home Atividades Recebidas alunos -->
+    <string name="titulo_atividade_recebida_professor">Titulo da Atividade</string>
+    <string name="nome_aluno_atividade_recebida_professor">Nome do aluno</string>
+    <string name="materia_atividade_recebida_professor">Materia</string>
+
+
+    <!-- Aluno -->
+
+    <!-- Aluno Main Content -->
+    <string name="menu_home_aluno">Perfil</string>
+    <string name="menu_atividade_aluno">Atividade</string>
+    <string name="menu_conteudo_aluno">Conteudo</string>
+    <string name="menu_atividades_enviadas">Enviar Atividade</string>
+    <string name="menu_duvidas_atividades">Atividades</string>
+    <string name="menu_duvidas_conteudo">Conteudo</string>
+
+
+
+    <!-- Home Screen Aluno -->
+    <string name="aluno_email">Email</string>
+    <string name="aluno_nome">Nome</string>
+    <string name="aluno_turma">Turma</string>
+    <string name="btn_aluno_atualiza_perfil">Atualizar</string>
+
+    <!-- Home Atividades Recebidas -->
+    <string name="titulo_atividade_recebida">Titulo da Atividade</string>
+    <string name="nome_professor_atividade_recebida">Nome do professor</string>
+    <string name="materia_atividade_recebida">Materia</string>
+
+
+    <!-- Home Conteudos Recebidas -->
+    <string name="titulo_conteudo_recebido">Titulo do Conteudo</string>
+    <string name="nome_professor_conteudo_recebido">Nome do professor</string>
+    <string name="materia_conteudo_recebido">Materia</string>
+
+    <!-- Enviar atividades concluidas -->
+    <string name="titulo_atividades_concluida">Título</string>
+    <string name="caminho_arquivo_atividade_concluida">Nenhum arquivo selecionado.</string>
+    <string name="btn_procurar_arquivo_atividade_concluida">Procurar</string>
+    <string name="btn_enviar_atividade_concluida">Enviar</string>
+
+    <!-- Duvidas Atividades Recebidas -->
+    <string name="titulo_duvidas_atividade_recebido">Titulo da atividade com duvida</string>
+    <string name="nome_aluno_atividade_duvida_recebida">Nome do aluno</string>
+    <string name="materia_atividade_duvida_recebida">Materia</string>
+    <string name="turma_aluno_atividade_duvida_recebida">Turma</string>
+
+    <!-- Duvidas Conteudos Recebidas -->
+    <string name="titulo_duvidas_conteudo_recebido">Titulo do conteudo com duvida</string>
+    <string name="nome_aluno_conteudo_duvida_recebida">Nome do aluno</string>
+    <string name="materia_conteudo_duvida_recebida">Materia</string>
+    <string name="turma_aluno_conteudo_duvida_recebida">Turma</string>
+
+
+
+</resources>

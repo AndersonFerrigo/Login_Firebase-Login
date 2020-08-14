@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_aluno"
+            android:icon="@mipmap/estudante_profile"
+            android:title="@string/menu_home_aluno" />
+        <item
+            android:id="@+id/nav_atividade_aluno"
+            android:icon="@mipmap/atividades_recebidas"
+            android:title="@string/menu_atividade_aluno" />
+        <item
+            android:id="@+id/nav_conteudo_aluno"
+            android:icon="@mipmap/conteudo_recebido"
+            android:title="@string/menu_conteudo_aluno" />
+        <item
+            android:id="@+id/nav_enviar_atividade_concluida"
+            android:icon="@mipmap/enviar_atividade_professor"
+            android:title="@string/menu_atividades_enviadas" />
+
+    </group>
+
+         <item android:title="Duvidas Frequentes">
+            <menu>
+                <item
+                    android:id="@+id/nav_duvidas_atividade_concluida"
+                    android:icon="@mipmap/duvidas_atividades_conteudo"
+                    android:title="@string/menu_duvidas_atividades" />
+
+                <item
+                    android:id="@+id/nav_duvidas_conteudo"
+                    android:icon="@mipmap/duvidas_atividades_conteudo"
+                    android:title="@string/menu_duvidas_conteudo" />
+            </menu>
+
+         </item>
+
+</menu>

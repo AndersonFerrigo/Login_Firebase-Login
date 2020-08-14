@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/professor_profile"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_nova_atividade"
+            android:icon="@mipmap/adicionar_atividade"
+            android:title="@string/menu_nova_atividade" />
+
+        <item
+            android:id="@+id/nav_novo_conteudo"
+            android:icon="@mipmap/adicionar_conteudo"
+            android:title="@string/menu_novo_conteudo" />
+
+        <item
+            android:id="@+id/nav_atividades_recebidas"
+            android:icon="@mipmap/atividades_recebidas"
+            android:title="@string/menu_atividades_recebidas" />
+
+
+        <item android:title="Duvidas Recebidas">
+            <menu>
+                <item
+                    android:id="@+id/nav_duvidas_atividades"
+                    android:icon="@mipmap/duvidas_atividades_conteudo"
+                    android:title="@string/menu_duvidas_atividades_recebidas" />
+
+                <item
+                    android:id="@+id/nav_duvidas_conteudo"
+                    android:icon="@mipmap/duvidas_atividades_conteudo"
+                    android:title="@string/menu_duvidas_conteudos_recebidas" />
+            </menu>
+
+        </item>
+
+    </group>
+</menu>
