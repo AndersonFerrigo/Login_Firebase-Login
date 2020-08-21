@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -17,44 +19,73 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.myapplication.R;
+import com.example.myapplication.model.CadastroNovoUsuario;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainAlunoContentActivity extends AppCompatActivity {
+
+    /**
+     * @since 2020
+     */
+
     private AppBarConfiguration mAppBarConfiguration;
+    private NavigationView navigationViewAluno;
+    private View headerViewAluno;
+
+    private CadastroNovoUsuario alunoUsuario;
+
+    private String recebeNomeBundle;
+    private String recebeTurmaBundle;
+    private String recebeEmailBundle;
+
+    private TextView txtAlunoNome;
+    private TextView txtAlunoTurma;
+    private TextView txtAlunoEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_aluno_content);
 
+        navigationViewAluno = findViewById(R.id.nav_view_aluno);
+        headerViewAluno = navigationViewAluno.getHeaderView(0);
+
+        DrawerLayout drawer = findViewById(R.id.drawer_layout_aluno);
+        NavigationView navigationView = findViewById(R.id.nav_view_aluno);
+
+
+        Toolbar toolbar = findViewById(R.id.toolbar_aluno);
+        setSupportActionBar(toolbar);
+
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             Window w = getWindow();
             w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
 
-        Toolbar toolbar = findViewById(R.id.toolbar_aluno);
-        setSupportActionBar(toolbar);
+        Bundle aluno = getIntent().getExtras();
+        if(aluno.isEmpty()){
+            Toast.makeText(getApplicationContext(), "Erro ao recuperar informações do aluno", Toast.LENGTH_LONG).show();
+        }else {
+            alunoUsuario = aluno.getParcelable("aluno");
+            recebeNomeBundle = alunoUsuario.getNome();
+            recebeTurmaBundle = alunoUsuario.getTurma();
+            recebeEmailBundle = alunoUsuario.getEmail();
+        }
 
-        /*
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        txtAlunoNome  = headerViewAluno.findViewById(R.id.nav_header_perfil_aluno_usuario);
+        txtAlunoTurma  = headerViewAluno.findViewById(R.id.nav_header_turma_aluno_usuario);
+        txtAlunoEmail = headerViewAluno.findViewById(R.id.nav_header_email_aluno_usuario);
 
-*/
-        DrawerLayout drawer = findViewById(R.id.drawer_layout_aluno);
-        NavigationView navigationView = findViewById(R.id.nav_view_aluno);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+
+        txtAlunoNome.setText(recebeNomeBundle);
+        txtAlunoTurma.setText(recebeTurmaBundle);
+        txtAlunoEmail.setText(recebeEmailBundle);
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home_aluno, R.id.nav_atividade_aluno, R.id.nav_conteudo_aluno,
+                R.id.nav_atividade_aluno, R.id.nav_conteudo_aluno,
                         R.id.nav_enviar_atividade_concluida, R.id.nav_duvidas_atividade_concluida,
                         R.id.nav_duvidas_atividade_concluida, R.id.nav_duvidas_conteudo)
                 .setDrawerLayout(drawer)
@@ -62,6 +93,18 @@ public class MainAlunoContentActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_aluno);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
 
     }
 

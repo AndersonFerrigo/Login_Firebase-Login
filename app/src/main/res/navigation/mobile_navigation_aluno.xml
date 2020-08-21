@@ -1,40 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home_aluno">
+    app:startDestination="@+id/nav_atividade_aluno">
 
+    <!--
     <fragment
         android:id="@+id/nav_home_aluno"
         android:name="com.example.myapplication.content.aluno.ui.home.ProfileAlunoFragment"
         android:label="@string/menu_home_aluno"
         tools:layout="@layout/fragment_profile_aluno" />
-
+-->
     <fragment
         android:id="@+id/nav_atividade_aluno"
         android:name="com.example.myapplication.content.aluno.ui.atividades_recebidas.AtividadesRecebidasFragment"
         android:label="@string/menu_atividade_aluno"
-        tools:layout="@layout/fragment_atividades_recebidas" />
+        tools:layout="@layout/fragment_atividades_recebidas"/>
 
     <fragment
         android:id="@+id/nav_conteudo_aluno"
         android:name="com.example.myapplication.content.aluno.ui.conteudos_recebidos.ConteudosRecebidosFragment"
         android:label="@string/menu_conteudo_aluno"
-        tools:layout="@layout/fragment_conteudo_recebido" />
+        tools:layout="@layout/fragment_conteudo_recebido"/>
 
     <fragment
         android:id="@+id/nav_enviar_atividade_concluida"
         android:name="com.example.myapplication.content.aluno.ui.atividades_concluidas.EnviarAtividadesConcluidasFragment"
         android:label="@string/menu_atividade_aluno"
-        tools:layout="@layout/enviar_atividades_concluidas_fragment" />
+        tools:layout="@layout/enviar_atividades_concluidas_fragment"/>
 
     <fragment
         android:id="@+id/nav_duvidas_atividade_concluida"
         android:name="com.example.myapplication.content.aluno.ui.duvidas_atividade.DuvidasAtividadesConcluidasFragment"
         android:label="@string/menu_duvidas_atividades"
         android:windowSoftInputMode="adjustPan|stateAlwaysVisible"
-        tools:layout="@layout/duvidas_atividades_concluidas_fragment" />
+        tools:layout="@layout/duvidas_atividades_concluidas_fragment"/>
 
     <fragment
         android:id="@+id/nav_duvidas_conteudo"

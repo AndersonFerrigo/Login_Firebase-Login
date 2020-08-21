@@ -36,22 +36,32 @@ import com.google.firebase.storage.UploadTask;
 
 public class NovaAtividadeFragment extends Fragment {
 
-    View novaAtividade;
+    /**
+     * @since 2020
+     */
 
-    private CadastarAtividade cadastarAtividade;
+    private View novaAtividade;
+    private View informaUploadArquivo;
 
-    ProgressBar simpleProgressBar;
-    String turma;
-    TextView recebeArquivo;
-    Spinner escolherTurma;
-    EditText tituloAtividade;
-    EditText descricaoAtividade;
-    Button procurarAtividade;
-    Button adicionarAtividade;
+    private String recebeNomeProfessor;
+    private String recebeTituloNovaAtividadeProfessor;
+    private String recebeTurmaNovaAtividadeProfessor;
+    private String recebeMateriaNovaAtividadeProfessor;
+    private String recebeDescricaoNovaAtividadeProfessor;
 
-    ProgressBar progressDialog;
 
-    Uri uriArquivoUpload;
+    private EditText edtNomeProfessorAtividade;
+    private EditText edtTituloNovaAtividade;
+    private EditText edtDescricaoNovaAtividade;
+    private TextView txtRecebeArquivoNovaAtividade;
+
+    private Spinner spnEscolheTurmaNovaAtividade;
+    private Spinner spnEscolheMateriaNovaAtividade;
+
+    private Button procurarAtividade;
+    private Button adicionarAtividade;
+
+    private Uri uriArquivoUploadNovaAtividade;
 
     private static final int CHOOSE_FILE_REQUESTCODE = 2;
 
@@ -60,32 +70,40 @@ public class NovaAtividadeFragment extends Fragment {
     private FirebaseStorage storage;
     private StorageReference storageReference;
 
-
     private NovaAtividadeViewModel novaAtividadeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         novaAtividade = inflater.inflate(R.layout.fragment_nova_atividade, container, false);
 
-        escolherTurma = novaAtividade.findViewById(R.id.spin_turma_atividade);
-        tituloAtividade = novaAtividade.findViewById(R.id.edt_titulo_cadastrar_atividade);
-        descricaoAtividade = novaAtividade.findViewById(R.id.edt_conteudo_cadastrar_atividade);
+        edtNomeProfessorAtividade = novaAtividade.findViewById(R.id.edt_nome_professor_nova_atividade);
+        edtTituloNovaAtividade = novaAtividade.findViewById(R.id.edt_titulo_cadastrar_atividade);
+        edtDescricaoNovaAtividade = novaAtividade.findViewById(R.id.edt_conteudo_cadastrar_atividade);
+
+        spnEscolheTurmaNovaAtividade = novaAtividade.findViewById(R.id.spin_turma_atividade);
+        spnEscolheMateriaNovaAtividade = novaAtividade.findViewById(R.id.spn_materia_professor);
+
         procurarAtividade = novaAtividade.findViewById(R.id.btn_procurar_cadastrar_atividade);
         adicionarAtividade = novaAtividade.findViewById(R.id.btn_adicionar_nova_atividade);
-        recebeArquivo = novaAtividade.findViewById(R.id.txt_receive_archive);
-        simpleProgressBar = novaAtividade.findViewById(R.id.simpleProgressBar);
+
+        txtRecebeArquivoNovaAtividade = novaAtividade.findViewById(R.id.txt_receive_archive);
+        informaUploadArquivo = novaAtividade.findViewById(R.id.progressbar_informa_upload);
+
 
         ArrayAdapter turmasAdapter = ArrayAdapter.createFromResource(novaAtividade.getContext(),
                 R.array.turmas_escola, R.layout.spinner_text_adapter);
 
         turmasAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        escolherTurma.setAdapter(turmasAdapter);
+        spnEscolheTurmaNovaAtividade.setAdapter(turmasAdapter);
+
+        ArrayAdapter adapterMateriaProfessor = ArrayAdapter.createFromResource(novaAtividade.getContext(),
+                R.array.materias_escola, R.layout.spinner_text_adapter);
+        adapterMateriaProfessor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spnEscolheMateriaNovaAtividade.setAdapter(adapterMateriaProfessor);
 
 
-        dbReferenceCadastroNovaAtividade = cadastroNovaAtividade.getInstance().getReference().child("atividades");
+        dbReferenceCadastroNovaAtividade = cadastroNovaAtividade.getInstance().getReference().child("atividades_adicionadas");
         storageReference = storage.getInstance().getReference();
-
-
 
         return novaAtividade;
     }
@@ -94,18 +112,26 @@ public class NovaAtividadeFragment extends Fragment {
     public void onResume() {
         super.onResume();
 
-        escolherTurma.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spnEscolheTurmaNovaAtividade.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
-                if(adapterView.getItemAtPosition(position).equals(0)){
-                    Toast.makeText(novaAtividade.getContext(), "Escolha uma turma", Toast.LENGTH_LONG).show();
 
-                }else{
-                    turma = adapterView.getItemAtPosition(position).toString();
-                }
+                  recebeTurmaNovaAtividadeProfessor = adapterView.getItemAtPosition(position).toString();
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) { }
+        });
+
+        spnEscolheMateriaNovaAtividade.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+
+                recebeMateriaNovaAtividadeProfessor = adapterView.getItemAtPosition(position).toString();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {}
         });
 
         procurarAtividade.setOnClickListener(new View.OnClickListener() {
@@ -121,60 +147,81 @@ public class NovaAtividadeFragment extends Fragment {
             }
         });
 
+
         adicionarAtividade.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                simpleProgressBar.setVisibility(View.VISIBLE);
-                cadastarAtividade = new CadastarAtividade();
+                recebeNomeProfessor = edtNomeProfessorAtividade.getText().toString();
+                recebeTituloNovaAtividadeProfessor = edtTituloNovaAtividade.getText().toString();
+                recebeDescricaoNovaAtividadeProfessor = edtDescricaoNovaAtividade.getText().toString();
 
-                String filename = System.currentTimeMillis() + "";
-                // Retorna O caminho raiz
-                storageReference.child("AtividadesUploads").child(filename).putFile(uriArquivoUpload)
-                        .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                            @Override
-                            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                                String urlUploadedFile = taskSnapshot.getMetadata().toString();
+                if((recebeNomeProfessor.isEmpty())|| (recebeTituloNovaAtividadeProfessor.isEmpty())
+                        || (recebeDescricaoNovaAtividadeProfessor.isEmpty())
+                        || (recebeTurmaNovaAtividadeProfessor.equals("Escolha uma Turma"))
+                        || (recebeMateriaNovaAtividadeProfessor.equals("Escolha uma materia"))
+                        || (uriArquivoUploadNovaAtividade.equals(""))){
 
-                                cadastarAtividade.setTurma(turma);
-                                cadastarAtividade.setTitulo(tituloAtividade.getText().toString());
-                                cadastarAtividade.setDescricaoAtividade(descricaoAtividade.getText().toString());
-                                cadastarAtividade.setPathDocumentoAtividade(urlUploadedFile);
+                    Toast.makeText(getContext(),"Todos os dados devem ser preenchidos", Toast.LENGTH_LONG).show();
 
-                                //Salva novo usuario no firebase
-                                dbReferenceCadastroNovaAtividade.push().setValue(cadastarAtividade)
-                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                            @Override
-                                            public void onSuccess(Void aVoid) {
-                                                simpleProgressBar.setVisibility(View.INVISIBLE);
-                                                Toast.makeText(novaAtividade.getContext(), "Cadastro  da atividade realizado com sucesso", Toast.LENGTH_LONG).show();
-                                                limparDados();
-                                            }
-                                        })
-                                        .addOnFailureListener(new OnFailureListener() {
-                                            @Override
-                                            public void onFailure(@NonNull Exception e) {
-                                                simpleProgressBar.setVisibility(View.INVISIBLE);
-                                                Toast.makeText(novaAtividade.getContext(), "Problemas ao realizar o cadastro", Toast.LENGTH_LONG).show();
-                                            }
-                                        });
-                            }
-                        }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        simpleProgressBar.setVisibility(View.INVISIBLE);
-                        Toast.makeText(novaAtividade.getContext(), "Problemas ao realizar o upload do arquivo", Toast.LENGTH_LONG).show();
-                    }
-                }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
-                        simpleProgressBar.setVisibility(View.VISIBLE);
-                    }
-                });
+                }else {
+                    informaUploadArquivo.setVisibility(View.VISIBLE);
+                    desabilitarComponentes();
+                    novaAtividadeViewModel = new NovaAtividadeViewModel();
 
+                    String filename = System.currentTimeMillis() + "";
+                    // Retorna o caminho raiz
+                    storageReference.child("AtividadesAdicionadasUploads").child(filename).putFile(uriArquivoUploadNovaAtividade)
+                            .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                                @Override
+                                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
+                                    String urlUploadedFile = taskSnapshot.getMetadata().toString();
+
+                                    novaAtividadeViewModel.setNomeProfessor(recebeNomeProfessor);
+                                    novaAtividadeViewModel.setTituloNovaAtividadeProfessor(recebeTituloNovaAtividadeProfessor);
+                                    novaAtividadeViewModel.setTurmaProfessor(recebeTurmaNovaAtividadeProfessor);
+                                    novaAtividadeViewModel.setMateriaProfessor(recebeMateriaNovaAtividadeProfessor);
+                                    novaAtividadeViewModel.setDescriçãoNovaAtividadeProfessor(recebeDescricaoNovaAtividadeProfessor);
+                                    novaAtividadeViewModel.setPathDocumentoNovaAtividadeProfessor(urlUploadedFile);
+
+                                    //Salva novo usuario no firebase
+                                    dbReferenceCadastroNovaAtividade.push().setValue(novaAtividadeViewModel)
+                                            .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                @Override
+                                                public void onSuccess(Void aVoid) {
+                                                    informaUploadArquivo.setVisibility(View.GONE);
+                                                    Toast.makeText(novaAtividade.getContext(), "Atividade cadastrada com sucesso", Toast.LENGTH_LONG).show();
+                                                    limparDados();
+                                                    habilitarComponentes();
+                                                }
+                                            })
+                                            .addOnFailureListener(new OnFailureListener() {
+                                                @Override
+                                                public void onFailure(@NonNull Exception e) {
+                                                    informaUploadArquivo.setVisibility(View.GONE);
+                                                    Toast.makeText(novaAtividade.getContext(), "Problemas ao realizar o cadastro", Toast.LENGTH_LONG).show();
+                                                    habilitarComponentes();
+                                                }
+                                            });
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+
+                            informaUploadArquivo.setVisibility(View.GONE);
+                            Toast.makeText(novaAtividade.getContext(), "Problemas ao realizar o upload do arquivo", Toast.LENGTH_LONG).show();
+                            habilitarComponentes();
+
+                        }
+                    }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
+                            informaUploadArquivo.setVisibility(View.VISIBLE);
+                            desabilitarComponentes();
+                        }
+                    });
+                }
             }
-
-
         });
     }
     @Override
@@ -201,7 +248,7 @@ public class NovaAtividadeFragment extends Fragment {
         Intent chooserIntent;
         if (getActivity().getPackageManager().resolveActivity(sIntent, 0) != null){
             // it is device with Samsung file manager
-            chooserIntent = Intent.createChooser(sIntent, "Open file");
+            chooserIntent = Intent.createChooser(sIntent, "Abrir arquivo");
             chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[] { intent});
         } else {
             chooserIntent = Intent.createChooser(intent, "Open file");
@@ -210,7 +257,7 @@ public class NovaAtividadeFragment extends Fragment {
         try {
             startActivityForResult(chooserIntent, CHOOSE_FILE_REQUESTCODE);
         } catch (android.content.ActivityNotFoundException ex) {
-            Toast.makeText(novaAtividade.getContext(), "No suitable File Manager was found.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(novaAtividade.getContext(), "Nenhum arquivo encontrado.", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -223,19 +270,44 @@ public class NovaAtividadeFragment extends Fragment {
             // The result data contains a URI for the document or directory that
             // the user selected.
             if (resultData != null) {
-                uriArquivoUpload = resultData.getData();
+                uriArquivoUploadNovaAtividade = resultData.getData();
 
                 // Perform operations on the document using its URI.
                 //        Toast.makeText(getApplicationContext(), "Caminho do arquivo = " + uri, Toast.LENGTH_LONG).show();
-                recebeArquivo.setText("Arquivo selecionado: " + resultData.getData().getLastPathSegment());
+                txtRecebeArquivoNovaAtividade.setText("Arquivo selecionado: " + resultData.getData().getLastPathSegment());
 
             }
         }
     }
 
     public void limparDados(){
-        tituloAtividade.setText("");
-        descricaoAtividade.setText("");
-        recebeArquivo.setText("");
+        edtNomeProfessorAtividade.setText("");
+        edtTituloNovaAtividade.setText("");
+        edtDescricaoNovaAtividade.setText("");
+        txtRecebeArquivoNovaAtividade.setText("");
+    }
+
+    public void desabilitarComponentes(){
+        edtNomeProfessorAtividade.setEnabled(false);
+        edtTituloNovaAtividade.setEnabled(false);
+        edtDescricaoNovaAtividade.setEnabled(false);
+        spnEscolheTurmaNovaAtividade.setEnabled(false);
+        spnEscolheMateriaNovaAtividade.setEnabled(false);
+        procurarAtividade.setEnabled(false);
+        adicionarAtividade.setEnabled(false);
+        txtRecebeArquivoNovaAtividade.setEnabled(false);
+
+    }
+
+    public void habilitarComponentes(){
+        edtNomeProfessorAtividade.setEnabled(true);
+        edtTituloNovaAtividade.setEnabled(true);
+        edtDescricaoNovaAtividade.setEnabled(true);
+        spnEscolheTurmaNovaAtividade.setEnabled(true);
+        spnEscolheMateriaNovaAtividade.setEnabled(true);
+        procurarAtividade.setEnabled(true);
+        adicionarAtividade.setEnabled(true);
+        txtRecebeArquivoNovaAtividade.setEnabled(true);
+
     }
 }

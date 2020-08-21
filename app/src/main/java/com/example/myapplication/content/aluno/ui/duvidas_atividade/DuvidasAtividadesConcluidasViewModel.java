@@ -9,9 +9,12 @@ import java.util.Objects;
 
 public class DuvidasAtividadesConcluidasViewModel extends ViewModel {
     private String uId;
-    private String turma;
-    private String tituloAtividadeConcluida;
-    private String pathDocumentoAtividadeConcluida;
+    private String nomeProfessorAtividadeDuvida;
+    private String tituloDuvidaAtividade;
+    private String materiaProfessorAtividadeDuvida;
+    private String turmaProfessorAtividadeDuvida;
+    private String descricaoAtividadeDuvida;
+    private String pathDocumentoAtividadeDuvida;
 
     public DuvidasAtividadesConcluidasViewModel() {    }
 
@@ -23,28 +26,52 @@ public class DuvidasAtividadesConcluidasViewModel extends ViewModel {
         this.uId = uId;
     }
 
-    public String getTurma() {
-        return turma;
+    public String getNomeProfessorAtividadeDuvida() {
+        return nomeProfessorAtividadeDuvida;
     }
 
-    public void setTurma(String turma) {
-        this.turma = turma;
+    public void setNomeProfessorAtividadeDuvida(String nomeProfessorAtividadeDuvida) {
+        this.nomeProfessorAtividadeDuvida = nomeProfessorAtividadeDuvida;
     }
 
-    public String getTituloAtividadeConcluida() {
-        return tituloAtividadeConcluida;
+    public String getTituloDuvidaAtividade() {
+        return tituloDuvidaAtividade;
     }
 
-    public void setTituloAtividadeConcluida(String tituloAtividadeConcluida) {
-        this.tituloAtividadeConcluida = tituloAtividadeConcluida;
+    public void setTituloDuvidaAtividade(String tituloDuvidaAtividade) {
+        this.tituloDuvidaAtividade = tituloDuvidaAtividade;
     }
 
-    public String getPathDocumentoAtividadeConcluida() {
-        return pathDocumentoAtividadeConcluida;
+    public String getMateriaProfessorAtividadeDuvida() {
+        return materiaProfessorAtividadeDuvida;
     }
 
-    public void setPathDocumentoAtividadeConcluida(String pathDocumentoAtividadeConcluida) {
-        this.pathDocumentoAtividadeConcluida = pathDocumentoAtividadeConcluida;
+    public void setMateriaProfessorAtividadeDuvida(String materiaProfessorAtividadeDuvida) {
+        this.materiaProfessorAtividadeDuvida = materiaProfessorAtividadeDuvida;
+    }
+
+    public String getTurmaProfessorAtividadeDuvida() {
+        return turmaProfessorAtividadeDuvida;
+    }
+
+    public void setTurmaProfessorAtividadeDuvida(String turmaProfessorAtividadeDuvida) {
+        this.turmaProfessorAtividadeDuvida = turmaProfessorAtividadeDuvida;
+    }
+
+    public String getDescricaoAtividadeDuvida() {
+        return descricaoAtividadeDuvida;
+    }
+
+    public void setDescricaoAtividadeDuvida(String descricaoAtividadeDuvida) {
+        this.descricaoAtividadeDuvida = descricaoAtividadeDuvida;
+    }
+
+    public String getPathDocumentoAtividadeDuvida() {
+        return pathDocumentoAtividadeDuvida;
+    }
+
+    public void setPathDocumentoAtividadeDuvida(String pathDocumentoAtividadeDuvida) {
+        this.pathDocumentoAtividadeDuvida = pathDocumentoAtividadeDuvida;
     }
 
     @Override
@@ -53,24 +80,30 @@ public class DuvidasAtividadesConcluidasViewModel extends ViewModel {
         if (!(o instanceof DuvidasAtividadesConcluidasViewModel)) return false;
         DuvidasAtividadesConcluidasViewModel that = (DuvidasAtividadesConcluidasViewModel) o;
         return getuId().equals(that.getuId()) &&
-                getTurma().equals(that.getTurma()) &&
-                getTituloAtividadeConcluida().equals(that.getTituloAtividadeConcluida()) &&
-                getPathDocumentoAtividadeConcluida().equals(that.getPathDocumentoAtividadeConcluida());
+                getNomeProfessorAtividadeDuvida().equals(that.getNomeProfessorAtividadeDuvida()) &&
+                getTituloDuvidaAtividade().equals(that.getTituloDuvidaAtividade()) &&
+                getMateriaProfessorAtividadeDuvida().equals(that.getMateriaProfessorAtividadeDuvida()) &&
+                getTurmaProfessorAtividadeDuvida().equals(that.getTurmaProfessorAtividadeDuvida()) &&
+                getDescricaoAtividadeDuvida().equals(that.getDescricaoAtividadeDuvida()) &&
+                getPathDocumentoAtividadeDuvida().equals(that.getPathDocumentoAtividadeDuvida());
     }
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     public int hashCode() {
-        return Objects.hash(getuId(), getTurma(), getTituloAtividadeConcluida(), getPathDocumentoAtividadeConcluida());
+        return Objects.hash(getuId(), getNomeProfessorAtividadeDuvida(), getTituloDuvidaAtividade(), getMateriaProfessorAtividadeDuvida(), getTurmaProfessorAtividadeDuvida(), getDescricaoAtividadeDuvida(), getPathDocumentoAtividadeDuvida());
     }
 
     @Override
     public String toString() {
         return "DuvidasAtividadesConcluidasViewModel{" +
                 "uId='" + uId + '\'' +
-                ", turma='" + turma + '\'' +
-                ", tituloAtividadeConcluida='" + tituloAtividadeConcluida + '\'' +
-                ", pathDocumentoAtividadeConcluida='" + pathDocumentoAtividadeConcluida + '\'' +
+                ", nomeProfessorAtividadeDuvida='" + nomeProfessorAtividadeDuvida + '\'' +
+                ", tituloDuvidaAtividade='" + tituloDuvidaAtividade + '\'' +
+                ", materiaProfessorAtividadeDuvida='" + materiaProfessorAtividadeDuvida + '\'' +
+                ", turmaProfessorAtividadeDuvida='" + turmaProfessorAtividadeDuvida + '\'' +
+                ", descricaoAtividadeDuvida='" + descricaoAtividadeDuvida + '\'' +
+                ", pathDocumentoAtividadeDuvida='" + pathDocumentoAtividadeDuvida + '\'' +
                 '}';
     }
 }

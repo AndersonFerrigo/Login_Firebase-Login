@@ -18,7 +18,7 @@ import android.widget.Toast;
 import com.example.myapplication.R;
 import com.example.myapplication.content.aluno.MainAlunoContentActivity;
 import com.example.myapplication.content.professor.MainProfessorContentActivity;
-import com.example.myapplication.model.Cadastro;
+import com.example.myapplication.model.CadastroNovoUsuario;
 import com.example.myapplication.model.Login;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -26,15 +26,33 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
 public class LoginActivity extends AppCompatActivity {
-    private Login loginUsuario;
 
-    private EditText editEmail, editSenha;
-    private Button btnLogar, btnCadastro;
+    /***
+     * @since 2020
+     * ok
+     */
+    private Login loginUsuario;
+    private EditText editEmail;
+    private EditText editSenha;
+    private Button btnLogar;
+    private Button btnCadastro;
     private TextView txtResetSenha;
     private DatabaseReference databaseReference;
     private FirebaseDatabase buscarLogin;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+
+        // Comando para deixar a barra de status transparente
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            Window w = getWindow();
+            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        }
+        databaseReference = buscarLogin.getInstance().getReference().child("users");
+    }
 
     @Override
     protected void onStart() {
@@ -44,24 +62,6 @@ public class LoginActivity extends AppCompatActivity {
         btnLogar = (Button) findViewById(R.id.btn_Logar);
         btnCadastro = (Button) findViewById(R.id.btn_cadastrar);
         txtResetSenha = (TextView) findViewById(R.id.textEsqueciaSenha);
-
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            Window w = getWindow();
-            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        }
-
-
-        databaseReference = buscarLogin.getInstance().getReference().child("users");
-
-
-
     }
 
     @Override
@@ -73,13 +73,14 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), CadastroActivity.class);
                 startActivity(i);
-
             }
         });
+
         btnLogar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if((editEmail.getText().equals("")) && (editSenha.getText().equals(""))){
+                if((editEmail.getText().toString().equals("")) &&
+                                                        (editSenha.getText().toString().equals(""))){
                     Toast.makeText(getApplicationContext(), "Email e senha devem ser preenchidos!", Toast.LENGTH_LONG).show();
                 }else{
 
@@ -90,48 +91,49 @@ public class LoginActivity extends AppCompatActivity {
                     databaseReference.addChildEventListener(new ChildEventListener() {
                         @Override
                         public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                            Cadastro cadastro = snapshot.getValue(Cadastro.class);
-                            if((loginUsuario.getEmail().equals(cadastro.getEmail())) &&
-                                        loginUsuario.getSenha().equals(cadastro.getSenha())){
-                                if(cadastro.getPerfil().equals("Aluno")){
-                                    Toast.makeText(getApplicationContext(), "Perfil ==  " + cadastro.getPerfil(), Toast.LENGTH_LONG).show();
-                                    Intent intentAtividades = new Intent(getApplicationContext(), MainAlunoContentActivity.class);
-                                    startActivity(intentAtividades);
-                                    limparDados();
+                            CadastroNovoUsuario cadastroNovoUsuario = snapshot.getValue(CadastroNovoUsuario.class);
+                            assert cadastroNovoUsuario != null;
+                                if ((loginUsuario.getEmail().equals(cadastroNovoUsuario.getEmail())) &&
+                                        loginUsuario.getSenha().equals(cadastroNovoUsuario.getSenha())) {
 
+                                    if (cadastroNovoUsuario.getPerfil().equals("Aluno")) {
+
+                                            cadastroNovoUsuario.getNome();
+                                            cadastroNovoUsuario.getEmail();
+                                            cadastroNovoUsuario.getTurma();
+
+                                            Intent intentMainAlunoContent = new Intent(getApplicationContext(), MainAlunoContentActivity.class);
+                                            intentMainAlunoContent.putExtra("aluno", cadastroNovoUsuario);
+                                            startActivity(intentMainAlunoContent);
+                                    }
+                                    if (cadastroNovoUsuario.getPerfil().equals("Professor")) {
+
+                                        cadastroNovoUsuario.getNome();
+                                        cadastroNovoUsuario.getEmail();
+                                        cadastroNovoUsuario.getMateria();
+
+                                        Intent intentMainProfessorContent = new Intent(getApplicationContext(), MainProfessorContentActivity.class);
+                                        intentMainProfessorContent.putExtra("professor", cadastroNovoUsuario);
+                                        startActivity(intentMainProfessorContent);
+                                    }
+                                    if (cadastroNovoUsuario.getPerfil().equals("")) {
+                                            Toast.makeText(getApplicationContext(), "Email ou senha incorretos", Toast.LENGTH_LONG).show();
+                                    }
                                 }
-                                 if(cadastro.getPerfil().equals("Professor")){
-                                    Toast.makeText(getApplicationContext(), "Perfil ==  " + cadastro.getPerfil(), Toast.LENGTH_LONG).show();
-                                    Intent intentAtividades = new Intent(getApplicationContext(), MainProfessorContentActivity.class);
-                                    startActivity(intentAtividades);
-                                     limparDados();
-
-                                 }if(cadastro.getPerfil().equals("")){
-                                    Toast.makeText(getApplicationContext(), "Email ou senha incorretos", Toast.LENGTH_LONG).show();
-                                }
-
-                            }
+                            limparDados();
                         }
 
                         @Override
-                        public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
-                        }
+                        public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {}
 
                         @Override
-                        public void onChildRemoved(@NonNull DataSnapshot snapshot) {
-
-                        }
+                        public void onChildRemoved(@NonNull DataSnapshot snapshot) {}
 
                         @Override
-                        public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
-                        }
+                        public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {}
 
                         @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
-
-                        }
+                        public void onCancelled(@NonNull DatabaseError error) {}
                     });
                 }
             }
@@ -140,16 +142,14 @@ public class LoginActivity extends AppCompatActivity {
         txtResetSenha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(LoginActivity.this, ResetSenha.class);
+                Intent i = new Intent(LoginActivity.this, RecuperarSenhaActivity.class);
                 startActivity(i);
             }
         });
-
     }
 
     public void limparDados(){
         editEmail.setText("");
         editSenha.setText("");
     }
-
 }

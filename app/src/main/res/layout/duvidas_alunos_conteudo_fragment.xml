@@ -1,45 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/side_nav_bar"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".content.professor.ui.duvidas_alunos_conteudos.DuvidasAlunosConteudoFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:paddingBottom="20dp"
+        android:paddingBottom="10dp"
         android:background="@color/cor_branca"
         android:orientation="vertical">
         <ImageView
             android:id="@+id/img_materia_professor_ic"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:background="@mipmap/folder"/>
 
         <Spinner
             android:id="@+id/spn_materia_professor"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:layout_marginStart="70dp"
             android:layout_marginLeft="70dp"
             android:layout_marginEnd="30dp"
-            android:layout_marginRight="30dp"
-            android:entries="@string/hint_spinner_materia_professor" />
+            android:layout_marginRight="30dp"/>
+
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/content_nova_atividade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="90dp"
         android:layout_marginBottom="10dp">
 
         <androidx.recyclerview.widget.RecyclerView
@@ -52,4 +53,4 @@
 
     </RelativeLayout>
 
-</FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/text_Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/baseThemeColor"
+            android:text="@string/login"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"/>
+
+            <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="45dp"
+               android:layout_marginBottom="20dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <EditText
+                       android:id="@+id/editEmail_Login"
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:layout_marginTop="50dp"
+                       android:layout_marginStart="100dp"
+                       android:layout_marginLeft="100dp"
+                       android:layout_marginEnd="100dp"
+                       android:layout_marginRight="100dp"
+                       android:hint="@string/email_Login"
+                       android:inputType="textEmailAddress"/>
+
+                   <EditText
+                       android:id="@+id/editSenha_Login"
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:layout_marginTop="130dp"
+                       android:layout_marginStart="100dp"
+                       android:layout_marginLeft="100dp"
+                       android:layout_marginEnd="100dp"
+                       android:layout_marginRight="100dp"
+                       android:autofillHints=""
+                       android:ems="10"
+                       android:hint="@string/senha_Login"
+                       android:inputType="textPassword"/>
+
+                   <Button
+                       android:id="@+id/btn_Logar"
+                       android:layout_width="match_parent"
+                       android:layout_height="60dp"
+                       android:layout_marginTop="250dp"
+                       android:layout_marginStart="100dp"
+                       android:layout_marginLeft="100dp"
+                       android:layout_marginRight="100dp"
+                       android:layout_marginEnd="100dp"
+                       android:background="@color/baseThemeColor"
+                       android:text="@string/logar"
+                       android:textColor="@color/cor_branca" />
+
+                   <Button
+                       android:id="@+id/btn_cadastrar"
+                       android:layout_width="match_parent"
+                       android:layout_height="60dp"
+                       android:layout_marginTop="350dp"
+                       android:layout_marginStart="100dp"
+                       android:layout_marginLeft="100dp"
+                       android:layout_marginRight="100dp"
+                       android:layout_marginEnd="100dp"
+                       android:background="@drawable/shape_custom_button"
+                       android:text="@string/cadastrar"
+                       android:textColor="@color/baseThemeColor" />
+
+                   <TextView
+                       android:id="@+id/textEsqueciaSenha"
+                       android:layout_width="200dp"
+                       android:layout_height="23dp"
+                       android:layout_marginTop="430dp"
+                       android:layout_marginBottom="50dp"
+                       android:layout_marginLeft="400dp"
+                       android:text="@string/esqueci_a_senha"
+                       android:textColor="@color/baseThemeColor"
+                       android:textAlignment="textEnd"
+                       android:layout_gravity="right"
+                       tools:ignore="RtlCompat" />
+
+
+           </RelativeLayout>
+
+       </ScrollView>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

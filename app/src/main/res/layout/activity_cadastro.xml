@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,28 +13,29 @@
         android:layout_marginEnd="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp">
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="24dp"
-        android:textColor="@color/baseThemeColor"
-        android:text="@string/cadastro"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/baseThemeColor"
+            android:text="@string/cadastroNovoUsuario"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30sp"/>
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginTop="120dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
             android:background="@mipmap/user"/>
 
         <EditText
-            android:id="@+id/cadastro_novo_usuario"
+            android:id="@+id/edt_nome_novo_usuario"
             android:layout_width="300sp"
             android:layout_height="40dp"
             android:layout_marginStart="60dp"
@@ -52,13 +52,12 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginTop="180dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
-            android:background="@mipmap/at"
-            />
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/at"/>
 
         <EditText
-            android:id="@+id/editEmail_cadastro"
+            android:id="@+id/edt_novo_email_cadastro"
             android:layout_width="300sp"
             android:layout_height="40dp"
             android:layout_marginTop="180dp"
@@ -75,12 +74,12 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginTop="240dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
-            android:background="@mipmap/padlock"
-            />
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/padlock"/>
+
         <EditText
-            android:id="@+id/editSenha_cadastro"
+            android:id="@+id/edt_nova_senha_cadastro"
             android:layout_width="300sp"
             android:layout_height="40dp"
             android:layout_marginTop="240dp"
@@ -97,12 +96,12 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginTop="300dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
-            android:background="@mipmap/perfil"
-            />
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/perfil"/>
+
         <Spinner
-            android:id="@+id/spin_tipo"
+            android:id="@+id/spn_perfil"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginTop="300dp"
@@ -111,7 +110,6 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:entries="@string/hint_spinner_perfil"
             android:defaultFocusHighlightEnabled="true"/>
 
         <ImageView
@@ -119,11 +117,11 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginTop="362dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
             android:background="@mipmap/folder"
-            android:visibility="invisible"
-            />
+            android:visibility="invisible"/>
+
         <Spinner
             android:id="@+id/spn_materia_professor"
             android:layout_width="300dp"
@@ -134,19 +132,18 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:entries="@string/hint_spinner_materia_professor"
-            android:visibility="invisible"
-            />
+            android:visibility="invisible"/>
 
         <ImageView
             android:id="@+id/img_turma_aluno_ic"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginTop="362dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
             android:background="@mipmap/team"
             android:visibility="invisible"/>
+
         <Spinner
             android:id="@+id/spn_turma_aluno"
             android:layout_width="300dp"
@@ -157,7 +154,6 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:entries="@string/hint_spinner_turma_aluno"
             android:visibility="invisible"/>
 
         <Button
@@ -165,27 +161,19 @@
             android:layout_width="400dp"
             android:layout_height="60dp"
             android:layout_marginTop="460dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="311dp"
             android:background="@color/baseThemeColor"
             android:textColor="@color/cor_branca"
             android:text="@string/registrar" />
 
         <Button
-        android:id="@+id/btn_Voltar"
-        android:layout_width="400dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="540dp"
-        android:textColor="@color/baseThemeColor"
-        android:background="@drawable/shape_custom_button"
-        android:text="@string/voltar" />
+            android:id="@+id/btn_Voltar"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="540dp"
+            android:textColor="@color/baseThemeColor"
+            android:background="@drawable/shape_custom_button"
+            android:text="@string/voltar" />
 
     </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

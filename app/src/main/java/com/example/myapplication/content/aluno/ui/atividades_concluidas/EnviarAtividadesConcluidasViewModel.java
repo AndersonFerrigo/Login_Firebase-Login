@@ -10,13 +10,18 @@ import com.example.myapplication.model.CadastarAtividade;
 import java.util.Objects;
 
 public class EnviarAtividadesConcluidasViewModel extends ViewModel {
+    /**
+     * @since2020
+     */
+
     private String uId;
-    private String turma;
-    private String tituloAtividadeConcluida;
-    private String pathDocumentoAtividadeConcluida;
+    private String nomeAluno;
+    private String materiaAluno;
+    private String turmaAluno;
+    private String tituloAtividadeConcluidaAluno;
+    private String pathDocumentoAtividadeConcluidaAluno;
 
     public EnviarAtividadesConcluidasViewModel(){}
-
 
     public String getuId() {
         return uId;
@@ -26,54 +31,74 @@ public class EnviarAtividadesConcluidasViewModel extends ViewModel {
         this.uId = uId;
     }
 
-    public String getTurma() {
-        return turma;
+    public String getNomeAluno() {
+        return nomeAluno;
     }
 
-    public void setTurma(String turma) {
-        this.turma = turma;
+    public void setNomeAluno(String nomeAluno) {
+        this.nomeAluno = nomeAluno;
     }
 
-    public String getTituloAtividadeConcluida() {
-        return tituloAtividadeConcluida;
+    public String getMateriaAluno() {
+        return materiaAluno;
     }
 
-    public void setTituloAtividadeConcluida(String tituloAtividadeConcluida) {
-        this.tituloAtividadeConcluida = tituloAtividadeConcluida;
+    public void setMateriaAluno(String materiaAluno) {
+        this.materiaAluno = materiaAluno;
     }
 
-    public String getPathDocumentoAtividadeConcluida() {
-        return pathDocumentoAtividadeConcluida;
+    public String getTurmaAluno() {
+        return turmaAluno;
     }
 
-    public void setPathDocumentoAtividadeConcluida(String pathDocumentoAtividadeConcluida) {
-        this.pathDocumentoAtividadeConcluida = pathDocumentoAtividadeConcluida;
+    public void setTurmaAluno(String turmaAluno) {
+        this.turmaAluno = turmaAluno;
+    }
+
+    public String getTituloAtividadeConcluidaAluno() {
+        return tituloAtividadeConcluidaAluno;
+    }
+
+    public void setTituloAtividadeConcluidaAluno(String tituloAtividadeConcluidaAluno) {
+        this.tituloAtividadeConcluidaAluno = tituloAtividadeConcluidaAluno;
+    }
+
+    public String getPathDocumentoAtividadeConcluidaAluno() {
+        return pathDocumentoAtividadeConcluidaAluno;
+    }
+
+    public void setPathDocumentoAtividadeConcluidaAluno(String pathDocumentoAtividadeConcluidaAluno) {
+        this.pathDocumentoAtividadeConcluidaAluno = pathDocumentoAtividadeConcluidaAluno;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof CadastarAtividade)) return false;
-        CadastarAtividade that = (CadastarAtividade) o;
+        if (!(o instanceof EnviarAtividadesConcluidasViewModel)) return false;
+        EnviarAtividadesConcluidasViewModel that = (EnviarAtividadesConcluidasViewModel) o;
         return getuId().equals(that.getuId()) &&
-                getTurma().equals(that.getTurma()) &&
-                getTituloAtividadeConcluida().equals(that.getTitulo()) &&
-                getPathDocumentoAtividadeConcluida().equals(that.getPathDocumentoAtividade());
+                getNomeAluno().equals(that.getNomeAluno()) &&
+                getMateriaAluno().equals(that.getMateriaAluno()) &&
+                getTurmaAluno().equals(that.getTurmaAluno()) &&
+                getTituloAtividadeConcluidaAluno().equals(that.getTituloAtividadeConcluidaAluno()) &&
+                getPathDocumentoAtividadeConcluidaAluno().equals(that.getPathDocumentoAtividadeConcluidaAluno());
     }
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     public int hashCode() {
-        return Objects.hash(getuId(), getTurma(), getTituloAtividadeConcluida(), getPathDocumentoAtividadeConcluida());
+        return Objects.hash(getuId(), getNomeAluno(), getMateriaAluno(), getTurmaAluno(), getTituloAtividadeConcluidaAluno(), getPathDocumentoAtividadeConcluidaAluno());
     }
 
     @Override
     public String toString() {
-        return "CadastarAtividade{" +
+        return "EnviarAtividadesConcluidasViewModel{" +
                 "uId='" + uId + '\'' +
-                ", turma='" + turma + '\'' +
-                ", titulo='" + tituloAtividadeConcluida + '\'' +
-                ", pathDocumentoAtividade='" + pathDocumentoAtividadeConcluida + '\'' +
+                ", nomeAluno='" + nomeAluno + '\'' +
+                ", materiaAluno='" + materiaAluno + '\'' +
+                ", turmaAluno='" + turmaAluno + '\'' +
+                ", tituloAtividadeConcluidaAluno='" + tituloAtividadeConcluidaAluno + '\'' +
+                ", pathDocumentoAtividadeConcluidaAluno='" + pathDocumentoAtividadeConcluidaAluno + '\'' +
                 '}';
     }
 }

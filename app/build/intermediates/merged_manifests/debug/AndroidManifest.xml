@@ -27,18 +27,15 @@
         <activity
             android:name="com.example.myapplication.content.aluno.MainAlunoContentActivity"
             android:label="@string/title_activity_main_aluno_content"
-            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
         </activity>
         <activity
             android:name="com.example.myapplication.content.professor.MainProfessorContentActivity"
             android:label="@string/title_activity_main_professor_content"
-            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.example.myapplication.splash.SplashScreenHomeSchoolActivity"
-            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,19 +44,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.myapplication.views.ResetSenha"
-            android:screenOrientation="portrait"
+            android:name="com.example.myapplication.views.RecuperarSenhaActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name="com.example.myapplication.views.Perfil"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.example.myapplication.views.CadastroActivity"
-            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.example.myapplication.views.LoginActivity"
-            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"

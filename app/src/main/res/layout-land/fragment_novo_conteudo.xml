@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".content.professor.ui.novo_conteudo.NovoConteudoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+
+            <EditText
+                android:id="@+id/edt_nome_professor_novo_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="@string/nome_professor_cadastro_atividades"/>
+
+            <EditText
+                android:id="@+id/edt_titulo_cadastrar_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="@string/titulo_cadastro_conteudo"/>
+
+
+            <ImageView
+                android:id="@+id/img_group_cadastrar_conteudo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/team"
+                android:layout_marginTop="120dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <Spinner
+                android:id="@+id/spin_turma_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:id="@+id/img_materia_professor_ic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="160dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/folder"/>
+
+            <Spinner
+                android:id="@+id/spn_materia_professor"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="160dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/edt_descrição_cadastrar_novo_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:lines="10"
+                android:hint="@string/description_cadastro_atividades"/>
+
+            <TextView
+                android:id="@+id/txt_receive_archive"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="340dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Nenhum arquivo selecionado."
+                android:textAlignment="center"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn_procurar_cadastrar_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="400dp"
+                android:text="@string/btn_procurar_conteudo_cadastro_atividades"
+                android:drawableLeft="@mipmap/internet"/>
+
+            <Button
+                android:id="@+id/btn_adicionar_novo_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="470dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/btn_adicionar_conteudo_cadastro_atividades" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/progressbar_informa_upload"
+        android:visibility="gone"
+        layout="@layout/upload_content_progressbar_homeschool"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
