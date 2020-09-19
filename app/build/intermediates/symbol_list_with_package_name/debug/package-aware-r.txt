@@ -1834,6 +1834,7 @@ id img_materia_professor_ic
 id img_notifica_sem_atividade_concluida
 id img_notifica_sem_duvidas_atividade
 id img_notifica_sem_duvidas_conteudo
+id img_notifica_sem_novas_atividade
 id img_profile_aluno
 id img_profile_professor
 id img_turma_aluno_ic
@@ -2069,6 +2070,7 @@ id turma_aluno_conteudo_duvida
 id txt_informa_sem_atividade_concluida
 id txt_informa_sem_duvidas_atividade
 id txt_informa_sem_duvidas_conteudo
+id txt_informa_sem_novas_atividade
 id txt_informa_upload_atividade_concluida
 id txt_recebe_arquivo_ativ_concluida
 id txt_recebe_arquivo_ativ_concluida_
@@ -2159,7 +2161,9 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_cadastro
 layout activity_detalhes_atividade
+layout activity_detalhes_atividades_recebidas_aluno
 layout activity_detalhes_conteudo
+layout activity_detalhes_duvidas_conteudo_atividade
 layout activity_login
 layout activity_main_aluno_content
 layout activity_main_professor_content2

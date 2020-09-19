@@ -30,7 +30,7 @@
 16-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:26:22-107
 17
 18    <application
-18-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:10:5-54:19
+18-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:10:5-52:19
 19        android:allowBackup="true"
 19-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:11:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -47,73 +47,77 @@
 26        android:testOnly="true"
 27        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" >
 27-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:16:9-74
-28        <activity
-28-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:18:9-21:20
-29            android:name="com.example.myapplication.content.aluno.DetalhesConteudoActivity"
-29-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:19:13-67
-30            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-30-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:20:13-69
-31        </activity>
-32        <activity
-32-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:22:9-25:20
-33            android:name="com.example.myapplication.content.aluno.DetalhesAtividadeActivity"
-33-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:23:13-68
-34            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-34-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:24:13-69
-35        </activity>
+28        <activity android:name="com.example.myapplication.content.professor.DetalhesDuvidasConteudoAtividadeActivity" />
+28-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:17:9-105
+28-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:17:19-93
+29        <activity android:name="com.example.myapplication.content.professor.DetalhesAtividadesRecebidasAlunoActivity" />
+29-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:18:9-96
+29-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:18:19-93
+30        <activity
+30-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:19:9-21:72
+31            android:name="com.example.myapplication.content.aluno.DetalhesConteudoActivity"
+31-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:20:13-67
+32            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+32-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:21:13-69
+33        <activity
+33-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:22:9-24:72
+34            android:name="com.example.myapplication.content.aluno.DetalhesAtividadeActivity"
+34-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:23:13-68
+35            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+35-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:24:13-69
 36        <activity
-36-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:27:9-31:76
+36-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:25:9-29:76
 37            android:name="com.example.myapplication.content.aluno.MainAlunoContentActivity"
-37-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:28:13-67
+37-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:26:13-67
 38            android:label="@string/title_activity_main_aluno_content"
-38-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:29:13-70
+38-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:27:13-70
 39            android:theme="@style/AppTheme.NoActionBar"
-39-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:30:13-56
+39-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:28:13-56
 40            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
-40-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:31:13-73
+40-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:29:13-73
 41        <activity
-41-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:32:9-35:59
+41-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:30:9-33:59
 42            android:name="com.example.myapplication.content.professor.MainProfessorContentActivity"
-42-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:33:13-75
+42-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:31:13-75
 43            android:label="@string/title_activity_main_professor_content"
-43-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:34:13-74
+43-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:32:13-74
 44            android:theme="@style/AppTheme.NoActionBar" />
-44-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:35:13-56
+44-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:33:13-56
 45        <activity
-45-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:36:9-44:20
+45-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:34:9-42:20
 46            android:name="com.example.myapplication.splash.SplashScreenHomeSchoolActivity"
-46-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:37:13-66
+46-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:35:13-66
 47            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-47-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:38:13-69
+47-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:36:13-69
 48            <intent-filter>
-48-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:39:13-43:29
+48-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:37:13-41:29
 49                <action android:name="android.intent.action.MAIN" />
-49-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:40:17-69
-49-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:40:25-66
+49-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:38:17-69
+49-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:38:25-66
 50
 51                <category android:name="android.intent.category.LAUNCHER" />
-51-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:42:17-77
-51-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:42:27-74
+51-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:40:17-77
+51-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:40:27-74
 52            </intent-filter>
 53        </activity>
 54        <activity
-54-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:45:9-47:72
+54-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:43:9-45:72
 55            android:name="com.example.myapplication.views.RecuperarSenhaActivity"
-55-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:46:13-57
+55-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:44:13-57
 56            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-56-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:47:13-69
+56-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:45:13-69
 57        <activity
-57-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:48:9-50:72
+57-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:46:9-48:72
 58            android:name="com.example.myapplication.views.CadastroActivity"
-58-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:49:13-51
+58-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:47:13-51
 59            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-59-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:50:13-69
+59-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:48:13-69
 60        <activity
-60-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:51:9-53:72
+60-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:49:9-51:72
 61            android:name="com.example.myapplication.views.LoginActivity"
-61-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:52:13-48
+61-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:50:13-48
 62            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-62-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:53:13-69
+62-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:51:13-69
 63        <activity
 63-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:24:9-31:50
 64            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"

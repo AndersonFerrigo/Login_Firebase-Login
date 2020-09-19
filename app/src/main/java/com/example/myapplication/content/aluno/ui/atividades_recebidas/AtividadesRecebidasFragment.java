@@ -48,36 +48,11 @@ public class AtividadesRecebidasFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         atividadesRecebidas = inflater.inflate(R.layout.fragment_atividades_recebidas, container, false);
+
         spnMateriaProfessor = atividadesRecebidas.findViewById(R.id.spn_materia_professor);
         recyclerViewAtividadesRecebidas = atividadesRecebidas.findViewById(R.id.recycler_view_tarefas_aluno);
-
-
-
-
-        FirebaseRecyclerOptions<ListarAtividadeConteudo> options =
-                    new FirebaseRecyclerOptions.Builder<ListarAtividadeConteudo>()
-                                .setQuery(FirebaseDatabase.getInstance().getReference()
-                                                .child("atividades_adicionadas")
-                                                .orderByChild("turmaProfessor")
-                                                .equalTo(recebeTurmaBundle)
-                                        , new SnapshotParser<ListarAtividadeConteudo>() {
-                                            @NonNull
-                                            @Override
-                                            public ListarAtividadeConteudo parseSnapshot(@NonNull DataSnapshot snapshot) {
-                                                return new ListarAtividadeConteudo(
-                                                        snapshot.child("descriçãoNovaAtividadeProfessor").getValue().toString(),
-                                                        snapshot.child("materiaProfessor").getValue().toString(),
-                                                        snapshot.child("nomeProfessor").getValue().toString(),
-                                                        snapshot.child("pathDocumentoNovaAtividadeProfessor").getValue().toString(),
-                                                        snapshot.child("tituloNovaAtividadeProfessor").getValue().toString()
-                                                );
-                                            }
-                                        })
-                                .build();
-
-        recyclerViewAtividadesRecebidas.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapterTarefasRecebidasProfessor = new AdapterTarefasRecebidasProfessor(options);
-        recyclerViewAtividadesRecebidas.setAdapter(adapterTarefasRecebidasProfessor);
+        imgNotificacaoSemNovasAtividadesRecebidas = atividadesRecebidas.findViewById(R.id.img_notifica_sem_novas_atividade);
+        txtInformaNotificacaoSemNovasAtividadeRecebidas = atividadesRecebidas.findViewById(R.id.txt_informa_sem_novas_atividade);
 
         return atividadesRecebidas;
     }
@@ -108,27 +83,48 @@ public class AtividadesRecebidasFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()){
+                    imgNotificacaoSemNovasAtividadesRecebidas.setVisibility(View.GONE);
+                    txtInformaNotificacaoSemNovasAtividadeRecebidas.setVisibility(View.GONE);
 
+                    options =  new FirebaseRecyclerOptions.Builder<ListarAtividadeConteudo>()
+                                    .setQuery(queryBuscaNovasAtividades, new SnapshotParser<ListarAtividadeConteudo>() {
+                                                @NonNull
+                                                @Override
+                                                public ListarAtividadeConteudo parseSnapshot(@NonNull DataSnapshot snapshot) {
+                                                    return new ListarAtividadeConteudo(
+                                                            snapshot.child("descriçãoNovaAtividadeProfessor").getValue().toString(),
+                                                            snapshot.child("materiaProfessor").getValue().toString(),
+                                                            snapshot.child("nomeProfessor").getValue().toString(),
+                                                            snapshot.child("pathDocumentoNovaAtividadeProfessor").getValue().toString(),
+                                                            snapshot.child("tituloNovaAtividadeProfessor").getValue().toString()
+                                                    );
+                                                }
+                                            })
+                                    .build();
+
+                    recyclerViewAtividadesRecebidas.setLayoutManager(new LinearLayoutManager(getContext()));
+                    adapterTarefasRecebidasProfessor = new AdapterTarefasRecebidasProfessor(options);
+                    recyclerViewAtividadesRecebidas.setAdapter(adapterTarefasRecebidasProfessor);
+                    adapterTarefasRecebidasProfessor.startListening();
+
+                }else{
+                    recyclerViewAtividadesRecebidas.setVisibility(View.GONE);
                 }
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
+            public void onCancelled(@NonNull DatabaseError error) { }
         });
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        adapterTarefasRecebidasProfessor.startListening();
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        adapterTarefasRecebidasProfessor.stopListening();
     }
 
 }

@@ -1,4 +1,4 @@
-#Sat Sep 19 08:17:24 BRT 2020
+#Sat Sep 19 16:02:39 BRT 2020
 base.0=C\:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
