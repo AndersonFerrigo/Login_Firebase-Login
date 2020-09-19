@@ -31,7 +31,8 @@ import com.google.firebase.database.FirebaseDatabase;
 public class RecuperarSenhaActivity extends AppCompatActivity {
 
     /**
-     * @since 2020
+     * @since 09/2020
+     * ok
      */
     private String recebeNomeRecuperarSenha;
     private String recebeEmailRecuperarSenha;
@@ -56,35 +57,34 @@ public class RecuperarSenhaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recuperar_senha);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            Window w = getWindow();
-            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        }
-        dbReferenceRecuperarSenha = FirebaseDatabase.getInstance().getReference().child("users");
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
         edtEmailRecuperarSenha = findViewById(R.id.edt_email_recuperar_senha);
         edtNomeRecuperarSenha = findViewById(R.id.edt_nome_recuperar_senha);
         spnPerfilRecuperarSenha = findViewById(R.id.spn_perfil);
         btnRecuperarSenhaUsuario = findViewById(R.id.btn_resetar_senha);
         btnRetornaLogin = findViewById(R.id.btn_voltar_login);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            Window w = getWindow();
+            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        }
+
+        dbReferenceRecuperarSenha = FirebaseDatabase.getInstance().getReference().child("users");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
         // Carrega o conteudo do spinner perfil
         ArrayAdapter adapterPerfilUsuario = ArrayAdapter.createFromResource(getApplicationContext(),
                 R.array.perfilUsuario, R.layout.spinner_text_adapter);
         adapterPerfilUsuario.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item
         );
         spnPerfilRecuperarSenha.setAdapter(adapterPerfilUsuario);
-
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-
         spnPerfilRecuperarSenha.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
@@ -92,8 +92,7 @@ public class RecuperarSenhaActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {}
-        });
+            public void onNothingSelected(AdapterView<?> adapterView) {}});
 
         btnRecuperarSenhaUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,70 +100,67 @@ public class RecuperarSenhaActivity extends AppCompatActivity {
             recebeNomeRecuperarSenha = edtNomeRecuperarSenha.getText().toString();
             recebeEmailRecuperarSenha = edtEmailRecuperarSenha.getText().toString();
 
-                if((recebeNomeRecuperarSenha.isEmpty()) || (recebeEmailRecuperarSenha.isEmpty()) ||
-                                    recebePerfilRecuperarSenha.equals("Escolha um perfil")){
-                    Toast.makeText(getApplicationContext(), "Todos os campos devem ser preenchidos", Toast.LENGTH_SHORT).show();
-                }else{
-                    recuperarSenhaUsuario = new RecuperarSenhaUsuario();
+            if((recebeNomeRecuperarSenha.isEmpty()) || (recebeEmailRecuperarSenha.isEmpty()) ||
+                                            recebePerfilRecuperarSenha.equals("Escolha um perfil")){
+                Toast.makeText(getApplicationContext(), "Todos os campos devem ser preenchidos", Toast.LENGTH_SHORT).show();
+            }else{
+                recuperarSenhaUsuario = new RecuperarSenhaUsuario();
+                recuperarSenhaUsuario.setRecuperaNomeUsuario(recebeNomeRecuperarSenha);
+                recuperarSenhaUsuario.setRecuperaEmailUsuario(recebeEmailRecuperarSenha);
+                recuperarSenhaUsuario.setRecuperaPerfilUsuario(recebePerfilRecuperarSenha);
 
-                    recuperarSenhaUsuario.setRecuperaNomeUsuario(recebeNomeRecuperarSenha);
-                    recuperarSenhaUsuario.setRecuperaEmailUsuario(recebeEmailRecuperarSenha);
-                    recuperarSenhaUsuario.setRecuperaPerfilUsuario(recebePerfilRecuperarSenha);
+                dbReferenceRecuperarSenha.addChildEventListener(new ChildEventListener() {
+                    @Override
+                    public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                        CadastroNovoUsuario cadastroNovoUsuario = snapshot.getValue(CadastroNovoUsuario.class);
+                        assert cadastroNovoUsuario != null;
+                        if ((recuperarSenhaUsuario.getRecuperaNomeUsuario().equals(cadastroNovoUsuario.getNome())) &&
+                                (recuperarSenhaUsuario.getRecuperaEmailUsuario().equals(cadastroNovoUsuario.getEmail())) &&
+                                (recuperarSenhaUsuario.getRecuperaPerfilUsuario().equals(cadastroNovoUsuario.getPerfil()))) {
 
-                    dbReferenceRecuperarSenha.addChildEventListener(new ChildEventListener() {
-                        @Override
-                        public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                            CadastroNovoUsuario cadastroNovoUsuario = snapshot.getValue(CadastroNovoUsuario.class);
-                            assert cadastroNovoUsuario != null;
-                            if ((recuperarSenhaUsuario.getRecuperaNomeUsuario().equals(cadastroNovoUsuario.getNome())) &&
-                                    (recuperarSenhaUsuario.getRecuperaEmailUsuario().equals(cadastroNovoUsuario.getEmail())) &&
-                                        (recuperarSenhaUsuario.getRecuperaPerfilUsuario().equals(cadastroNovoUsuario.getPerfil()))) {
+                            recebeSenhaRecuperada = "Sua senha é  " + cadastroNovoUsuario.getSenha();
+                            AlertDialog.Builder builder = new AlertDialog.Builder(RecuperarSenhaActivity.this);
 
-                                recebeSenhaRecuperada = "Sua senha é  " + cadastroNovoUsuario.getSenha();
-                                AlertDialog.Builder builder = new AlertDialog.Builder(RecuperarSenhaActivity.this);
+                            builder.setMessage(recebeSenhaRecuperada)
+                                    .setTitle(R.string.txt_title_dialog_recuperar_senha);
 
-                                builder.setMessage(recebeSenhaRecuperada)
-                                        .setTitle(R.string.txt_title_dialog_recuperar_senha);
+                            builder.setPositiveButton(R.string.btn_dialog_recuperar_senha_ok, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    finish();
+                                }
+                            });
 
-                                builder.setPositiveButton(R.string.btn_dialog_recuperar_senha_ok, new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int id) {
-                                        finish();
-                                    }
-                                });
+                            AlertDialog dialog =  builder.create();
 
-                                AlertDialog dialog =  builder.create();
-
-                                dialog.show();
-                            }
-
-                            limparDados();
+                            dialog.show();
                         }
+                        limparDados();
+                    }
 
-                        @Override
-                        public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {}
+                    @Override
+                    public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {}
 
-                        @Override
-                        public void onChildRemoved(@NonNull DataSnapshot snapshot) {}
+                    @Override
+                    public void onChildRemoved(@NonNull DataSnapshot snapshot) {}
 
-                        @Override
-                        public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {}
+                    @Override
+                    public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {}
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
-                            Toast.makeText(getApplicationContext(), " Dados incorretos", Toast.LENGTH_LONG).show();
-
-                        }
-                    });
-                }
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+                        Toast.makeText(getApplicationContext(), " Dados incorretos", Toast.LENGTH_LONG).show();
+                    }
+                });
+            }
             }
         });
 
         btnRetornaLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent retornarTelaLogin = new Intent(getApplicationContext(), LoginActivity.class);
-                startActivity(retornarTelaLogin);
-                limparDados();
+            Intent retornarTelaLogin = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(retornarTelaLogin);
+            limparDados();
             }
         });
     }

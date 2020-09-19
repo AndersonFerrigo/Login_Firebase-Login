@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".content.professor.ui.nova_atividades.NovaAtividadeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:paddingBottom="20dp">
+
+        <EditText
+            android:id="@+id/edt_nome_professor_nova_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:hint="@string/nome_professor_cadastro_atividades"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/edt_titulo_cadastrar_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:hint="@string/titulo_cadastro_atividades"
+            android:textSize="30sp"/>
+
+        <ImageView
+            android:id="@+id/img_group_cadastrar_atividade"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@mipmap/team"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"/>
+
+        <Spinner
+            android:id="@+id/spin_turma_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"/>
+
+        <ImageView
+            android:id="@+id/img_materia_professor_ic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="@mipmap/folder"/>
+
+        <Spinner
+            android:id="@+id/spn_materia_professor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp" />
+
+        <EditText
+            android:id="@+id/edt_conteudo_cadastrar_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:lines="10"
+            android:hint="@string/description_cadastro_atividades"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/txt_receive_archive"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="420dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginEnd="140dp"
+            android:hint="Nenhum arquivo selecionado."
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/btn_procurar_cadastrar_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginRight="200dp"
+            android:layout_marginTop="500dp"
+            android:text="@string/btn_procurar_conteudo_cadastro_atividades"
+            android:drawableLeft="@mipmap/internet"/>
+
+        <Button
+            android:id="@+id/btn_adicionar_nova_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="600dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/btn_adicionar_conteudo_cadastro_atividades"
+            android:textSize="30sp"/>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/progressbar_informa_upload"
+        android:visibility="gone"
+        layout="@layout/upload_content_progressbar_homeschool"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

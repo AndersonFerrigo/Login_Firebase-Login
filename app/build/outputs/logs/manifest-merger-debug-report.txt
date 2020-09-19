@@ -1,13 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-51:12
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-56:12
 MERGED from [androidx.navigation:navigation-ui:2.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\de79141d24eaaf9fdfda032673164e8b\navigation-ui-2.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\ef0827398e5f62e52631bcec25b8143f\material-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\2623c5ec6fa92d68e711128d15e9038d\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5fde9b470ca241c13fa0641ca95ae4a\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.firebaseui:firebase-ui-database:6.2.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\026626671eca0ec6c709a3ef48530f9b\jetified-firebase-ui-database-6.2.1\AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\aab5293454cabe85272e9de04d494d57\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment:2.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\be33e17e160e6f07e14b77976e17ac19\navigation-fragment-2.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\8e1fa5a2604a8f5ed21dffdeccbcf57a\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
@@ -16,6 +17,7 @@ MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\ander\.gradl
 MERGED from [com.google.firebase:firebase-core:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f6dc17980e0770f4f4ed538197e0cd05\jetified-firebase-core-17.4.4\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-analytics:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\bd309465ebd0de2b47e20e0ff7b8c9c7\jetified-firebase-analytics-17.4.4\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:15:1-39:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\adb371d4d53f86eab98a28717d70cc7e\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview-selection:1.1.0-rc01] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d26b37ad613b2aca83bacf0b19b1c1fd\recyclerview-selection-1.1.0-rc01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\305c2898fe2457e82c9da2257c2bc0a1\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\8d8a8abf56b0acf243894e5c793a7480\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -58,9 +60,9 @@ MERGED from [androidx.activity:activity:1.1.0] C:\Users\ander\.gradle\caches\tra
 MERGED from [androidx.navigation:navigation-common:2.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\4451b9b18218df1a152b7e3497f1423a\navigation-common-2.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\71a649a18db048a533a3b2353514428a\core-1.3.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\705071dba30571a9226503cb1f0dac80\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\adb371d4d53f86eab98a28717d70cc7e\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\fbb45a1792cf0e97ccf5507b087b63b1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:17:1-32:12
 MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\b703afcb5ad763e5933f0b6c8e08ef9a\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.firebaseui:firebase-ui-common:6.2.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\c32bf95937e2a01fa9bc83cb2a71f07d\jetified-firebase-ui-common-6.2.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f6da952f61b4019c537f7d9fa681a24f\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\6d7515352dc4b863d20c67319f481f54\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\793b5d87405bf3f75f1562f8aa980318\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
@@ -75,25 +77,27 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ander\.gradle\ca
 MERGED from [androidx.print:print:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5fd7fbc692311a845217063332ce16c\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\6435850e23f2d01013861f1c8dbdb3a0\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\ae891c337b2dc8d7a559b90a3711f662\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-56:12
 	package
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:4:5-40
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:3:5-40
 		INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-51:12
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-56:12
 		INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-51:12
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:1-56:12
 		INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:3:5-63
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.firebaseui:firebase-ui-database:6.2.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\026626671eca0ec6c709a3ef48530f9b\jetified-firebase-ui-database-6.2.1\AndroidManifest.xml:11:5-67
+MERGED from [com.firebaseui:firebase-ui-database:6.2.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\026626671eca0ec6c709a3ef48530f9b\jetified-firebase-ui-database-6.2.1\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\227f78203b0b12a1d5db88f7e5b8d4d8\jetified-firebase-database-19.3.1\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\227f78203b0b12a1d5db88f7e5b8d4d8\jetified-firebase-database-19.3.1\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:27:5-67
@@ -109,9 +113,9 @@ MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\ander\.
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\860f132502327c0d186194e927c03ba9\jetified-play-services-measurement-sdk-api-17.4.4\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\860f132502327c0d186194e927c03ba9\jetified-play-services-measurement-sdk-api-17.4.4\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:7:5-79
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:6:5-79
 MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\227f78203b0b12a1d5db88f7e5b8d4d8\jetified-firebase-database-19.3.1\AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\227f78203b0b12a1d5db88f7e5b8d4d8\jetified-firebase-database-19.3.1\AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:26:5-79
@@ -127,17 +131,17 @@ MERGED from [com.google.firebase:firebase-installations:16.3.2] C:\Users\ander\.
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\860f132502327c0d186194e927c03ba9\jetified-play-services-measurement-sdk-api-17.4.4\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\860f132502327c0d186194e927c03ba9\jetified-play-services-measurement-sdk-api-17.4.4\AndroidManifest.xml:24:5-79
 	android:name
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:8:5-76
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:7:5-76
 	android:name
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:8:22-73
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:7:22-73
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:9:5-80
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:8:5-80
 	android:name
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:9:22-77
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:8:22-77
 application
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:11:5-49:19
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:10:5-54:19
 MERGED from [com.google.android.material:material:1.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\ef0827398e5f62e52631bcec25b8143f\material-1.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\ef0827398e5f62e52631bcec25b8143f\material-1.2.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5fde9b470ca241c13fa0641ca95ae4a\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -193,69 +197,81 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\an
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\71a649a18db048a533a3b2353514428a\core-1.3.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:13:9-41
 	android:roundIcon
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:15:9-59
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:14:9-59
 	android:icon
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:12:9-54
 	android:allowBackup
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:17:9-74
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:16:9-74
+activity#com.example.myapplication.content.aluno.DetalhesConteudoActivity
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:18:9-21:20
+	android:theme
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:20:13-69
+	android:name
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:19:13-67
+activity#com.example.myapplication.content.aluno.DetalhesAtividadeActivity
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:22:9-25:20
+	android:theme
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:24:13-69
+	android:name
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:23:13-68
 activity#com.example.myapplication.content.aluno.MainAlunoContentActivity
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:19:9-24:20
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:27:9-31:76
 	android:label
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:21:13-70
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:29:13-70
 	android:windowSoftInputMode
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:23:13-73
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:31:13-73
 	android:theme
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:22:13-56
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:30:13-56
 	android:name
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:20:13-67
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:28:13-67
 activity#com.example.myapplication.content.professor.MainProfessorContentActivity
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:26:9-29:58
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:32:9-35:59
 	android:label
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:28:13-74
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:34:13-74
 	android:theme
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:29:13-56
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:35:13-56
 	android:name
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:27:13-75
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:33:13-75
 activity#com.example.myapplication.splash.SplashScreenHomeSchoolActivity
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:31:9-38:20
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:36:9-44:20
 	android:theme
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:33:13-69
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:38:13-69
 	android:name
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:32:13-66
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:37:13-66
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:34:13-37:29
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:39:13-43:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:35:17-69
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:40:17-69
 	android:name
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:35:25-66
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:40:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:36:17-77
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:42:17-77
 	android:name
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:36:27-74
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:42:27-74
 activity#com.example.myapplication.views.RecuperarSenhaActivity
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:40:9-41:77
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:45:9-47:72
 	android:theme
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:41:19-75
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:47:13-69
 	android:name
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:40:19-63
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:46:13-57
 activity#com.example.myapplication.views.CadastroActivity
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:43:9-44:77
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:48:9-50:72
 	android:theme
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:44:19-75
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:50:13-69
 	android:name
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:43:19-57
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:49:13-51
 activity#com.example.myapplication.views.LoginActivity
-ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:46:9-47:78
+ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:51:9-53:72
 	android:theme
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:47:19-75
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:53:13-69
 	android:name
-		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:46:19-54
+		ADDED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:52:13-48
 uses-sdk
 INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml
@@ -268,6 +284,8 @@ MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\ander\.gradle\caches\t
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\2623c5ec6fa92d68e711128d15e9038d\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5fde9b470ca241c13fa0641ca95ae4a\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5fde9b470ca241c13fa0641ca95ae4a\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-database:6.2.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\026626671eca0ec6c709a3ef48530f9b\jetified-firebase-ui-database-6.2.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-database:6.2.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\026626671eca0ec6c709a3ef48530f9b\jetified-firebase-ui-database-6.2.1\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\aab5293454cabe85272e9de04d494d57\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\aab5293454cabe85272e9de04d494d57\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-fragment:2.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\be33e17e160e6f07e14b77976e17ac19\navigation-fragment-2.3.0\AndroidManifest.xml:20:5-22:41
@@ -284,6 +302,8 @@ MERGED from [com.google.firebase:firebase-analytics:17.4.4] C:\Users\ander\.grad
 MERGED from [com.google.firebase:firebase-analytics:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\bd309465ebd0de2b47e20e0ff7b8c9c7\jetified-firebase-analytics-17.4.4\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\adb371d4d53f86eab98a28717d70cc7e\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\adb371d4d53f86eab98a28717d70cc7e\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview-selection:1.1.0-rc01] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d26b37ad613b2aca83bacf0b19b1c1fd\recyclerview-selection-1.1.0-rc01\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview-selection:1.1.0-rc01] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d26b37ad613b2aca83bacf0b19b1c1fd\recyclerview-selection-1.1.0-rc01\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\305c2898fe2457e82c9da2257c2bc0a1\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -368,12 +388,12 @@ MERGED from [androidx.core:core:1.3.0] C:\Users\ander\.gradle\caches\transforms-
 MERGED from [androidx.core:core:1.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\71a649a18db048a533a3b2353514428a\core-1.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\705071dba30571a9226503cb1f0dac80\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\705071dba30571a9226503cb1f0dac80\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\adb371d4d53f86eab98a28717d70cc7e\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\adb371d4d53f86eab98a28717d70cc7e\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\fbb45a1792cf0e97ccf5507b087b63b1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\fbb45a1792cf0e97ccf5507b087b63b1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\b703afcb5ad763e5933f0b6c8e08ef9a\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\b703afcb5ad763e5933f0b6c8e08ef9a\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.firebaseui:firebase-ui-common:6.2.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\c32bf95937e2a01fa9bc83cb2a71f07d\jetified-firebase-ui-common-6.2.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-common:6.2.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\c32bf95937e2a01fa9bc83cb2a71f07d\jetified-firebase-ui-common-6.2.1\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f6da952f61b4019c537f7d9fa681a24f\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f6da952f61b4019c537f7d9fa681a24f\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\6d7515352dc4b863d20c67319f481f54\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41

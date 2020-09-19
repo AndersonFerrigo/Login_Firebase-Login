@@ -47,10 +47,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view_tarefas_aluno"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/recycler_atividades_recebidas_professor">
-    
+            android:layout_height="wrap_content">
+
         </androidx.recyclerview.widget.RecyclerView>
 
     </RelativeLayout>

@@ -111,7 +111,7 @@ public class DuvidasConteudoFragment extends Fragment {
         adapterMateriaProfessor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spnMateriaProfessorConteudoDuvida.setAdapter(adapterMateriaProfessor);
 
-        dbReferenceConteudoDuvida = conteudoDuvidaDataBase.getInstance().getReference().child("duvidasConteudoAulas");
+        dbReferenceConteudoDuvida = conteudoDuvidaDataBase.getInstance().getReference().child("duvidas_conteudo_aulas");
         storageReference = storage.getInstance().getReference();
 
 
@@ -175,7 +175,7 @@ public class DuvidasConteudoFragment extends Fragment {
 
                     String filename = System.currentTimeMillis() + "";
                     // Retorna O caminho raiz
-                    storageReference.child("duvidasConteudosAulasUploads").child(filename).putFile(uriArquivoUploadConteudoDuvida)
+                    storageReference.child("duvidas_conteudos_aulas_uploads").child(filename).putFile(uriArquivoUploadConteudoDuvida)
                             .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                                 @Override
                                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {

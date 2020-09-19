@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.CadastroActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="88dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="@string/cadastroNovoUsuario"
+            android:textAlignment="center"
+            android:textColor="@color/baseThemeColor"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="120dp"
+            android:background="@mipmap/user" />
+
+        <EditText
+            android:id="@+id/edt_nome_novo_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/user_Cadastro"
+            android:inputType="textCapSentences" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="210dp"
+            android:background="@mipmap/at" />
+
+        <EditText
+            android:id="@+id/edt_novo_email_cadastro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="@string/email_Cadastro"
+            android:inputType="textEmailAddress" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="300dp"
+            android:background="@mipmap/padlock" />
+
+        <EditText
+            android:id="@+id/edt_nova_senha_cadastro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="@string/senha_Cadastro"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="400dp"
+            android:background="@mipmap/perfil" />
+
+        <Spinner
+            android:id="@+id/spn_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginBottom="10dp"
+            android:defaultFocusHighlightEnabled="true" />
+
+        <ImageView
+            android:id="@+id/img_materia_professor_ic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="480dp"
+            android:background="@mipmap/folder"
+            android:visibility="invisible" />
+
+        <Spinner
+            android:id="@+id/spn_materia_professor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/img_turma_aluno_ic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="480dp"
+            android:background="@mipmap/team"
+            android:visibility="invisible" />
+
+        <Spinner
+            android:id="@+id/spn_turma_aluno"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_cadastrar_novo_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="580dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginEnd="140dp"
+            android:background="@color/baseThemeColor"
+            android:text="@string/registrar"
+            android:textColor="@color/cor_branca" />
+
+        <Button
+            android:id="@+id/btn_Voltar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="680dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginEnd="140dp"
+            android:background="@drawable/shape_custom_button"
+            android:text="@string/voltar"
+            android:textColor="@color/baseThemeColor" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

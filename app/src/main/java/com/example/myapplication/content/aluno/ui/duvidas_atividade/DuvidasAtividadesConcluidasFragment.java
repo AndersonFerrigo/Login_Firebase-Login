@@ -109,7 +109,7 @@ public class DuvidasAtividadesConcluidasFragment extends Fragment {
         spnMateriaProfessorAtividadeDuvida.setAdapter(adapterMateriaProfessor);
 
 
-        dbReferenceAtividadeDuvida = atividadeDuvidaDataBase.getInstance().getReference().child("duvidasAtividadesConcluidas");
+        dbReferenceAtividadeDuvida = atividadeDuvidaDataBase.getInstance().getReference().child("duvidas_atividades_concluidas");
         storageReference = storage.getInstance().getReference();
 
 
@@ -178,7 +178,7 @@ public class DuvidasAtividadesConcluidasFragment extends Fragment {
 
                     String filename = System.currentTimeMillis() + "";
                     // Retorna O caminho raiz
-                    storageReference.child("DuvidasAtividadesConcluidasUploads").child(filename).putFile(uriArquivoUploadAtividadesDuvida)
+                    storageReference.child("duvidas_atividades_concluidas_uploads").child(filename).putFile(uriArquivoUploadAtividadesDuvida)
                             .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                                 @Override
                                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {

@@ -97,7 +97,7 @@ public class EnviarAtividadesConcluidasFragment extends Fragment {
         adapterMateriaProfessor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spnMateriaAtividadeConcluida.setAdapter(adapterMateriaProfessor);
 
-        dbReferenceAtividadeConcluida = atividadeConcluidaDataBase.getInstance().getReference().child("atividadesConcluidas");
+        dbReferenceAtividadeConcluida = atividadeConcluidaDataBase.getInstance().getReference().child("atividades_concluidas");
         storageReference = storage.getInstance().getReference();
 
         return atividadeConcluida;
@@ -155,7 +155,7 @@ public class EnviarAtividadesConcluidasFragment extends Fragment {
                     mViewModelAtividadeConcluida = new EnviarAtividadesConcluidasViewModel();
                     String filename = System.currentTimeMillis() + "";
                     // Retorna o caminho raiz
-                    storageReference.child("AtividadesConcluidasUploads").child(filename).putFile(uriArquivoUploadAtividadesConcluidas)
+                    storageReference.child("Atividades_concluidas_uploads").child(filename).putFile(uriArquivoUploadAtividadesConcluidas)
                             .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                                 @Override
                                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {

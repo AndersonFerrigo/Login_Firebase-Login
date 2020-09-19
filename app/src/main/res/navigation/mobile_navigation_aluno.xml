@@ -45,4 +45,9 @@
         android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
         tools:layout="@layout/duvidas_conteudo_fragment"/>
 
+    <fragment
+        android:id="@+id/nav_detalhes_atividade"
+        android:name="com.example.myapplication.content.aluno.DetalhesAtividadeFragment"
+        tools:layout="@layout/fragment_detalhes_atividade"/>
+
 </navigation>

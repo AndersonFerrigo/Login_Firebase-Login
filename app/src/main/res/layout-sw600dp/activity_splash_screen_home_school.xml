@@ -7,26 +7,28 @@
     android:layout_height="match_parent"
     android:id="@+id/container"
     tools:context=".splash.SplashScreenHomeSchoolActivity"
+    android:background="@color/baseThemeColor"
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:background="@mipmap/splash_screen_homeschool_green"
         android:orientation="vertical">
 
         <com.agrawalsuneet.dotsloader.loaders.TashieLoader
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="800dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="700dp"
             app:tashieloader_animDelay="150"
             app:tashieloader_animDur="400"
             app:tashieloader_dotsColor="@color/cor_branca"
             app:tashieloader_dotsDist="10dp"
             app:tashieloader_dotsRadius="10dp"
             app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
-            app:tashieloader_noOfDots="3"
-            android:layout_gravity="center"/>
+            app:tashieloader_noOfDots="3" />
 
     </LinearLayout>
 

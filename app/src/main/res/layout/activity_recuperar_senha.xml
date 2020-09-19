@@ -27,26 +27,41 @@
             android:textSize="30sp"
             android:gravity="center_horizontal"/>
 
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/user"/>
+
         <EditText
             android:id="@+id/edt_nome_recuperar_senha"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="150dp"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
-            android:ems="10"
             android:hint="@string/txt_nome_recuperar_senha"
-            android:inputType="textEmailAddress"
+            android:inputType="textCapSentences"
             android:importantForAutofill="no" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/at"/>
 
         <EditText
             android:id="@+id/edt_email_recuperar_senha"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="230dp"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
@@ -56,9 +71,9 @@
             android:importantForAutofill="no" />
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="322dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="325dp"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:background="@mipmap/perfil"

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".content.aluno.ui.duvidas_conteudo.DuvidasConteudoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:paddingBottom="20dp">
+
+            <EditText
+                android:id="@+id/edt_nome_aluno_duvida_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginEnd="140dp"
+                android:layout_marginRight="140dp"
+                android:hint="@string/nome_aluno_conteudo_duvida_recebida"
+                android:textSize="30sp"/>
+
+            <EditText
+                android:id="@+id/edt_titulo_duvida_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginEnd="140dp"
+                android:layout_marginRight="140dp"
+                android:hint="@string/titulo_duvidas_conteudo"
+                android:textSize="30sp"/>
+
+            <ImageView
+                android:id="@+id/img_group_duvida_conteudo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/team"
+                android:layout_marginTop="150dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"/>
+
+            <Spinner
+                android:id="@+id/spn_turma_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="140dp"
+                android:layout_marginRight="140dp"/>
+
+            <ImageView
+                android:id="@+id/img_materia_professor_ic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="240dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:background="@mipmap/folder"/>
+
+            <Spinner
+                android:id="@+id/spn_materia_duvida_professor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="240dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginEnd="140dp"
+                android:layout_marginRight="140dp" />
+
+            <EditText
+                android:id="@+id/edt_descricao_duvidas_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="310dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginEnd="140dp"
+                android:layout_marginRight="140dp"
+                android:lines="10"
+                android:hint="@string/descricao_duvida_conteudo"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/txt_recebe_arquivo_duvida_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="440dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="140dp"
+                android:layout_marginEnd="140dp"
+                android:hint="@string/recebe_arquivo_conteudo_duvida"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/btn_procurar_conteudo_duvida"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginTop="500dp"
+                android:text="@string/btn_procurar_conteudo_cadastro_atividades"
+                android:drawableLeft="@mipmap/internet"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/btn_enviar_conteudo_duvida"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="600dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginEnd="140dp"
+                android:layout_marginRight="140dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/enviar_conteudo_duvida"
+                android:textSize="30sp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/progressbar_informa_upload"
+        android:visibility="gone"
+        layout="@layout/upload_content_progressbar_homeschool"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

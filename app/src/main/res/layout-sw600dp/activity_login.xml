@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,91 +7,101 @@
     tools:context=".views.LoginActivity">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginLeft="20dp">
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/text_Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:text="@string/login"
-            android:textSize="50sp"
-            android:textAlignment="center"
+            android:layout_marginTop="80dp"
             android:gravity="center_horizontal"
-            android:textColor="@color/baseThemeColor"/>
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textColor="@color/baseThemeColor"
+            android:textSize="60sp" />
 
         <EditText
             android:id="@+id/editEmail_Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="240dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginRight="50dp"
-            android:ems="10"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
             android:hint="@string/email_Login"
-            android:inputType="textEmailAddress"
-            android:importantForAutofill="no" />
+            android:inputType="textEmailAddress" />
 
         <EditText
-        android:id="@+id/editSenha_Login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="370dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/senha_Login"
-        android:inputType="textPassword"/>
+            android:id="@+id/editSenha_Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="390dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:autofillHints=""
+            android:hint="@string/senha_Login"
+            android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/btn_Logar"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="580dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:textColor="@color/cor_branca"
-        android:text="@string/logar"
-        android:textSize="20dp"
-        android:background="@color/baseThemeColor"/>
+        <Button
+            android:id="@+id/btn_Logar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="520dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@color/baseThemeColor"
+            android:text="@string/logar"
+            android:textColor="@color/cor_branca"
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/btn_cadastrar"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginTop="700dp"
-            android:elevation="2px"
-            android:textColor="@color/baseThemeColor"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="620dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:foregroundTint="@android:color/transparent"
             android:background="@drawable/shape_custom_button"
+            android:elevation="2px"
             android:text="@string/cadastrar"
-            android:textSize="20dp"/>
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="@color/baseThemeColor"
+            android:textSize="20dp" />
+
         <TextView
             android:id="@+id/textEsqueciaSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="170dp"
-            android:layout_marginLeft="170dp"
-            android:layout_marginTop="800dp"
-            android:textColor="@color/baseThemeColor"
+            android:layout_gravity="end"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="720dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
             android:text="@string/esqueci_a_senha"
             android:textAlignment="textEnd"
-            android:textSize="30dp"
-            android:layout_gravity="end" />
+            android:textColor="@color/baseThemeColor"
+            android:textSize="15sp" />
 
     </RelativeLayout>
 

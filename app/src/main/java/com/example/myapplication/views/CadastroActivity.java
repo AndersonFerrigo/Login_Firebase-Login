@@ -29,7 +29,8 @@ import java.util.UUID;
 public class CadastroActivity extends AppCompatActivity {
 
     /**
-     * @since 2020
+     * @since 09/2020
+     * ok
      */
 
     private CadastroNovoUsuario cadastroNovoUsuarioNovoUser;
@@ -58,16 +59,6 @@ public class CadastroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            Window w = getWindow();
-            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        }
-        dbReferenceCadastroNovoUsuario = FirebaseDatabase.getInstance().getReference().child("users");
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
         edtNomeNovoUsuario = findViewById(R.id.edt_nome_novo_usuario);
         edtEmailNovoUsuario = findViewById(R.id.edt_novo_email_cadastro);
         edtSenhaNovoUsuario = findViewById(R.id.edt_nova_senha_cadastro);
@@ -78,6 +69,18 @@ public class CadastroActivity extends AppCompatActivity {
         imgTurmaAlunoIc = findViewById(R.id.img_turma_aluno_ic);
         spnMateriaProfessor = findViewById(R.id.spn_materia_professor);
         spnTurmaAluno = findViewById(R.id.spn_turma_aluno);
+
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            Window w = getWindow();
+            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        }
+        dbReferenceCadastroNovoUsuario = FirebaseDatabase.getInstance().getReference().child("users");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
 
         // Carrega o conteudo do spinner perfil
         ArrayAdapter adapterPerfilUsuario = ArrayAdapter.createFromResource(getApplicationContext(),
@@ -106,37 +109,36 @@ public class CadastroActivity extends AppCompatActivity {
         spnTipoPerfilUsuario.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
-                   recebePerfil = adapterView.getItemAtPosition(position).toString();
-                        if(recebePerfil.equals("Aluno")){
-                            imgTurmaAlunoIc.setVisibility(View.VISIBLE);
-                            imgMateriaProfessorIc.setVisibility(View.INVISIBLE);
+                recebePerfil = adapterView.getItemAtPosition(position).toString();
+                if(recebePerfil.equals("Aluno")){
+                    imgTurmaAlunoIc.setVisibility(View.VISIBLE);
+                    imgMateriaProfessorIc.setVisibility(View.INVISIBLE);
 
-                            recebeMateria = "Não aplicado";
-                            spnTurmaAluno.setVisibility(View.VISIBLE);
-                            spnMateriaProfessor.setVisibility(View.INVISIBLE);
-                        }
-                        if(recebePerfil.equals("Professor")){
-                            imgTurmaAlunoIc.setVisibility(View.INVISIBLE);
-                            imgMateriaProfessorIc.setVisibility(View.VISIBLE);
-
-                            recebeTurma = "Não aplicado";
-                            spnTurmaAluno.setVisibility(View.INVISIBLE);
-                            spnMateriaProfessor.setVisibility(View.VISIBLE);
-                        }
+                    recebeMateria = "Não aplicado";
+                    spnTurmaAluno.setVisibility(View.VISIBLE);
+                    spnMateriaProfessor.setVisibility(View.INVISIBLE);
                 }
+                if(recebePerfil.equals("Professor")){
+                    imgTurmaAlunoIc.setVisibility(View.INVISIBLE);
+                    imgMateriaProfessorIc.setVisibility(View.VISIBLE);
+
+                    recebeTurma = "Não aplicado";
+                    spnTurmaAluno.setVisibility(View.INVISIBLE);
+                    spnMateriaProfessor.setVisibility(View.VISIBLE);
+                }
+            }
 
             @Override
-            public void onNothingSelected(AdapterView<?> adapterView) { }
-        });
+            public void onNothingSelected(AdapterView<?> adapterView) { }});
 
         spnMateriaProfessor.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 recebeMateria = adapterView.getItemAtPosition(position).toString();
             }
+
             @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {}
-        });
+            public void onNothingSelected(AdapterView<?> adapterView) { }});
 
         spnTurmaAluno.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -145,19 +147,18 @@ public class CadastroActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {}
-        });
+            public void onNothingSelected(AdapterView<?> adapterView) {}});
 
         btnRegistrarNovoUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              if((edtEmailNovoUsuario.getText().toString().equals("")) || (edtEmailNovoUsuario.getText().toString().equals(""))
-                   || (edtSenhaNovoUsuario.getText().toString().equals("")) || (recebePerfil.equals("Escolha um perfil"))
-                      ||(recebeMateria.equals("Escolha uma materia"))||(recebeTurma.equals("Escolha uma turma"))){
+                if((edtEmailNovoUsuario.getText().toString().equals("")) || (edtEmailNovoUsuario.getText().toString().equals(""))
+                            || (edtSenhaNovoUsuario.getText().toString().equals("")) || (recebePerfil.equals("Escolha um perfil"))
+                            ||(recebeMateria.equals("Escolha uma materia"))||(recebeTurma.equals("Escolha uma turma"))){
 
                     Toast.makeText(getApplicationContext(), "Todos os campos devem ser preenchidos!", Toast.LENGTH_LONG).show();
 
-              }else {
+                }else {
                     cadastroNovoUsuarioNovoUser = new CadastroNovoUsuario();
                     cadastroNovoUsuarioNovoUser.setUid(UUID.randomUUID().toString());
                     cadastroNovoUsuarioNovoUser.setNome(edtNomeNovoUsuario.getText().toString());
@@ -172,20 +173,20 @@ public class CadastroActivity extends AppCompatActivity {
 
                         @Override
                         public void onSuccess(Void aVoid) {
-                            Toast.makeText(getApplicationContext(), "Cadastro  de usuario realizado com sucesso", Toast.LENGTH_LONG).show();
-                            Intent retornarLogin = new Intent(getApplicationContext(), LoginActivity.class);
-                            startActivity(retornarLogin);
-                            limparDados();
-                            finish();
+                        Toast.makeText(getApplicationContext(), "Cadastro  de usuario realizado com sucesso", Toast.LENGTH_LONG).show();
+                        Intent retornarLogin = new Intent(getApplicationContext(), LoginActivity.class);
+                        startActivity(retornarLogin);
+                        limparDados();
+                        finish();
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(getApplicationContext(), "Problemas ao realizar o cadastro", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Problemas ao realizar o cadastro", Toast.LENGTH_LONG).show();
                         }
                     });
-              }
+                }
             }
         });
 

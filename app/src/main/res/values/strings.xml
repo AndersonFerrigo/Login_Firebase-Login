@@ -11,15 +11,15 @@
     <!-- Lista de turmas da escola refrente ao cadastroNovoUsuario de novas atividades, conteudo e alunos-->
     <string-array name="turmas_escola">
         <item>Escolha uma turma</item>
-        <item>1° Ano Fundamantal</item>
-        <item>2° Ano Fundamantal</item>
-        <item>3° Ano Fundamantal</item>
-        <item>4° Ano Fundamantal</item>
-        <item>5° Ano Fundamantal</item>
-        <item>6° Ano Fundamantal</item>
-        <item>7° Ano Fundamantal</item>
-        <item>8° Ano Fundamantal</item>
-        <item>9° Ano Fundamantal</item>
+        <item>1° Ano Fundamental</item>
+        <item>2° Ano Fundamental</item>
+        <item>3° Ano Fundamental</item>
+        <item>4° Ano Fundamental</item>
+        <item>5° Ano Fundamental</item>
+        <item>6° Ano Fundamental</item>
+        <item>7° Ano Fundamental</item>
+        <item>8° Ano Fundamental</item>
+        <item>9° Ano Fundamental</item>
         <item>1° Ano Médio</item>
         <item>2° Ano Médio</item>
         <item>3° Ano Médio</item>
@@ -75,6 +75,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Log Out</string>
+    <string name="profile_menu_aluno">Perfil</string>
 
 
     <!-- Professor -->
@@ -122,10 +123,17 @@
     <string name="btn_adicionar_conteudo_cadastro_conteudo">Adicionar</string>
 
 
-    <!-- Home Atividades Recebidas alunos -->
+    <!-- Home atividades concluidas alunos -->
     <string name="titulo_atividade_recebida_professor">Titulo da Atividade</string>
     <string name="nome_aluno_atividade_recebida_professor">Nome do aluno</string>
     <string name="materia_atividade_recebida_professor">Materia</string>
+    <string name="informa_sem_atividade_recebida">Nenhuma atividade recebida até o momento</string>
+
+    <!-- Detalhe atividades concluidas alunos -->
+    <string name="detalhes_titulo_atividade_concluida_aluno">Titulo da Atividade</string>
+    <string name="detalhes_nome_atividade_concluida_aluno">Nome do aluno</string>
+    <string name="detalhes_materia_atividade_concluida_aluno">Materia</string>
+    <string name="detalhes_caminho_atividade_concluida_aluno">Caminho do arquivo</string>
 
 
     <!-- Atividades duvidas alunos -->
@@ -134,12 +142,17 @@
     <string name="materia_duvida_atividade_aluno">Materia</string>
     <string name="turma_aluno_atividade_duvida">Turma</string>
 
+    <!-- Lista duvidas atividade aluno -->
+    <string name="informa_sem_duvidas_atividades_aluno_recebidas">Nenhuma dúvida referente a atividades recebida até o momento</string>
 
     <!-- Conteudo duvidas alunos -->
     <string name="titulo_duvidas_conteudo_aluno">Titulo do conteudo</string>
     <string name="nome_aluno_duvida_conteudo">Nome do aluno</string>
     <string name="materia_duvida_conteudo_aluno">Materia</string>
     <string name="turma_aluno_conteudo_duvida">Turma</string>
+
+    <!-- Lista duvidas atividade aluno -->
+    <string name="informa_sem_duvidas_conteudo_aluno_recebidas">Nenhuma dúvida referente a conteúdo recebida até o momento</string>
 
 
     <!-- Aluno -->
@@ -202,5 +215,12 @@
     <string name="descricao_duvida_conteudo">Descrever suas duvidas sobre conteudo</string>
     <string name="recebe_arquivo_conteudo_duvida">Nenhum conteudo com duvida adicionado</string>
     <string name="enviar_conteudo_duvida">Enviar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Detalhes Atividade-->
+    <string name="detalhes_atividade">Detalhes Atividade</string>
+
 
 </resources>
