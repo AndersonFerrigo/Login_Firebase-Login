@@ -14,26 +14,49 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp">
 
-        <EditText
-            android:id="@+id/edt_nome_professor_novo_conteudo"
+        <TextView
+            android:id="@+id/txt_nome_professor_novo_conteudo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
-            android:hint="@string/nome_professor_cadastro_atividades"/>
+            android:paddingLeft="10dp"
+            android:hint="@string/nome_professor_cadastro_conteudo"
+            android:textColor="@color/baseThemeColor"
+            android:textColorHint="@color/baseThemeColor"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txt_materia_professor_novo_conteudo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:hint="@string/materia_professor_cadastro_conteudo"
+            android:textColor="@color/baseThemeColor"
+            android:textColorHint="@color/baseThemeColor"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
 
         <EditText
             android:id="@+id/edt_titulo_cadastrar_conteudo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="80dp"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
-            android:hint="@string/titulo_cadastro_conteudo"/>
+            android:hint="@string/titulo_cadastro_conteudo"
+            android:textColor="@color/baseThemeColor"
+            android:textColorHint="@color/baseThemeColor"/>
 
 
         <ImageView
@@ -41,36 +64,17 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@mipmap/team"
-            android:layout_marginTop="120dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"/>
 
         <Spinner
             android:id="@+id/spin_turma_conteudo"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="120dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"/>
-
-        <ImageView
-            android:id="@+id/img_materia_professor_ic"
-            android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginTop="160dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:background="@mipmap/folder"/>
-
-        <Spinner
-            android:id="@+id/spn_materia_professor"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="160dp"
             android:layout_marginStart="70dp"
             android:layout_marginLeft="70dp"
+            android:layout_marginTop="140dp"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"/>
 
@@ -78,24 +82,28 @@
             android:id="@+id/edt_descrição_cadastrar_novo_conteudo"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_marginTop="230dp"
+            android:layout_marginTop="180dp"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:lines="10"
-            android:hint="@string/description_cadastro_atividades"/>
+            android:hint="@string/description_cadastro_atividades"
+            android:textColor="@color/baseThemeColor"
+            android:textColorHint="@color/baseThemeColor"/>
 
         <TextView
-            android:id="@+id/txt_receive_archive"
+            android:id="@+id/txt_recebe_arquivo_novo_conteudo"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="340dp"
+            android:layout_marginTop="290dp"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginEnd="10dp"
-            android:hint="Nenhum arquivo selecionado."
+            android:hint="@string/caminho_arquivo_conteudo"
+            android:textColor="@color/baseThemeColor"
+            android:textColorHint="@color/baseThemeColor"
             android:textAlignment="center"
             android:gravity="center"/>
 
@@ -103,11 +111,11 @@
             android:id="@+id/btn_procurar_cadastrar_conteudo"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginEnd="60dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="400dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="350dp"
             android:text="@string/btn_procurar_conteudo_cadastro_atividades"
             android:drawableLeft="@mipmap/internet"/>
 
@@ -115,7 +123,7 @@
             android:id="@+id/btn_adicionar_novo_conteudo"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="470dp"
+            android:layout_marginTop="430dp"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginEnd="10dp"

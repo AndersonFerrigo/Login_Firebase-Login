@@ -27,6 +27,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
+import com.example.myapplication.model.duvidas.EnviarDuvidaAtividadeConteudo;
+import com.example.myapplication.model.login.CadastroNovoUsuario;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
@@ -36,105 +38,85 @@ import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.util.UUID;
+
 public class DuvidasAtividadesConcluidasFragment extends Fragment {
+    /**
+     * @since  26/09/2020
+     */
+    private static final int CHOOSE_FILE_REQUESTCODE = 2;
 
     private View vDuvidasAtividades;
     private View informaUploadArquivo;
 
-    private String recebeNomeDuvidaAtividadeProfessor;
-    private String recebeTituloDuvidaAtividadeProfessor;
-    private String recebeTurmaDuvidaAtividadeProfessor;
     private String recebeMateriaDuvidaAtividadeProfessor;
-    private String recebeDescricaoDuvidaAtividadeProfessor;
 
-
-    private EditText edtNomeProfessorAtividade;
+    private TextView txtNomeAlunoAtividadeConcluidaDuvida;
+    private TextView txtTurmaAlunoAtividadeConcluidaDuvida;
     private EditText edtTituloAtividadeDuvida;
-    private EditText edtDescricaoNovaAtividade;
+    private EditText edtDescricaoDuvidaAtividadeConcluida;
     private TextView txtRecebeArquivoDuvidaAtividade;
-
     private Button btnProcurarAtividadeDuvidas;
     private Button btnEnviarAtividadeDuvida;
-
-
-    private Spinner spnEscolheTurmaAtividadeDuvida;
     private Spinner spnMateriaProfessorAtividadeDuvida;
 
     private Uri uriArquivoUploadAtividadesDuvida;
-
-    private static final int CHOOSE_FILE_REQUESTCODE = 2;
-
     private DatabaseReference dbReferenceAtividadeDuvida;
     private FirebaseDatabase atividadeDuvidaDataBase;
     private FirebaseStorage storage;
     private StorageReference storageReference;
 
+    private EnviarDuvidaAtividadeConteudo duvidaAtividade;
+    private CadastroNovoUsuario alunoUsuario;
 
-    private DuvidasAtividadesConcluidasViewModel mViewModeDuvidasAtividade;
-
-    public static DuvidasAtividadesConcluidasFragment newInstance() {
-        return new DuvidasAtividadesConcluidasFragment();
-    }
+    public DuvidasAtividadesConcluidasFragment () { }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-
         vDuvidasAtividades =  inflater.inflate(R.layout.duvidas_atividades_concluidas_fragment, container, false);
 
-        edtNomeProfessorAtividade = vDuvidasAtividades.findViewById(R.id.edt_nome_professor_duvida_atividade);
+        txtNomeAlunoAtividadeConcluidaDuvida = vDuvidasAtividades.findViewById(R.id.txt_nome_professor_duvida_atividade);
+        txtTurmaAlunoAtividadeConcluidaDuvida = vDuvidasAtividades.findViewById(R.id.txt_turma_aluno_duvida_atividade);
         edtTituloAtividadeDuvida = vDuvidasAtividades.findViewById(R.id.edt_titulo_atividade_concluida);
-        edtDescricaoNovaAtividade = vDuvidasAtividades.findViewById(R.id.edt_duvidas_atividades_enviada);
-
-        spnEscolheTurmaAtividadeDuvida = vDuvidasAtividades.findViewById(R.id.spin_turma_atividade);
+        edtDescricaoDuvidaAtividadeConcluida = vDuvidasAtividades.findViewById(R.id.edt_duvidas_atividades_enviada);
         spnMateriaProfessorAtividadeDuvida = vDuvidasAtividades.findViewById(R.id.spn_materia_professor);
-
         btnProcurarAtividadeDuvidas = vDuvidasAtividades.findViewById(R.id.btn_procurar_atividade_duvida);
         btnEnviarAtividadeDuvida = vDuvidasAtividades.findViewById(R.id.btn_enviar_atividade_duvida);
-
-
-        txtRecebeArquivoDuvidaAtividade = vDuvidasAtividades.findViewById(R.id.txt_recebe_arquivo_ativ_concluida_);
+        txtRecebeArquivoDuvidaAtividade = vDuvidasAtividades.findViewById(R.id.txt_recebe_duvida_arquivo_ativ_concluida);
         informaUploadArquivo = vDuvidasAtividades.findViewById(R.id.progressbar_informa_upload);
-
-
-        ArrayAdapter turmasAdapter = ArrayAdapter.createFromResource(vDuvidasAtividades.getContext(),
-                R.array.turmas_escola, R.layout.spinner_text_adapter);
-
-        turmasAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spnEscolheTurmaAtividadeDuvida.setAdapter(turmasAdapter);
-
-        ArrayAdapter adapterMateriaProfessor = ArrayAdapter.createFromResource(vDuvidasAtividades.getContext(),
-                R.array.materias_escola, R.layout.spinner_text_adapter);
-        adapterMateriaProfessor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spnMateriaProfessorAtividadeDuvida.setAdapter(adapterMateriaProfessor);
-
-
-        dbReferenceAtividadeDuvida = atividadeDuvidaDataBase.getInstance().getReference().child("duvidas_atividades_concluidas");
-        storageReference = storage.getInstance().getReference();
-
 
         return vDuvidasAtividades;
     }
 
     @Override
+    public void onStart() {
+        super.onStart();
+        ArrayAdapter adapterMateriaProfessor = ArrayAdapter.createFromResource(vDuvidasAtividades.getContext(),
+                R.array.materias_escola, R.layout.spinner_text_adapter);
+        adapterMateriaProfessor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spnMateriaProfessorAtividadeDuvida.setAdapter(adapterMateriaProfessor);
+
+        dbReferenceAtividadeDuvida = atividadeDuvidaDataBase.getInstance().getReference().child("duvidas_atividades_concluidas");
+        storageReference = storage.getInstance().getReference();
+    }
+
+    @Override
     public void onResume() {
         super.onResume();
+        Bundle aluno = getActivity().getIntent().getExtras();
+        if(aluno != null){
+            alunoUsuario = aluno.getParcelable("aluno");
+            txtNomeAlunoAtividadeConcluidaDuvida.setText(alunoUsuario.getNome());
+            txtTurmaAlunoAtividadeConcluidaDuvida.setText(alunoUsuario.getTurma());
 
-        spnEscolheTurmaAtividadeDuvida.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
-
-                    recebeTurmaDuvidaAtividadeProfessor = adapterView.getItemAtPosition(position).toString();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) { }
-        });
+        }else {
+            Toast.makeText(getContext(), R.string.erro_informacoes_aluno_bundle, Toast.LENGTH_LONG).show();
+        }
 
         spnMateriaProfessorAtividadeDuvida.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
-
                 recebeMateriaDuvidaAtividadeProfessor = adapterView.getItemAtPosition(position).toString();
             }
 
@@ -145,7 +127,6 @@ public class DuvidasAtividadesConcluidasFragment extends Fragment {
         btnProcurarAtividadeDuvidas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 if(ContextCompat.checkSelfPermission(vDuvidasAtividades.getContext(),  Manifest.permission.READ_EXTERNAL_STORAGE )
                         == PackageManager.PERMISSION_GRANTED){
                     openFile();
@@ -158,64 +139,76 @@ public class DuvidasAtividadesConcluidasFragment extends Fragment {
         btnEnviarAtividadeDuvida.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                recebeNomeDuvidaAtividadeProfessor = edtNomeProfessorAtividade.getText().toString();
-                recebeTituloDuvidaAtividadeProfessor = edtTituloAtividadeDuvida.getText().toString();
-                recebeDescricaoDuvidaAtividadeProfessor = edtDescricaoNovaAtividade.getText().toString();
 
-                if((recebeNomeDuvidaAtividadeProfessor.isEmpty())|| (recebeTituloDuvidaAtividadeProfessor.isEmpty())
-                        || (recebeDescricaoDuvidaAtividadeProfessor.isEmpty())
-                        || (recebeTurmaDuvidaAtividadeProfessor.equals("Escolha uma Turma"))
-                        || (recebeMateriaDuvidaAtividadeProfessor.equals("Escolha uma materia"))
+                if((txtNomeAlunoAtividadeConcluidaDuvida.getText().toString().isEmpty())
+                        || (txtTurmaAlunoAtividadeConcluidaDuvida.getText().toString().isEmpty())
+                        || (edtTituloAtividadeDuvida.getText().toString().equals(""))
+                        || (edtDescricaoDuvidaAtividadeConcluida.getText().toString().isEmpty())
+                        || (recebeMateriaDuvidaAtividadeProfessor.equals("Escolha uma matéria"))
+                        || (txtRecebeArquivoDuvidaAtividade.getText().toString().equals(""))
                         || (uriArquivoUploadAtividadesDuvida.equals(""))) {
 
-                    Toast.makeText(getContext(), "Todos os dados devem ser preenchidos", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), R.string.campos_obrigatorios_aluno, Toast.LENGTH_LONG).show();
 
                 }else {
 
                     informaUploadArquivo.setVisibility(View.VISIBLE);
                     desabilitarComponentes();
-                    mViewModeDuvidasAtividade = new DuvidasAtividadesConcluidasViewModel();
+
+                    duvidaAtividade = new EnviarDuvidaAtividadeConteudo();
 
                     String filename = System.currentTimeMillis() + "";
-                    // Retorna O caminho raiz
-                    storageReference.child("duvidas_atividades_concluidas_uploads").child(filename).putFile(uriArquivoUploadAtividadesDuvida)
-                            .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+
+                    storageReference.child("duvidas_atividades_concluidas_uploads")
+                                    .child(filename)
+                                    .putFile(uriArquivoUploadAtividadesDuvida)
+                                    .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+
+                            String urlUploadedFile = taskSnapshot.getStorage().getPath();
+
+                            duvidaAtividade.setUID(UUID.randomUUID().toString());
+                            duvidaAtividade.setAluno(txtNomeAlunoAtividadeConcluidaDuvida.getText().toString());
+                            duvidaAtividade.setTitulo(edtTituloAtividadeDuvida.getText().toString());
+                            duvidaAtividade.setTurma(txtTurmaAlunoAtividadeConcluidaDuvida.getText().toString());
+                            duvidaAtividade.setMateria(recebeMateriaDuvidaAtividadeProfessor);
+                            duvidaAtividade.setDuvida(edtDescricaoDuvidaAtividadeConcluida.getText().toString());
+                            duvidaAtividade.setDocumento(urlUploadedFile);
+
+                            dbReferenceAtividadeDuvida.push().setValue(duvidaAtividade)
+                            .addOnSuccessListener(new OnSuccessListener<Void>() {
+
                                 @Override
-                                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                                    String urlUploadedFile = taskSnapshot.getMetadata().toString();
-
-                                    mViewModeDuvidasAtividade.setNomeProfessorAtividadeDuvida(recebeNomeDuvidaAtividadeProfessor);
-                                    mViewModeDuvidasAtividade.setTituloDuvidaAtividade(recebeTituloDuvidaAtividadeProfessor);
-                                    mViewModeDuvidasAtividade.setTurmaProfessorAtividadeDuvida(recebeTurmaDuvidaAtividadeProfessor);
-                                    mViewModeDuvidasAtividade.setMateriaProfessorAtividadeDuvida(recebeMateriaDuvidaAtividadeProfessor);
-                                    mViewModeDuvidasAtividade.setDescricaoAtividadeDuvida(recebeDescricaoDuvidaAtividadeProfessor);
-                                    mViewModeDuvidasAtividade.setPathDocumentoAtividadeDuvida(urlUploadedFile);
-
-                                    //Salva novo usuario no firebase
-                                    dbReferenceAtividadeDuvida.push().setValue(mViewModeDuvidasAtividade)
-                                            .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                                @Override
-                                                public void onSuccess(Void aVoid) {
-                                                    informaUploadArquivo.setVisibility(View.GONE);
-                                                    Toast.makeText(vDuvidasAtividades.getContext(), "Atividade enviada com sucesso", Toast.LENGTH_LONG).show();
-                                                    limparDados();
-                                                    habilitarComponentes();
-                                                }
-                                            })
-                                            .addOnFailureListener(new OnFailureListener() {
-                                                @Override
-                                                public void onFailure(@NonNull Exception e) {
-                                                    informaUploadArquivo.setVisibility(View.GONE);
-                                                    Toast.makeText(vDuvidasAtividades.getContext(), "Problemas ao enviar atividade", Toast.LENGTH_LONG).show();
-                                                    habilitarComponentes();
-                                                }
-                                            });
+                                public void onSuccess(Void aVoid) {
+                                    informaUploadArquivo.setVisibility(View.GONE);
+                                    Toast.makeText(vDuvidasAtividades.getContext(),
+                                            R.string.sucesso_enviar_duvida_atividade_concluida,
+                                            Toast.LENGTH_LONG).show();
+                                    limparDados();
+                                    habilitarComponentes();
                                 }
-                            }).addOnFailureListener(new OnFailureListener() {
+                            })
+
+                            .addOnFailureListener(new OnFailureListener() {
+
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                informaUploadArquivo.setVisibility(View.GONE);
+                                Toast.makeText(vDuvidasAtividades.getContext(),
+                                         R.string.falha_enviar_duvida_atividade_concluida,
+                                         Toast.LENGTH_LONG).show();
+                                habilitarComponentes();
+                            }
+                        });
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
                             informaUploadArquivo.setVisibility(View.GONE);
-                            Toast.makeText(vDuvidasAtividades.getContext(), "Problemas ao realizar o upload do arquivo", Toast.LENGTH_LONG).show();
+                            Toast.makeText(vDuvidasAtividades.getContext(),
+                                     R.string.erro_upload_arquivo,
+                                     Toast.LENGTH_LONG).show();
                             habilitarComponentes();
 
                         }
@@ -227,19 +220,20 @@ public class DuvidasAtividadesConcluidasFragment extends Fragment {
                         }
                     });
                 }
-
             }
 
 
         });
     }
 
+
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if(requestCode == 9 && grantResults[0]== PackageManager.PERMISSION_GRANTED){
             openFile();
         }else{
-            Toast.makeText(vDuvidasAtividades.getContext(), "Necessário aceitar a permissão de leitura", Toast.LENGTH_LONG).show();
+            Toast.makeText(vDuvidasAtividades.getContext(), R.string.permissao_leitura_storage,
+                                                                                                        Toast.LENGTH_LONG).show();
         }
     }
 
@@ -249,15 +243,12 @@ public class DuvidasAtividadesConcluidasFragment extends Fragment {
         intent.setType(mimeType);
         intent.addCategory(Intent.CATEGORY_OPENABLE);
 
-        // special intent for Samsung file manager
         Intent sIntent = new Intent("com.sec.android.app.myfiles.PICK_DATA");
-        // if you want any file type, you can skip next line
         sIntent.putExtra("CONTENT_TYPE", mimeType);
         sIntent.addCategory(Intent.CATEGORY_DEFAULT);
 
         Intent chooserIntent;
         if (getActivity().getPackageManager().resolveActivity(sIntent, 0) != null){
-            // it is device with Samsung file manager
             chooserIntent = Intent.createChooser(sIntent, "Abrir arquivo");
             chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[] { intent});
         } else {
@@ -267,7 +258,7 @@ public class DuvidasAtividadesConcluidasFragment extends Fragment {
         try {
             startActivityForResult(chooserIntent, CHOOSE_FILE_REQUESTCODE);
         } catch (android.content.ActivityNotFoundException ex) {
-            Toast.makeText(vDuvidasAtividades.getContext(), "Nenhum arquivo encontrado.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(vDuvidasAtividades.getContext(), R.string.nenhum_arquivo_encontrado, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -277,39 +268,29 @@ public class DuvidasAtividadesConcluidasFragment extends Fragment {
         super.onActivityResult(requestCode, resultCode, resultData);
         if (requestCode == CHOOSE_FILE_REQUESTCODE
                 && resultCode == Activity.RESULT_OK) {
-            // The result data contains a URI for the document or directory that
-            // the user selected.
             if (resultData != null) {
                 uriArquivoUploadAtividadesDuvida = resultData.getData();
-
-                // Perform operations on the document using its URI.
-                //        Toast.makeText(getApplicationContext(), "Caminho do arquivo = " + uri, Toast.LENGTH_LONG).show();
                 txtRecebeArquivoDuvidaAtividade.setText("Arquivo selecionado: " + resultData.getData().getLastPathSegment());
-
             }
         }
     }
 
     public void limparDados(){
-        edtNomeProfessorAtividade.setText("");
         edtTituloAtividadeDuvida.setText("");
-        edtDescricaoNovaAtividade.setText("");
+        edtDescricaoDuvidaAtividadeConcluida.setText("");
         txtRecebeArquivoDuvidaAtividade.setText("");
-
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModeDuvidasAtividade = ViewModelProviders.of(this).get(DuvidasAtividadesConcluidasViewModel.class);
-        // TODO: Use the ViewModel
     }
 
     public void desabilitarComponentes(){
-        edtNomeProfessorAtividade.setEnabled(false);
+        txtNomeAlunoAtividadeConcluidaDuvida.setEnabled(false);
+        txtTurmaAlunoAtividadeConcluidaDuvida.setEnabled(false);
         edtTituloAtividadeDuvida.setEnabled(false);
-        edtDescricaoNovaAtividade.setEnabled(false);
-        spnEscolheTurmaAtividadeDuvida.setEnabled(false);
+        edtDescricaoDuvidaAtividadeConcluida.setEnabled(false);
         spnMateriaProfessorAtividadeDuvida.setEnabled(false);
         btnProcurarAtividadeDuvidas.setEnabled(false);
         btnEnviarAtividadeDuvida.setEnabled(false);
@@ -317,10 +298,10 @@ public class DuvidasAtividadesConcluidasFragment extends Fragment {
     }
 
     public void habilitarComponentes(){
-        edtNomeProfessorAtividade.setEnabled(true);
+        txtNomeAlunoAtividadeConcluidaDuvida.setEnabled(true);
+        txtTurmaAlunoAtividadeConcluidaDuvida.setEnabled(true);
         edtTituloAtividadeDuvida.setEnabled(true);
-        edtDescricaoNovaAtividade.setEnabled(true);
-        spnEscolheTurmaAtividadeDuvida.setEnabled(true);
+        edtDescricaoDuvidaAtividadeConcluida.setEnabled(true);
         spnMateriaProfessorAtividadeDuvida.setEnabled(true);
         btnProcurarAtividadeDuvidas.setEnabled(true);
         btnEnviarAtividadeDuvida.setEnabled(true);

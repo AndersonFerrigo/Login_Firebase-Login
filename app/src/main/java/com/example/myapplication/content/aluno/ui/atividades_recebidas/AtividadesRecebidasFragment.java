@@ -18,8 +18,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
 import com.example.myapplication.content.adapters.aluno.AdapterTarefasRecebidasProfessor;
-import com.example.myapplication.model.CadastroNovoUsuario;
-import com.example.myapplication.model.ListarAtividadeConteudo;
+import com.example.myapplication.model.login.CadastroNovoUsuario;
+import com.example.myapplication.model.conteudo.ListarAtividadeConteudo;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.firebase.ui.database.SnapshotParser;
 import com.google.firebase.database.DataSnapshot;
@@ -30,18 +30,25 @@ import com.google.firebase.database.ValueEventListener;
 
 public class AtividadesRecebidasFragment extends Fragment {
 
+    /**
+     * @since 22/09/2020
+     */
+
     private CadastroNovoUsuario alunoUsuario;
-    private Spinner spnMateriaProfessor;
-    private View atividadesRecebidas;
-    private RecyclerView recyclerViewAtividadesRecebidas;
+
     private String recebeTurmaBundle;
-    private AdapterTarefasRecebidasProfessor adapterTarefasRecebidasProfessor;
-    private Query queryBuscaNovasAtividades;
-    private FirebaseRecyclerOptions options;
 
     private ImageView imgNotificacaoSemNovasAtividadesRecebidas;
     private TextView txtInformaNotificacaoSemNovasAtividadeRecebidas;
+    private Spinner spnMateriaProfessor;
 
+    private View atividadesRecebidas;
+
+    private RecyclerView recyclerViewAtividadesRecebidas;
+    private AdapterTarefasRecebidasProfessor adapterTarefasRecebidasProfessor;
+
+    private Query queryBuscaNovasAtividades;
+    private FirebaseRecyclerOptions options;
 
     public AtividadesRecebidasFragment() {}
 
@@ -58,26 +65,29 @@ public class AtividadesRecebidasFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        Bundle aluno = getActivity().getIntent().getExtras();
-        if(aluno.isEmpty()){
-            Toast.makeText(getContext(), "Erro ao recuperar informações do aluno", Toast.LENGTH_LONG).show();
-        }else {
-            alunoUsuario = aluno.getParcelable("aluno");
-            recebeTurmaBundle = alunoUsuario.getTurma();
-        }
-
+    public void onStart() {
+        super.onStart();
         ArrayAdapter adapterMateriaProfessor = ArrayAdapter.createFromResource(getContext(),
                 R.array.materias_escola, R.layout.spinner_text_adapter);
         adapterMateriaProfessor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spnMateriaProfessor.setAdapter(adapterMateriaProfessor);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Bundle aluno = getActivity().getIntent().getExtras();
+        if(aluno != null){
+            alunoUsuario = aluno.getParcelable("aluno");
+            recebeTurmaBundle = alunoUsuario.getTurma();
+        }else {
+            Toast.makeText(getContext(), R.string.erro_informacoes_aluno_bundle, Toast.LENGTH_LONG).show();
+        }
 
         queryBuscaNovasAtividades = FirebaseDatabase.getInstance().getReference()
-                                    .child("atividades_adicionadas")
-                                    .orderByChild("turmaProfessor")
-                                    .equalTo(recebeTurmaBundle);
+                .child("atividades_adicionadas")
+                .orderByChild("turma")
+                .equalTo(recebeTurmaBundle);
 
         queryBuscaNovasAtividades.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -87,20 +97,19 @@ public class AtividadesRecebidasFragment extends Fragment {
                     txtInformaNotificacaoSemNovasAtividadeRecebidas.setVisibility(View.GONE);
 
                     options =  new FirebaseRecyclerOptions.Builder<ListarAtividadeConteudo>()
-                                    .setQuery(queryBuscaNovasAtividades, new SnapshotParser<ListarAtividadeConteudo>() {
-                                                @NonNull
-                                                @Override
-                                                public ListarAtividadeConteudo parseSnapshot(@NonNull DataSnapshot snapshot) {
-                                                    return new ListarAtividadeConteudo(
-                                                            snapshot.child("descriçãoNovaAtividadeProfessor").getValue().toString(),
-                                                            snapshot.child("materiaProfessor").getValue().toString(),
-                                                            snapshot.child("nomeProfessor").getValue().toString(),
-                                                            snapshot.child("pathDocumentoNovaAtividadeProfessor").getValue().toString(),
-                                                            snapshot.child("tituloNovaAtividadeProfessor").getValue().toString()
-                                                    );
-                                                }
-                                            })
-                                    .build();
+                    .setQuery(queryBuscaNovasAtividades, new SnapshotParser<ListarAtividadeConteudo>() {
+                        @NonNull
+                        @Override
+                        public ListarAtividadeConteudo parseSnapshot(@NonNull DataSnapshot snapshot) {
+                            return new ListarAtividadeConteudo(
+                                snapshot.child("professor").getValue().toString(),
+                                snapshot.child("materia").getValue().toString(),
+                                snapshot.child("titulo").getValue().toString(),
+                                snapshot.child("descricao").getValue().toString(),
+                                snapshot.child("documento").getValue().toString()
+                            );
+                        }
+                    }).build();
 
                     recyclerViewAtividadesRecebidas.setLayoutManager(new LinearLayoutManager(getContext()));
                     adapterTarefasRecebidasProfessor = new AdapterTarefasRecebidasProfessor(options);
@@ -118,8 +127,8 @@ public class AtividadesRecebidasFragment extends Fragment {
     }
 
     @Override
-    public void onStart() {
-        super.onStart();
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
     }
 
     @Override

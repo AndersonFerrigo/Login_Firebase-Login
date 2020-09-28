@@ -11,7 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
 import com.example.myapplication.content.aluno.DetalhesConteudoActivity;
-import com.example.myapplication.model.ListarDuvidasAlunoAtividadeConteudo;
+import com.example.myapplication.content.professor.DetalhesDuvidaConteudoActivity;
+import com.example.myapplication.model.duvidas.ListarDuvidasAlunoAtividadeConteudo;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
@@ -25,13 +26,12 @@ public class AdapterDuvidasConteudoAluno extends FirebaseRecyclerAdapter<ListarD
     protected void onBindViewHolder(@NonNull MyHolder holder, int position, @NonNull final ListarDuvidasAlunoAtividadeConteudo duvidasAlunoConteudo) {
         holder.tituloDuvidaConteudoAluno.setText(duvidasAlunoConteudo.getTitulo());
         holder.nomeAlunoDuvidaConteudo.setText(duvidasAlunoConteudo.getAluno());
-        holder.materiaAlunoDuvidaConteudo.setText(duvidasAlunoConteudo.getMateria());
         holder.turmaAlunoDuvidaConteudo.setText(duvidasAlunoConteudo.getTurma());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                Intent intentDetalhesConteudo = new Intent(v.getContext(), DetalhesConteudoActivity.class);
+                Intent intentDetalhesConteudo = new Intent(v.getContext(), DetalhesDuvidaConteudoActivity.class);
                 intentDetalhesConteudo.putExtra("duvidas_conteudos_aulas", duvidasAlunoConteudo);
                 v.getContext().startActivity(intentDetalhesConteudo);
             }
@@ -51,14 +51,12 @@ public class AdapterDuvidasConteudoAluno extends FirebaseRecyclerAdapter<ListarD
     public class MyHolder extends RecyclerView.ViewHolder{
         public TextView tituloDuvidaConteudoAluno;
         public TextView nomeAlunoDuvidaConteudo;
-        public TextView materiaAlunoDuvidaConteudo;
         public TextView turmaAlunoDuvidaConteudo;
 
         public MyHolder(View v) {
             super(v);
             tituloDuvidaConteudoAluno = v.findViewById(R.id.titulo_conteudo_duvida_aluno);
             nomeAlunoDuvidaConteudo = v.findViewById(R.id.nome_do_aluno_conteudo_duvida);
-            materiaAlunoDuvidaConteudo = v.findViewById(R.id.nome_materia_conteudo_duvida);
             turmaAlunoDuvidaConteudo = v.findViewById(R.id.turma_aluno_conteudo_duvida);
         }
     }

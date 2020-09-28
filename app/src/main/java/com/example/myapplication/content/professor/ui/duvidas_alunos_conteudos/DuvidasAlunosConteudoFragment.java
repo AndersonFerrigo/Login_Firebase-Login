@@ -18,10 +18,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
-import com.example.myapplication.content.adapters.professor.AdapterDuvidasAtividadesAluno;
 import com.example.myapplication.content.adapters.professor.AdapterDuvidasConteudoAluno;
-import com.example.myapplication.model.CadastroNovoUsuario;
-import com.example.myapplication.model.ListarDuvidasAlunoAtividadeConteudo;
+import com.example.myapplication.model.login.CadastroNovoUsuario;
+import com.example.myapplication.model.duvidas.ListarDuvidasAlunoAtividadeConteudo;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.firebase.ui.database.SnapshotParser;
 import com.google.firebase.database.DataSnapshot;
@@ -31,17 +30,23 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 public class DuvidasAlunosConteudoFragment extends Fragment {
-
+    /**
+     * @since 26/09/2020
+     */
     private  View duvidasConteudoAluno;
-    private CadastroNovoUsuario professorUsuario;
-    private String recebeMateriaProfessor;
-    private Spinner spnMateriaProfessor;
-    private Query queryListarDuvidasConteudoAluno;
-    private FirebaseRecyclerOptions options;
-    private ImageView imgNotificacaoSemDuvidasConteudo;
-    private TextView txtInformaNotificacaoSemDuvidasConteudo;
     private RecyclerView recyclerViewDuvidasAtividadesRecebidas;
     private AdapterDuvidasConteudoAluno adapterDuvidasConteudoAluno;
+
+    private CadastroNovoUsuario professorUsuario;
+
+    private String recebeMateriaProfessor;
+
+    private Spinner spnMateriaProfessor;
+    private ImageView imgNotificacaoSemDuvidasConteudo;
+    private TextView txtInformaNotificacaoSemDuvidasConteudo;
+
+    private Query queryListarDuvidasConteudoAluno;
+    private FirebaseRecyclerOptions options;
 
     public DuvidasAlunosConteudoFragment() { }
 
@@ -49,6 +54,7 @@ public class DuvidasAlunosConteudoFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         duvidasConteudoAluno = inflater.inflate(R.layout.duvidas_alunos_conteudo_fragment, container, false);
+
         spnMateriaProfessor = duvidasConteudoAluno.findViewById(R.id.spn_materia_professor);
         recyclerViewDuvidasAtividadesRecebidas = duvidasConteudoAluno.findViewById(R.id.recycler_view_duvidas_aluno_conteudo);
         imgNotificacaoSemDuvidasConteudo = duvidasConteudoAluno.findViewById(R.id.img_notifica_sem_duvidas_conteudo);
@@ -58,27 +64,27 @@ public class DuvidasAlunosConteudoFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        Bundle professor = getActivity().getIntent().getExtras();
-        if(professor.isEmpty()){
-            Toast.makeText(getContext(), "Erro ao recuperar informações do professor", Toast.LENGTH_LONG).show();
-        }else {
-            professorUsuario = professor.getParcelable("professor");
-            recebeMateriaProfessor = professorUsuario.getMateria();
-        }
-
-        // Carrega o conteudo do spinner materia do professor
+    public void onStart() {
+        super.onStart();
         ArrayAdapter adapterMateriaProfessor = ArrayAdapter.createFromResource(getContext(),
                 R.array.materias_escola, R.layout.spinner_text_adapter);
         adapterMateriaProfessor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spnMateriaProfessor.setAdapter(adapterMateriaProfessor);
+    }
 
-        queryListarDuvidasConteudoAluno = FirebaseDatabase.getInstance().getReference().child("duvidas_conteudo_aluno")
-                .orderByChild("materiaProfessor").equalTo(recebeMateriaProfessor);
+    @Override
+    public void onResume() {
+        super.onResume();
+        Bundle professor = getActivity().getIntent().getExtras();
+        if(professor != null){
+            professorUsuario = professor.getParcelable("professor");
+            recebeMateriaProfessor = professorUsuario.getMateria();
+        }else {
+            Toast.makeText(getContext(), R.string.erro_informacoes_professor_bundle, Toast.LENGTH_LONG).show();
+        }
 
-
+        queryListarDuvidasConteudoAluno = FirebaseDatabase.getInstance().getReference().child("duvidas_conteudo_aulas")
+                .orderByChild("materia").equalTo(recebeMateriaProfessor);
 
         queryListarDuvidasConteudoAluno.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -86,27 +92,28 @@ public class DuvidasAlunosConteudoFragment extends Fragment {
                 if(snapshot.exists()){
                     imgNotificacaoSemDuvidasConteudo.setVisibility(View.GONE);
                     txtInformaNotificacaoSemDuvidasConteudo.setVisibility(View.GONE);
+
                     options = new FirebaseRecyclerOptions.Builder<ListarDuvidasAlunoAtividadeConteudo>()
-                            .setQuery(queryListarDuvidasConteudoAluno, new SnapshotParser<ListarDuvidasAlunoAtividadeConteudo>() {
-                                @NonNull
-                                @Override
-                                public ListarDuvidasAlunoAtividadeConteudo parseSnapshot(@NonNull DataSnapshot snapshot) {
-                                    return new ListarDuvidasAlunoAtividadeConteudo(
-                                            snapshot.child("tituloAtividadeConcluidaAluno").getValue().toString(),
-                                            snapshot.child("nomeAluno").getValue().toString(),
-                                            snapshot.child("turmaAluno").getValue().toString(),
-                                            snapshot.child("pathDocumentoAtividadeConcluidaAluno").getValue().toString());
+                    .setQuery(queryListarDuvidasConteudoAluno, new SnapshotParser<ListarDuvidasAlunoAtividadeConteudo>() {
 
-                                }
-
-                            }).build();
+                        @NonNull
+                        @Override
+                        public ListarDuvidasAlunoAtividadeConteudo parseSnapshot(@NonNull DataSnapshot snapshot) {
+                            return new ListarDuvidasAlunoAtividadeConteudo(
+                                snapshot.child("aluno").getValue().toString(),
+                                snapshot.child("turma").getValue().toString(),
+                                snapshot.child("titulo").getValue().toString(),
+                                snapshot.child("duvida").getValue().toString(),
+                                snapshot.child("documento").getValue().toString()
+                            );
+                        }
+                    }).build();
 
                     recyclerViewDuvidasAtividadesRecebidas.setLayoutManager(new LinearLayoutManager(getContext()));
                     adapterDuvidasConteudoAluno = new AdapterDuvidasConteudoAluno(options);
                     recyclerViewDuvidasAtividadesRecebidas.setAdapter(adapterDuvidasConteudoAluno);
                     adapterDuvidasConteudoAluno.startListening();
                 }else{
-                    //Caso não tenha nenhuma atividade deixo a RecyclerView invisivel e coloco imagem informando no lugar.
                     recyclerViewDuvidasAtividadesRecebidas.setVisibility(View.GONE);
                 }
             }
@@ -114,10 +121,12 @@ public class DuvidasAlunosConteudoFragment extends Fragment {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {}
         });
-
     }
+
     @Override
-    public void onStart() { super.onStart(); }
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+    }
 
     @Override
     public void onStop() { super.onStop(); }

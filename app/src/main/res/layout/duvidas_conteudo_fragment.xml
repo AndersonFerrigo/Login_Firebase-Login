@@ -14,87 +14,95 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp">
 
-        <EditText
-            android:id="@+id/edt_nome_aluno_duvida_conteudo"
+        <TextView
+            android:id="@+id/txt_nome_aluno_duvida_conteudo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
-            android:hint="@string/nome_aluno_conteudo_duvida_recebida"/>
+            android:paddingLeft="10dp"
+            android:text="@string/nome_aluno_conteudo_duvida_recebida"
+            android:textColor="@color/baseThemeColor"
+            android:textColorHint="@color/baseThemeColor"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txt_turma_aluno_duvida_conteudo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/turma_aluno_conteudo_duvida"
+            android:textColor="@color/baseThemeColor"
+            android:textColorHint="@color/baseThemeColor"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
 
         <EditText
             android:id="@+id/edt_titulo_duvida_conteudo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="80dp"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
-            android:hint="@string/titulo_duvidas_conteudo"/>
-
-        <ImageView
-            android:id="@+id/img_group_duvida_conteudo"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@mipmap/team"
-            android:layout_marginTop="120dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"/>
-
-        <Spinner
-            android:id="@+id/spn_turma_conteudo"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="120dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"/>
+            android:hint="@string/titulo_duvidas_conteudo"
+            android:textColor="@color/baseThemeColor"
+            android:textColorHint="@color/baseThemeColor"/>
 
         <ImageView
             android:id="@+id/img_materia_professor_ic"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginTop="160dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
             android:background="@mipmap/folder"/>
 
         <Spinner
             android:id="@+id/spn_materia_duvida_professor"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="160dp"
+            android:layout_height="30dp"
             android:layout_marginStart="70dp"
             android:layout_marginLeft="70dp"
+            android:layout_marginTop="140dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="10dp"/>
 
         <EditText
             android:id="@+id/edt_descricao_duvidas_conteudo"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_marginTop="230dp"
+            android:layout_marginTop="180dp"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:lines="10"
-            android:hint="@string/descricao_duvida_conteudo"/>
+            android:hint="@string/descricao_duvida_conteudo"
+            android:textColor="@color/baseThemeColor"
+            android:textColorHint="@color/baseThemeColor"/>
 
         <TextView
             android:id="@+id/txt_recebe_arquivo_duvida_conteudo"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="340dp"
+            android:layout_marginTop="290dp"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginEnd="10dp"
             android:hint="@string/recebe_arquivo_conteudo_duvida"
+            android:textColor="@color/baseThemeColor"
+            android:textColorHint="@color/baseThemeColor"
             android:textAlignment="center"
             android:gravity="center"/>
 
@@ -102,11 +110,11 @@
             android:id="@+id/btn_procurar_conteudo_duvida"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginEnd="60dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="400dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="350dp"
             android:text="@string/btn_procurar_conteudo_cadastro_atividades"
             android:drawableLeft="@mipmap/internet"/>
 
@@ -114,7 +122,7 @@
             android:id="@+id/btn_enviar_conteudo_duvida"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="470dp"
+            android:layout_marginTop="430dp"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginEnd="10dp"

@@ -9,9 +9,9 @@
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
     app:cardCornerRadius="8dp"
-    android:elevation="5dp"
+    android:elevation="10dp"
     app:cardUseCompatPadding="true"
-    android:background="@drawable/nova_atividade_shape">
+    android:background="@drawable/side_nav_bar">
 
 
         <androidx.appcompat.widget.AppCompatTextView

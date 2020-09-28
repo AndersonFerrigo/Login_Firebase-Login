@@ -17,39 +17,42 @@ import com.example.myapplication.R;
 import com.example.myapplication.views.LoginActivity;
 
 public class SplashScreenHomeSchoolActivity extends AppCompatActivity {
-
-    LinearLayout containerLL;
+    /**
+     * @since 22/09/2020
+     */
+    private LinearLayout containerLL;
+    private TashieLoader tashieLoader;
+    private Handler handler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen_home_school);
 
-        containerLL = findViewById(R.id.container);
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             Window w = getWindow();
             w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
-
-        TashieLoader tashie = new TashieLoader(
-                this, 0,
-                5, 10,
-                ContextCompat.getColor(this, R.color.cor_branca));
-
-        tashie.setAnimDuration(500);
-        tashie.setAnimDelay(4000);
-        tashie.setInterpolator(new LinearInterpolator());
-        containerLL.addView(tashie);
-
-
+        containerLL = findViewById(R.id.container);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+    }
 
-        Handler handler = new Handler();
+    @Override
+    protected void onResume() {
+        super.onResume();
+        tashieLoader = new TashieLoader(this, 0, 5, 10,
+                                                                            ContextCompat.getColor(this, R.color.cor_branca));
+
+        tashieLoader.setAnimDuration(500);
+        tashieLoader.setAnimDelay(4000);
+        tashieLoader.setInterpolator(new LinearInterpolator());
+        containerLL.addView(tashieLoader);
+
+        handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -61,8 +64,8 @@ public class SplashScreenHomeSchoolActivity extends AppCompatActivity {
     private void mostraLogin() {
         Intent intentLogin = new Intent(getApplicationContext(), LoginActivity.class);
         startActivity(intentLogin);
-        finish();
+        SplashScreenHomeSchoolActivity.this.finish();
     }
-  }
+}
 
 

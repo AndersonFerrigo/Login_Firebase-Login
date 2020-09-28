@@ -107,6 +107,7 @@
     <!-- Cadastro de novas atividades-->
     <string name="description_cadastro_atividades">Informações sobre a atividade</string>
     <string name="nome_professor_cadastro_atividades">Nome completo</string>
+    <string name="materia_professor_cadastro_atividades">Matéria</string>
     <string name="titulo_cadastro_atividades">Título</string>
     <string name="conteudo_cadastro_atividades">Digite aqui o conteúdo</string>
     <string name="caminho_arquivo_atividades">Nenhum arquivo selecionado.</string>
@@ -116,6 +117,8 @@
 
     <!-- Cadastro de novos conteudos-->
     <string name="description_cadastro_conteudo">Conteudo</string>
+    <string name="nome_professor_cadastro_conteudo">Nome completo</string>
+    <string name="materia_professor_cadastro_conteudo">Matéria</string>
     <string name="titulo_cadastro_conteudo">Título</string>
     <string name="conteudo_cadastro_conteudo">Digite aqui o conteúdo</string>
     <string name="caminho_arquivo_conteudo">Nenhum arquivo selecionado.</string>
@@ -195,6 +198,7 @@
     <!-- Enviar atividades concluidas -->
     <string name="nome_aluno_atividades_concluida">Nome completo</string>
     <string name="titulo_atividades_concluida">Título</string>
+    <string name="turma_atividades_concluida">Turma</string>
     <string name="caminho_arquivo_atividade_concluida">Nenhum arquivo selecionado.</string>
     <string name="informa_envio_atividade_concluida">Por favor aguarde, enviando...</string>
     <string name="btn_procurar_arquivo_atividade_concluida">Procurar</string>
@@ -221,6 +225,69 @@
 
     <!-- Detalhes Atividade-->
     <string name="detalhes_atividade">Detalhes Atividade</string>
+
+    <!-- Sem atividade e conteudo -->
+    <string name="informa_sem_atividade_recedida">Nenhuma atividade cadastrada até o momento</string>
+    <string name="informa_sem_conteudo_recedido">Nenhum conteudo cadastrado até o momento</string>
+
+    <string name="doc_detalhes_atividade_concluida">Documento referente a atividade</string>
+
+    <!-- Bundle Aluno-->
+    <!-- recuperação das informações do aluno -->
+    <string name="erro_informacoes_aluno_bundle">Não foi possível recuperar as informações do aluno</string>
+
+    <!-- Bundle Professor-->
+
+    <!-- recuperação das informações do professor -->
+    <string name="erro_informacoes_professor_bundle">Não foi possível recuperar as informações do professor</string>
+
+    <!-- Informações campos obrigatótios -->
+    <!-- professor -->
+    <string name="campos_obrigatorios_professor">Todas as informações devem ser preenchidas!</string>
+    <string name="sucesso_enviar_nova_atividade">Atividade concluída enviada para o professor.</string>
+    <string name="falha_enviar_nova_atividade">Problemas ao realizar o envio da atividade para os alunos.</string>
+
+    <!-- Tabelas -->
+    <!-- aluno firebase -->
+
+    <!-- Informações campos obrigatótios -->
+    <!-- aluno -->
+    <string name="campos_obrigatorios_aluno">Todas as informações devem ser preenchidas!</string>
+    <string name="erro_upload_arquivo">Ocorreu um erro ao realizar o upload do arquivo.</string>
+    <string name="nenhum_arquivo_encontrado">Nenhum arquivo encontrado.</string>
+    <string name="sucesso_enviar_atividade_concluida">Atividade concluída enviada para o professor.</string>
+    <string name="sucesso_enviar_duvida_atividade_concluida">Dúvidas sobre a atividade concluída enviada para o professor.</string>
+    <string name="sucesso_enviar_duvida_conteudo">Dúvidas sobre o conteúdo enviada para o professor.</string>
+    <string name="falha_enviar_atividade_concluida">Problemas ao realizar o envio da atividade para professor.</string>
+    <string name="falha_enviar_duvida_conteudo">Problemas ao realizar o envio do conteudo para professor.</string>
+    <string name="falha_enviar_duvida_atividade_concluida">Problemas ao realizar o envio das dúvidas sobre a atividade para professor.</string>
+
+
+    <!-- Permissões obrigatótios -->
+    <!-- aluno -->
+    <string name="permissao_leitura_storage">Para perfeito funcionamento do alicativo,
+        se faz necessário aceitar as permissões de leitura</string>
+
+    <!-- Bundle Atividade-->
+    <!-- recuperação das informações do aluno -->
+    <string name="erro_detalhes_atividade_bundle">Não foi possível recuperar as informações da atividade</string>
+    <string name="informa_download_arquivo">Download em andamento.</string>
+
+    <!-- Bundle Conteúdo-->
+    <!-- recuperação das informações do aluno -->
+    <string name="erro_detalhes_conteudo_bundle">Não foi possível recuperar as informações do conteúdo</string>
+
+    <!-- Nova Atividade-->
+   <string name="campos_obrigatorios_nova_atividade">Todas as informações da atividade devem ser preenchidas.</string>
+
+    <!-- Novo conteudo-->
+    <string name="campos_obrigatorios_novo_conteudo">Todas as informações do conteúdo devem ser preenchidas.</string>
+    <string name="sucesso_enviar_novo_conteudo">Novo conteúdo enviado para os alunos.</string>
+    <string name="falha_enviar_novo_conteudo">Problemas ao realizar o envio do novo conteúdo para os alunos.</string>
+
+    <!-- Bundle Atividade concluidas-->
+    <!-- recuperação das informações da atividade concluida -->
+    <string name="erro_detalhes_atividade_concluida_bundle">Não foi possível recuperar as informações da atividade concluída</string>
 
 
 </resources>

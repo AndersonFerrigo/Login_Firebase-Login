@@ -18,7 +18,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication.R;
-import com.example.myapplication.model.CadastroNovoUsuario;
+import com.example.myapplication.model.login.CadastroNovoUsuario;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
@@ -29,8 +29,8 @@ import java.util.UUID;
 public class CadastroActivity extends AppCompatActivity {
 
     /**
-     * @since 09/2020
-     * ok
+     * @since 22/09/2020
+     *
      */
 
     private CadastroNovoUsuario cadastroNovoUsuarioNovoUser;
@@ -69,7 +69,6 @@ public class CadastroActivity extends AppCompatActivity {
         imgTurmaAlunoIc = findViewById(R.id.img_turma_aluno_ic);
         spnMateriaProfessor = findViewById(R.id.spn_materia_professor);
         spnTurmaAluno = findViewById(R.id.spn_turma_aluno);
-
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             Window w = getWindow();
@@ -113,18 +112,16 @@ public class CadastroActivity extends AppCompatActivity {
                 if(recebePerfil.equals("Aluno")){
                     imgTurmaAlunoIc.setVisibility(View.VISIBLE);
                     imgMateriaProfessorIc.setVisibility(View.INVISIBLE);
-
-                    recebeMateria = "Não aplicado";
                     spnTurmaAluno.setVisibility(View.VISIBLE);
                     spnMateriaProfessor.setVisibility(View.INVISIBLE);
+                    recebeMateria = "Não aplicado";
                 }
                 if(recebePerfil.equals("Professor")){
                     imgTurmaAlunoIc.setVisibility(View.INVISIBLE);
                     imgMateriaProfessorIc.setVisibility(View.VISIBLE);
-
-                    recebeTurma = "Não aplicado";
                     spnTurmaAluno.setVisibility(View.INVISIBLE);
                     spnMateriaProfessor.setVisibility(View.VISIBLE);
+                    recebeTurma = "Não aplicado";
                 }
             }
 
@@ -149,7 +146,7 @@ public class CadastroActivity extends AppCompatActivity {
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {}});
 
-        btnRegistrarNovoUsuario.setOnClickListener(new View.OnClickListener() {
+        btnRegistrarNovoUsuario.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if((edtEmailNovoUsuario.getText().toString().equals("")) || (edtEmailNovoUsuario.getText().toString().equals(""))
@@ -173,11 +170,10 @@ public class CadastroActivity extends AppCompatActivity {
 
                         @Override
                         public void onSuccess(Void aVoid) {
-                        Toast.makeText(getApplicationContext(), "Cadastro  de usuario realizado com sucesso", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Cadastro realizado com sucesso", Toast.LENGTH_LONG).show();
                         Intent retornarLogin = new Intent(getApplicationContext(), LoginActivity.class);
                         startActivity(retornarLogin);
-                        limparDados();
-                        finish();
+                        CadastroActivity.this.finish();
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
@@ -193,17 +189,19 @@ public class CadastroActivity extends AppCompatActivity {
         btnVoltarLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent voltarTelaLogin = new Intent(getApplicationContext(), LoginActivity.class);
-                startActivity(voltarTelaLogin);
-                limparDados();
-                finish();
+              retornarLogin();
             }
         });
     }
 
-    public void limparDados(){
-        edtNomeNovoUsuario.setText("");
-        edtEmailNovoUsuario.setText("");
-        edtSenhaNovoUsuario.setText("");
+    @Override
+    public void onBackPressed() {
+        retornarLogin();
+    }
+
+    public void retornarLogin(){
+        Intent loginIntent = new Intent(getApplicationContext(), LoginActivity.class);
+        startActivity(loginIntent);
+        CadastroActivity.this.finish();
     }
 }

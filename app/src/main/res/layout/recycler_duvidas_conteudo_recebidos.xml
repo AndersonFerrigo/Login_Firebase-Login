@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -9,74 +9,47 @@
     android:layout_marginRight="10dp"
     android:background="@drawable/nova_atividade_shape">
 
-    <LinearLayout
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titulo_conteudo_duvida_aluno"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:hint="@string/titulo_duvidas_conteudo"
+        android:textSize="17sp"
+        android:textColor="@color/baseThemeColor"
+        android:gravity="center_horizontal" />
 
-        <LinearLayout
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:layout_marginTop="40dp"
+            android:background="@color/baseThemeColor"/>
+
+
+        <TextView
+            android:id="@+id/nome_do_aluno_conteudo_duvida"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/nome_aluno_duvida_conteudo"
+            android:textColor="@color/baseThemeColor"
+            android:layout_marginBottom="10dp"/>
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/titulo_conteudo_duvida_aluno"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:hint="@string/titulo_duvidas_conteudo"
-                android:textSize="15dp"/>
-        </LinearLayout>
-
-        <View
+        <TextView
+            android:id="@+id/turma_aluno_conteudo_duvida"
             android:layout_width="match_parent"
-            android:layout_height="2sp"
-            android:layout_marginTop="2dp"
-            android:background="@color/baseThemeColor" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/turma_aluno_conteudo_duvida"
+            android:textColor="@color/baseThemeColor"
+            android:layout_marginBottom="5dp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/nome_do_aluno_conteudo_duvida"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:hint="@string/nome_aluno_duvida_conteudo"
-                android:layout_marginBottom="10dp"/>
-
-            <TextView
-                android:id="@+id/nome_materia_conteudo_duvida"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:hint="@string/materia_duvida_conteudo_aluno"
-                android:layout_marginBottom="5dp"/>
-
-            <TextView
-                android:id="@+id/turma_aluno_conteudo_duvida"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:hint="@string/turma_aluno_conteudo_duvida"
-                android:layout_marginBottom="5dp"/>
-
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2sp"
-            android:layout_marginTop="2dp"
-            android:background="@color/baseThemeColor" />
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

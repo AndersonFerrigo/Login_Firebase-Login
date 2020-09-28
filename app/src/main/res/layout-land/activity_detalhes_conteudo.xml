@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".content.aluno.DetalhesConteudoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="Detalhes Conteúdo"
+        android:textAlignment="center"
+        android:textColor="@color/baseThemeColor"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_detalhes"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="223dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Titulo : "
+                android:textAlignment="textEnd"
+                android:textColor="@color/baseThemeColor"
+                android:textSize="15sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/titulo_detalhes_novo_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="50dp"
+                android:hint="@string/titulo_atividade_recebida_professor"
+                android:paddingLeft="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/baseThemeColor"
+                android:textSize="15sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="90dp"
+                android:gravity="center_vertical"
+                android:text="Professor(a) :"
+                android:textAlignment="textEnd"
+                android:textColor="@color/baseThemeColor"
+                android:textSize="15sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/nome_professor_detalhes_novo_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="95dp"
+                android:layout_marginRight="50dp"
+                android:hint="@string/nome_professor_atividade_recebida"
+                android:paddingLeft="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/baseThemeColor"
+                android:textSize="15sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="160dp"
+                android:gravity="center_vertical"
+                android:text="Materia :"
+                android:textAlignment="textEnd"
+                android:textColor="@color/baseThemeColor"
+                android:textSize="15sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/materia_detalhes_novo_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="165dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical"
+                android:hint="@string/materia_atividade_recebida_professor"
+                android:textAlignment="textStart"
+                android:textColor="@color/baseThemeColor"
+                android:textSize="15sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="230dp"
+                android:gravity="center_vertical"
+                android:text="Informações sobre o conteúdo:"
+                android:textAlignment="center"
+                android:textColor="@color/baseThemeColor"
+                android:textSize="15sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/descricao_detalhes_novo_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="280dp"
+                android:layout_marginRight="25dp"
+                android:hint="@string/description_cadastro_atividades"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/baseThemeColor"
+                android:textSize="15sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginLeft="40dp"
+                android:gravity="center_vertical"
+                android:text="Arquivo novo aconteúdo :"
+                android:textAlignment="center"
+                android:textColor="@color/baseThemeColor"
+                android:textSize="15sp"
+                tools:ignore="RtlCompat" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="450dp"
+                android:src="@mipmap/download_documento" />
+
+            <TextView
+                android:id="@+id/caminho_arquivo_detalhes_novo_conteudo"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="235dp"
+                android:layout_marginTop="450dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="Nova conteúdo"
+                android:textAlignment="center"
+                android:textColor="@color/baseThemeColor"
+                android:textSize="15sp"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/btn_download_novo_conteudo"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="420dp"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="450dp"
+                android:background="@drawable/shape_custom_button"
+                android:text="Download"
+                android:textColor="@color/baseThemeColor" />
+
+
+            <Button
+                android:id="@+id/btn_fechar_detalhes_novo_conteudo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="510dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/shape_details_buttons"
+                android:gravity="center"
+                android:text="Fechar"
+                android:textColor="@color/cor_branca"/>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

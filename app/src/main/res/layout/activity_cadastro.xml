@@ -44,8 +44,9 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:ems="10"
             android:hint="@string/user_Cadastro"
+            android:textColor="@color/baseThemeColor"
+            android:textColorHint="@color/baseThemeColor"
             android:inputType="textCapSentences"/>
 
         <ImageView
@@ -66,8 +67,9 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:ems="10"
             android:hint="@string/email_Cadastro"
+            android:textColor="@color/baseThemeColor"
+            android:textColorHint="@color/baseThemeColor"
             android:inputType="textEmailAddress"/>
 
         <ImageView
@@ -88,8 +90,9 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:ems="10"
             android:hint="@string/senha_Cadastro"
+            android:textColor="@color/baseThemeColor"
+            android:textColorHint="@color/baseThemeColor"
             android:inputType="textPassword"/>
 
         <ImageView

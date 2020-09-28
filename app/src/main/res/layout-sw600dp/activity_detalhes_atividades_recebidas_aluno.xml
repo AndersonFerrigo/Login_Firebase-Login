@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".content.professor.DetalhesAtividadesRecebidasAlunoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_detalhes"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="223dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="Atividade Concluida"
+            android:textAlignment="center"
+            android:textColor="@color/baseThemeColor"
+            android:textSize="40sp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="120dp"
+            android:gravity="center_vertical"
+            android:text="Titulo : "
+            android:textAlignment="textEnd"
+            android:textColor="@color/baseThemeColor"
+            android:textSize="30sp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/titulo_detalhes_atividade_concluida_aluno"
+            android:layout_width="560dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="430dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="10dp"
+            android:hint="Titulo atividade concluida"
+            android:paddingLeft="5dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/baseThemeColor"
+            android:textSize="30sp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="220dp"
+            android:gravity="center_vertical"
+            android:text="Aluno(a) :"
+            android:textAlignment="textEnd"
+            android:textColor="@color/baseThemeColor"
+            android:textSize="30sp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/nome_aluno_detalhes_atividade_concluida"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginRight="10dp"
+            android:hint="Nome do aluno atividade concluida"
+            android:paddingLeft="5dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/baseThemeColor"
+            android:textSize="30sp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="600dp"
+            android:layout_marginTop="220dp"
+            android:gravity="center_vertical"
+            android:text="Turma :"
+            android:textAlignment="textEnd"
+            android:textColor="@color/baseThemeColor"
+            android:textSize="30sp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/turma_detalhes_atividade_concluida_aluno"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="740dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:hint="Turma atividade concluida"
+            android:textAlignment="textStart"
+            android:textColor="@color/baseThemeColor"
+            android:textSize="30sp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="310dp"
+            android:gravity="center_vertical"
+            android:text="Informações sobre atividade enviada pelo aluno:"
+            android:textAlignment="center"
+            android:textColor="@color/baseThemeColor"
+            android:textSize="30sp"
+            tools:ignore="RtlCompat" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="450dp"
+            android:src="@mipmap/download_documento" />
+
+        <TextView
+            android:id="@+id/caminho_arquivo_detalhes_atividade_concluida"
+            android:layout_width="550dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="470dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/doc_detalhes_atividade_concluida"
+            android:textAlignment="center"
+            android:textColor="@color/baseThemeColor"
+            android:textSize="30sp"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/btn_download_atividade_concluida"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="780dp"
+            android:layout_marginLeft="780dp"
+            android:layout_marginTop="470dp"
+            android:background="@drawable/shape_custom_button"
+            android:text="Download"
+            android:textColor="@color/baseThemeColor"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btn_fechar_detalhes_atividade_concluida"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="600dp"
+            android:layout_marginRight="230dp"
+            android:background="@drawable/shape_details_buttons"
+            android:gravity="center"
+            android:text="Fechar"
+            android:textColor="@color/cor_branca"
+            android:textSize="30sp"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,14 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
-import com.example.myapplication.content.aluno.DetalhesConteudoActivity;
-import com.example.myapplication.model.ListarDuvidasAlunoAtividadeConteudo;
+import com.example.myapplication.content.professor.DetalhesAtividadesRecebidasAlunoActivity;
+import com.example.myapplication.model.duvidas.ListarDuvidasAlunoAtividadeConteudo;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
@@ -29,15 +28,14 @@ public class AdapterAtividadesConcluidasAluno extends FirebaseRecyclerAdapter<Li
     @Override
     protected void onBindViewHolder(@NonNull MyHolder holder, int position, @NonNull final ListarDuvidasAlunoAtividadeConteudo alunoAtividadeConteudo) {
 
-        holder.tituloAtividadeConcluida.setText(alunoAtividadeConteudo.getTitulo());
-        holder.nomeAlunoAtividadeConcluida.setText(alunoAtividadeConteudo.getAluno());
-        holder.materiaAlunoAtividadeConcluida.setText(alunoAtividadeConteudo.getMateria());
-        holder.turmaAlunoAtividadeConcluida.setText(alunoAtividadeConteudo.getTurma());
+        holder.txtTituloAtividadeConcluida.setText(alunoAtividadeConteudo.getTitulo());
+        holder.txtNomeAlunoAtividadeConcluida.setText(alunoAtividadeConteudo.getAluno());
+        holder.txtTurmaAtividadeConcluida.setText(alunoAtividadeConteudo.getTurma());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                Intent intentDetalhesConteudo = new Intent(v.getContext(), DetalhesConteudoActivity.class);
+                Intent intentDetalhesConteudo = new Intent(v.getContext(), DetalhesAtividadesRecebidasAlunoActivity.class);
                 intentDetalhesConteudo.putExtra("atividades_concluidas", alunoAtividadeConteudo);
                 v.getContext().startActivity(intentDetalhesConteudo);
             }
@@ -56,17 +54,15 @@ public class AdapterAtividadesConcluidasAluno extends FirebaseRecyclerAdapter<Li
 
     public class MyHolder extends RecyclerView.ViewHolder{
 
-        public TextView tituloAtividadeConcluida;
-        public TextView nomeAlunoAtividadeConcluida;
-        public TextView materiaAlunoAtividadeConcluida;
-        public TextView turmaAlunoAtividadeConcluida;
+        public TextView txtTituloAtividadeConcluida;
+        public TextView txtNomeAlunoAtividadeConcluida;
+        public TextView txtTurmaAtividadeConcluida;
 
         public MyHolder(View v) {
             super(v);
-            tituloAtividadeConcluida = v.findViewById(R.id.titulo_atividade_concluida_aluno);
-            nomeAlunoAtividadeConcluida = v.findViewById(R.id.nome_do_aluno_atividade_concluida);
-            materiaAlunoAtividadeConcluida = v.findViewById(R.id.materia_aluno_atividade_concluida);
-            turmaAlunoAtividadeConcluida = v.findViewById(R.id.turma_aluno_atividade_concluida);
+            txtTituloAtividadeConcluida = v.findViewById(R.id.titulo_atividade_concluida_aluno);
+            txtNomeAlunoAtividadeConcluida = v.findViewById(R.id.nome_do_aluno_atividade_concluida);
+            txtTurmaAtividadeConcluida = v.findViewById(R.id.turma_aluno_atividade_concluida);
         }
     }
 }

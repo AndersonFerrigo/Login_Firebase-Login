@@ -28,7 +28,7 @@
             app:tashieloader_dotsDist="5dp"
             app:tashieloader_dotsRadius="5dp"
             app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
-            app:tashieloader_noOfDots="3"
+            app:tashieloader_noOfDots="4"
             android:layout_gravity="center"/>
 
     </LinearLayout>

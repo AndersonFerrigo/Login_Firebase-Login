@@ -1,23 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_duvidas_atividades_concluidas_fragment.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\duvidas_atividades_concluidas_fragment.xml"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_duvidas_atividades_conteudo.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\duvidas_atividades_conteudo.png"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_upload_atividade_conteudo.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\upload_atividade_conteudo.png"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_folder.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\folder.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_recuperar_senha.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\activity_recuperar_senha.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_duvidas_atividades_concluidas_fragment.xml.flat",
@@ -32,18 +20,6 @@
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\duvidas_alunos_atividades_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_internet.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\internet.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_conteudo_recebido.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\fragment_conteudo_recebido.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_main_aluno.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\nav_header_main_aluno.xml"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_foreground.png"
     },
@@ -56,48 +32,28 @@
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_at.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\at.png"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shape_details_buttons.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\drawable\\shape_details_buttons.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_at.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\at.png"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_perfil.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-mdpi\\perfil.png"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_editar_perfil_user.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\editar_perfil_user.png"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_adicionar_atividade.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\adicionar_atividade.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation_aluno.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\navigation\\mobile_navigation_aluno.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_main_aluno.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\app_bar_main_aluno.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_recycler_nova_tarefa_aluno.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\recycler_nova_tarefa_aluno.xml"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_padlock.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xhdpi\\padlock.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_novo_conteudo.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\fragment_novo_conteudo.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_estudante_profile.png.flat",
@@ -108,32 +64,12 @@
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_professor_content2.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\activity_main_professor_content2.xml"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_teacher_profile.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\teacher_profile.png"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_screen_home_school.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\activity_splash_screen_home_school.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_nav_header_main.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\nav_header_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_perfil.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\perfil.png"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_padlock.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-mdpi\\padlock.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_content_main.xml.flat",
@@ -152,28 +88,16 @@
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\activity_recuperar_senha.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nova_atividade_shape.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\drawable\\nova_atividade_shape.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_at.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\at.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_novo_conteudo.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\fragment_novo_conteudo.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_enviar_atividade.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\enviar_atividade.png"
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nova_atividade_shape.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\drawable\\nova_atividade_shape.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_atividades_recebidas_aluno.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\fragment_atividades_recebidas_aluno.xml"
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_enviar_atividade.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\enviar_atividade.png"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_team.png.flat",
@@ -182,10 +106,6 @@
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\menu_main_professor_content.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\menu\\main_professor_content.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_spinner_text_adapter.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\spinner_text_adapter.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_sem_notificacao.png.flat",
@@ -204,18 +124,6 @@
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\enviar_atividades_concluidas_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_main.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\nav_header_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_user.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\user.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_at.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-mdpi\\at.png"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
@@ -230,10 +138,6 @@
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_activity_main_aluno_content.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\activity_main_aluno_content.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_recycler_atividades_recebidas_professor.xml.flat",
@@ -252,14 +156,6 @@
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\activity_detalhes_atividade.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_atividades_recebidas.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\atividades_recebidas.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_fragment_nova_atividade.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\fragment_nova_atividade.xml"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
@@ -268,56 +164,32 @@
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_recycler_nova_tarefa_aluno.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\recycler_nova_tarefa_aluno.xml"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_homeschool_launcher.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xhdpi\\ic_homeschool_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_recycler_nova_tarefa_aluno.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\recycler_nova_tarefa_aluno.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_fragment_novo_conteudo.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\fragment_novo_conteudo.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_splash_screen_homeschool_green.jpg.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\splash_screen_homeschool_green.jpg"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_upload_arquivo_conteudo.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\upload_arquivo_conteudo.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\menu_main_aluno_content.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\menu\\main_aluno_content.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_recycler_duvidas_conteudo_recebidos.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\recycler_duvidas_conteudo_recebidos.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_spinner_text_adapter.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\spinner_text_adapter.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_recycler_novo_conteudo_aluno.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\recycler_novo_conteudo_aluno.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_team.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\team.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_atividades_recebidas_aluno.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\fragment_atividades_recebidas_aluno.xml"
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_duvidas_alunos_conteudo_fragment.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\duvidas_alunos_conteudo_fragment.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_duvidas_alunos_conteudo_fragment.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\duvidas_alunos_conteudo_fragment.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_main_aluno.xml.flat",
@@ -326,10 +198,6 @@
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_at.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xhdpi\\at.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_duvidas_conteudo_fragment.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\duvidas_conteudo_fragment.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_activity_login.xml.flat",
@@ -342,10 +210,6 @@
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_activity_main_aluno_content.xml.flat",
@@ -364,16 +228,8 @@
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\recycler_duvidas_atividades_recebidas.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_homeschool_launcher.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-mdpi\\ic_homeschool_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_nova_atividade.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\fragment_nova_atividade.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_student_profile.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\student_profile.png"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_upload_cloud.png.flat",
@@ -384,40 +240,12 @@
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\activity_cadastro.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cadastro.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\activity_cadastro.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_recycler_atividades_recebidas_professor.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\recycler_atividades_recebidas_professor.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shape_custom_button.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\drawable\\shape_custom_button.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_upload_content_progressbar_homeschool.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\upload_content_progressbar_homeschool.xml"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_main.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\content_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_splash_screen_homeschool_green.jpg.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\splash_screen_homeschool_green.jpg"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_activity_main_professor_content2.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\activity_main_professor_content2.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_app_bar_main.xml.flat",
@@ -428,20 +256,8 @@
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xhdpi\\perfil.png"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_perfil.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\perfil.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_adicionar_conteudo.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\adicionar_conteudo.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_recycler_nova_tarefa_aluno.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\recycler_nova_tarefa_aluno.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_slideshow.xml.flat",
@@ -484,64 +300,24 @@
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\recycler_novo_conteudo_aluno.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_duvidas_conteudo_fragment.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\duvidas_conteudo_fragment.xml"
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_recycler_duvidas_conteudo_recebidos.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\recycler_duvidas_conteudo_recebidos.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_perfil.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\perfil.png"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_recycler_duvidas_conteudo_recebidos.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\recycler_duvidas_conteudo_recebidos.xml"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_recycler_atividades_concluidas_aluno.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\recycler_atividades_concluidas_aluno.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_teacher_ic_nav.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\teacher_ic_nav.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_content_main_aluno.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\content_main_aluno.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_enviar_atividade_professor.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\enviar_atividade_professor.png"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_team.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\team.png"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinner_text_adapter.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\spinner_text_adapter.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\activity_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_nav_header_aluno_tablet.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_nav_header_aluno_tablet.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_activity_splash_screen_home_school.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\activity_splash_screen_home_school.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_detalhes_duvidas_conteudo_atividade.xml.flat",
@@ -550,10 +326,6 @@
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_at.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\at.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_detalhes_conteudo.xml.flat",
@@ -572,20 +344,344 @@
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\fragment_atividades_recebidas.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_enviar_atividades_concluidas_fragment.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\enviar_atividades_concluidas_fragment.xml"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_detalhes_atividades_recebidas_aluno.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\activity_detalhes_atividades_recebidas_aluno.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_student_profile_ic.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\student_profile_ic.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_professor_profile.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\professor_profile.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_camera.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_user.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-mdpi\\user.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_padlock.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\padlock.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shape_detalhes.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\drawable\\shape_detalhes.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_duvidas_alunos_atividades_fragment.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\duvidas_alunos_atividades_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_fragment_atividades_recebidas_aluno.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\fragment_atividades_recebidas_aluno.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_app_bar_main_aluno.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\app_bar_main_aluno.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_activity_main_professor_content2.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\activity_main_professor_content2.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_main_drawer_aluno.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\menu\\activity_main_drawer_aluno.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_team.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-mdpi\\team.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_atividades_recebidas.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\fragment_atividades_recebidas.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_splash_screen_homeschool_green.jpg.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-mdpi\\splash_screen_homeschool_green.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_content_main.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_padlock.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\padlock.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_recycler_atividades_recebidas_professor.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\recycler_atividades_recebidas_professor.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_content_main_aluno.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\content_main_aluno.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_gallery.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_atividades_recebidas.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\fragment_atividades_recebidas.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_duvidas_atividades_concluidas_fragment.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\duvidas_atividades_concluidas_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_upload_atividade_conteudo.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\upload_atividade_conteudo.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_recuperar_senha.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\activity_recuperar_senha.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_internet.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\internet.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_conteudo_recebido.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\fragment_conteudo_recebido.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_main_aluno.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\nav_header_main_aluno.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_editar_perfil_user.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\editar_perfil_user.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation_aluno.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\navigation\\mobile_navigation_aluno.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_main_aluno.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\app_bar_main_aluno.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_novo_conteudo.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\fragment_novo_conteudo.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_recycler_nova_tarefa_aluno.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\recycler_nova_tarefa_aluno.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_professor_content2.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\activity_main_professor_content2.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_screen_home_school.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\activity_splash_screen_home_school.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_nav_header_main.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_perfil.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\perfil.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_at.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\at.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_atividades_recebidas_aluno.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\fragment_atividades_recebidas_aluno.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_spinner_text_adapter.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\spinner_text_adapter.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_main.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_user.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\user.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_at.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-mdpi\\at.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_activity_main_aluno_content.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\activity_main_aluno_content.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_atividades_recebidas.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\atividades_recebidas.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_fragment_nova_atividade.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\fragment_nova_atividade.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_splash_screen_homeschool_green.jpg.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\splash_screen_homeschool_green.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\menu_main_aluno_content.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\menu\\main_aluno_content.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_recycler_duvidas_conteudo_recebidos.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\recycler_duvidas_conteudo_recebidos.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_recycler_novo_conteudo_aluno.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\recycler_novo_conteudo_aluno.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_atividades_recebidas_aluno.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\fragment_atividades_recebidas_aluno.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_team.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\team.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_duvidas_conteudo_fragment.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\duvidas_conteudo_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_homeschool_launcher.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-mdpi\\ic_homeschool_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_student_profile.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\student_profile.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_sair_aplicacao_dialog.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\sair_aplicacao_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cadastro.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\activity_cadastro.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shape_custom_button.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\drawable\\shape_custom_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_upload_content_progressbar_homeschool.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\upload_content_progressbar_homeschool.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_splash_screen_homeschool_green.jpg.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\splash_screen_homeschool_green.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_activity_main_professor_content2.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\activity_main_professor_content2.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_adicionar_conteudo.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\adicionar_conteudo.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_recycler_nova_tarefa_aluno.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\recycler_nova_tarefa_aluno.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_detalhes_duvida_conteudo.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\activity_detalhes_duvida_conteudo.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_duvidas_conteudo_fragment.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\duvidas_conteudo_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_teacher_ic_nav.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\teacher_ic_nav.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_content_main_aluno.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\content_main_aluno.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_enviar_atividade_professor.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\enviar_atividade_professor.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinner_text_adapter.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\spinner_text_adapter.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_nav_header_aluno_tablet.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_nav_header_aluno_tablet.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_activity_splash_screen_home_school.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\activity_splash_screen_home_school.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_download_documento.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\download_documento.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_enviar_atividades_concluidas_fragment.xml.flat",
+        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\enviar_atividades_concluidas_fragment.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_nav_header_main.xml.flat",
@@ -612,52 +708,20 @@
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\fragment_conteudo_recebido.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_professor_profile.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\professor_profile.png"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_nav_header_main_aluno.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\nav_header_main_aluno.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_camera.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_nav_header_teacher_tablet.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_nav_header_teacher_tablet.png"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_user.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-mdpi\\user.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_padlock.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\padlock.png"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_recycler_duvidas_atividades_recebidas.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\recycler_duvidas_atividades_recebidas.xml"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shape_detalhes.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\drawable\\shape_detalhes.xml"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_app_bar_main_aluno.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\app_bar_main_aluno.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_duvidas_alunos_atividades_fragment.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\duvidas_alunos_atividades_fragment.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_fragment_atividades_recebidas_aluno.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\fragment_atividades_recebidas_aluno.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_app_bar_main_aluno.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\app_bar_main_aluno.xml"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
@@ -680,44 +744,16 @@
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\user.png"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_activity_main_professor_content2.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\activity_main_professor_content2.xml"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_main_drawer_aluno.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\menu\\activity_main_drawer_aluno.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_team.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-mdpi\\team.png"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_user.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xhdpi\\user.png"
     },
     {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_atividades_recebidas.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\fragment_atividades_recebidas.xml"
-    },
-    {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_upload_cloud_size.png.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-xxhdpi\\upload_cloud_size.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_splash_screen_homeschool_green.jpg.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-mdpi\\splash_screen_homeschool_green.jpg"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_content_main.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\content_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_padlock.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\mipmap-hdpi\\padlock.png"
     },
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_activity_cadastro.xml.flat",
@@ -738,29 +774,5 @@
     {
         "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_recycler_novo_conteudo_aluno.xml.flat",
         "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\recycler_novo_conteudo_aluno.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\fragment_home.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_recycler_atividades_recebidas_professor.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-land\\recycler_atividades_recebidas_professor.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_content_main_aluno.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout-sw600dp\\content_main_aluno.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_gallery.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
-    },
-    {
-        "merged": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_atividades_recebidas.xml.flat",
-        "source": "C:\\Users\\ander\\OneDrive\\AndroidStudioProjects\\Login_Firebase-Login\\app\\src\\main\\res\\layout\\fragment_atividades_recebidas.xml"
     }
 ]

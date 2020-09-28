@@ -26,8 +26,15 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" >
-        <activity android:name="com.example.myapplication.content.professor.DetalhesDuvidasConteudoAtividadeActivity" />
-        <activity android:name="com.example.myapplication.content.professor.DetalhesAtividadesRecebidasAlunoActivity" />
+        <activity
+            android:name="com.example.myapplication.content.professor.DetalhesDuvidaConteudoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.example.myapplication.content.professor.DetalhesDuvidasAtividadeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.example.myapplication.content.professor.DetalhesAtividadesRecebidasAlunoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.example.myapplication.content.aluno.DetalhesConteudoActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

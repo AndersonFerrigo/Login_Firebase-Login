@@ -9,111 +9,113 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="20dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp">
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp">
 
-            <EditText
-                android:id="@+id/edt_nome_professor_duvida_atividade"
+            <TextView
+                android:id="@+id/txt_nome_professor_duvida_atividade"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_height="30sp"
+                android:layout_marginTop="20dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:hint="@string/nome_professor_cadastro_atividades"/>
+                android:text="@string/nome_professor_cadastro_atividades"
+                android:textSize="20sp"
+                android:textColor="@color/baseThemeColor"/>
+
+            <TextView
+                android:id="@+id/txt_materia_professor_duvida_atividade"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/materia_professor_cadastro_atividades"
+                android:textSize="20sp"
+                android:textColor="@color/baseThemeColor"/>
 
             <EditText
                 android:id="@+id/edt_titulo_atividade_concluida"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="120dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:hint="@string/titulo_duvidas_atividade_recebido"/>
-
-            <ImageView
-                android:id="@+id/img_group_cadastrar_atividade"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@mipmap/team"
-                android:layout_marginTop="120dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"/>
-
-            <Spinner
-                android:id="@+id/spin_turma_atividade"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginStart="70dp"
-                android:layout_marginLeft="70dp"
-                android:layout_marginTop="120dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"/>
+                android:hint="@string/titulo_duvidas_atividade_recebido"
+                android:textColor="@color/baseThemeColor"
+                android:textColorHint="@color/baseThemeColor"/>
 
             <ImageView
                 android:id="@+id/img_materia_professor_ic"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginTop="160dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:background="@mipmap/folder"/>
+                android:background="@mipmap/team"
+                android:layout_marginTop="190dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"/>
 
             <Spinner
                 android:id="@+id/spn_materia_professor"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginTop="160dp"
                 android:layout_marginStart="70dp"
                 android:layout_marginLeft="70dp"
+                android:layout_marginTop="190dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp" />
+                android:layout_marginRight="10dp"/>
 
             <EditText
                 android:id="@+id/edt_duvidas_atividades_enviada"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:layout_marginTop="230dp"
+                android:layout_marginTop="260dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
                 android:lines="10"
-                android:hint="@string/descricao_duvidas_atividade"/>
+                android:hint="@string/descricao_duvidas_atividade"
+                android:textColor="@color/baseThemeColor"
+                android:textColorHint="@color/baseThemeColor"/>
+
 
             <TextView
                 android:id="@+id/txt_recebe_arquivo_ativ_concluida"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginTop="340dp"
+                android:layout_marginTop="380dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginEnd="10dp"
                 android:hint="@string/recebe_duvidas_atividade_recebido"
                 android:textAlignment="center"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColorHint="@color/baseThemeColor"
+                android:textColor="@color/baseThemeColor"/>
 
             <Button
                 android:id="@+id/btn_procurar_atividade_duvida"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginEnd="60dp"
-                android:layout_marginRight="60dp"
-                android:layout_marginTop="400dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginEnd="160dp"
+                android:layout_marginRight="160dp"
+                android:layout_marginTop="440dp"
                 android:text="@string/btn_procurar_conteudo_cadastro_atividades"
                 android:drawableLeft="@mipmap/internet"/>
 
@@ -121,12 +123,12 @@
                 android:id="@+id/btn_enviar_atividade_duvida"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="470dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="520dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginBottom="40dp"
                 android:text="@string/enviar_atividade_duvida" />
 
         </RelativeLayout>

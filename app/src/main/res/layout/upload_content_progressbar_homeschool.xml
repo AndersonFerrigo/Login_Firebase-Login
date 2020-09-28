@@ -24,7 +24,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:hint="@string/informa_envio_atividade_concluida"
+        android:text="@string/informa_envio_atividade_concluida"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/baseThemeColor"

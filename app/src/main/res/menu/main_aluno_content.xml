@@ -7,8 +7,5 @@
         android:orderInCategory="1"
         app:showAsAction="never"/>
 
-    <item android:id="@+id/menu_perfil_aluno"
-        android:title="@string/profile_menu_aluno"
-        android:orderInCategory="2"
-        app:showAsAction="never"/>
+
 </menu> 

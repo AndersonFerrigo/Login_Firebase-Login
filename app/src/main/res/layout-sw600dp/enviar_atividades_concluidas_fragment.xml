@@ -16,104 +16,104 @@
         android:layout_marginEnd="50dp"
         android:paddingBottom="20dp">
 
-        <EditText
-            android:id="@+id/edt_nome_aluno_atividade_concluida"
+        <TextView
+            android:id="@+id/txt_nome_aluno_atividade_concluida"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginEnd="140dp"
-            android:layout_marginRight="140dp"
-            android:hint="@string/nome_aluno_atividades_concluida"
-            android:textSize="30sp"/>
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/nome_aluno_atividades_concluida"
+            android:textSize="35sp"
+            android:textColor="@color/baseThemeColor"/>
+
+        <TextView
+            android:id="@+id/txt_turma_aluno_atividade_concluida"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="120dp"
+            android:text="@string/turma_atividades_concluida"
+            android:textSize="35sp"
+            android:textColor="@color/baseThemeColor"/>
 
         <EditText
             android:id="@+id/edt_titulo_atividade_concluida"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginEnd="140dp"
-            android:layout_marginRight="140dp"
-            android:hint="@string/titulo_atividades_concluida"
-            android:textSize="30sp"/>
-
-        <ImageView
-            android:id="@+id/img_group_cadastrar_atividade"
-            android:layout_width="60dp"
             android:layout_height="60dp"
-            android:background="@mipmap/team"
-            android:layout_marginTop="190dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginLeft="100dp"/>
-
-        <Spinner
-            android:id="@+id/spin_turma_atividade"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="180dp"
-            android:layout_marginLeft="180dp"
-            android:layout_marginTop="190dp"
-            android:layout_marginEnd="140dp"
-            android:layout_marginRight="140dp"/>
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:hint="@string/titulo_atividades_concluida"
+            android:textColor="@color/baseThemeColor"
+            android:textColorHint="@color/baseThemeColor"
+            android:textSize="35sp"/>
 
         <ImageView
             android:id="@+id/img_materia_professor_ic"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginTop="270dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginLeft="100dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
             android:background="@mipmap/folder"/>
 
         <Spinner
             android:id="@+id/spn_materia_professor"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="270dp"
-            android:layout_marginStart="180dp"
-            android:layout_marginLeft="180dp"
-            android:layout_marginEnd="140dp"
-            android:layout_marginRight="140dp"/>
+            android:layout_height="60dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"/>
 
         <TextView
             android:id="@+id/txt_recebe_arquivo_ativ_concluida_"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="350dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginRight="140dp"
-            android:layout_marginEnd="140dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="530dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp"
             android:hint="@string/caminho_arquivo_atividade_concluida"
             android:textAlignment="center"
             android:gravity="center"
-            android:textSize="30sp"/>
+            android:textSize="35sp"
+            android:textColorHint="@color/baseThemeColor"
+            android:textColor="@color/baseThemeColor"/>
 
         <Button
             android:id="@+id/btn_procurar_atividade_concluida"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_marginStart="200dp"
             android:layout_marginLeft="200dp"
             android:layout_marginEnd="200dp"
             android:layout_marginRight="200dp"
-            android:layout_marginTop="450dp"
+            android:layout_marginTop="720dp"
             android:text="@string/btn_procurar_arquivo_atividade_concluida"
-            android:textSize="30sp"
-            android:drawableLeft="@mipmap/internet"/>
+            android:drawableLeft="@mipmap/internet"
+            android:textSize="25sp"/>
 
         <Button
             android:id="@+id/btn_enviar_atividade_concluida"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginTop="570dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="850dp"
             android:layout_marginStart="100dp"
             android:layout_marginLeft="100dp"
             android:layout_marginEnd="140dp"
             android:layout_marginRight="140dp"
+            android:layout_marginBottom="10dp"
             android:text="@string/btn_enviar_atividade_concluida"
             android:textSize="30sp"/>
 

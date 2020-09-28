@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -37,7 +36,8 @@
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp"
         android:hint="@string/email_Login"
-        android:textSize="15sp"
+        android:textColor="@color/baseThemeColor"
+        android:textColorHint="@color/baseThemeColor"
         android:inputType="textEmailAddress"
         android:importantForAutofill="no" />
 
@@ -51,8 +51,9 @@
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp"
         android:hint="@string/senha_Login"
-        android:textSize="15sp"
         android:autofillHints="none"
+        android:textColor="@color/baseThemeColor"
+        android:textColorHint="@color/baseThemeColor"
         android:inputType="textPassword"/>
 
     <Button
@@ -65,7 +66,7 @@
          android:textSize="15sp"
          android:textColor="@color/cor_branca" />
 
-     <Button
+    <Button
          android:id="@+id/btn_cadastrar"
          android:layout_width="match_parent"
          android:layout_height="60dp"
@@ -75,7 +76,7 @@
          android:textSize="15sp"
          android:textColor="@color/baseThemeColor" />
 
-     <TextView
+    <TextView
          android:id="@+id/textEsqueciaSenha"
          android:layout_width="200dp"
          android:layout_height="23dp"

@@ -12,8 +12,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:paddingBottom="10dp"
+        android:paddingBottom="2dp"
         android:background="@color/cor_branca"
         android:orientation="vertical">
 
@@ -21,7 +20,7 @@
             android:id="@+id/img_materia_professor_ic"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:background="@mipmap/folder"/>
@@ -53,8 +52,8 @@
 
         <ImageView
             android:id="@+id/img_notifica_sem_atividade_concluida"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginTop="120dp"
             android:layout_marginLeft="140dp"
             android:background="@mipmap/sem_notificacao"/>

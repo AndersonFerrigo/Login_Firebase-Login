@@ -30,7 +30,7 @@
 16-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:26:22-107
 17
 18    <application
-18-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:10:5-52:19
+18-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:10:5-61:19
 19        android:allowBackup="true"
 19-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:11:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -47,198 +47,210 @@
 26        android:testOnly="true"
 27        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" >
 27-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:16:9-74
-28        <activity android:name="com.example.myapplication.content.professor.DetalhesDuvidasConteudoAtividadeActivity" />
-28-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:17:9-105
-28-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:17:19-93
-29        <activity android:name="com.example.myapplication.content.professor.DetalhesAtividadesRecebidasAlunoActivity" />
-29-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:18:9-96
-29-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:18:19-93
-30        <activity
-30-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:19:9-21:72
-31            android:name="com.example.myapplication.content.aluno.DetalhesConteudoActivity"
-31-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:20:13-67
-32            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-32-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:21:13-69
-33        <activity
-33-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:22:9-24:72
-34            android:name="com.example.myapplication.content.aluno.DetalhesAtividadeActivity"
-34-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:23:13-68
-35            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-35-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:24:13-69
-36        <activity
-36-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:25:9-29:76
-37            android:name="com.example.myapplication.content.aluno.MainAlunoContentActivity"
-37-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:26:13-67
-38            android:label="@string/title_activity_main_aluno_content"
-38-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:27:13-70
-39            android:theme="@style/AppTheme.NoActionBar"
-39-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:28:13-56
-40            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
-40-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:29:13-73
-41        <activity
-41-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:30:9-33:59
-42            android:name="com.example.myapplication.content.professor.MainProfessorContentActivity"
-42-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:31:13-75
-43            android:label="@string/title_activity_main_professor_content"
-43-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:32:13-74
-44            android:theme="@style/AppTheme.NoActionBar" />
-44-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:33:13-56
-45        <activity
-45-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:34:9-42:20
-46            android:name="com.example.myapplication.splash.SplashScreenHomeSchoolActivity"
-46-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:35:13-66
-47            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-47-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:36:13-69
-48            <intent-filter>
-48-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:37:13-41:29
-49                <action android:name="android.intent.action.MAIN" />
-49-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:38:17-69
-49-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:38:25-66
-50
-51                <category android:name="android.intent.category.LAUNCHER" />
-51-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:40:17-77
-51-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:40:27-74
-52            </intent-filter>
-53        </activity>
-54        <activity
-54-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:43:9-45:72
-55            android:name="com.example.myapplication.views.RecuperarSenhaActivity"
-55-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:44:13-57
-56            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-56-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:45:13-69
-57        <activity
-57-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:46:9-48:72
-58            android:name="com.example.myapplication.views.CadastroActivity"
-58-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:47:13-51
-59            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-59-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:48:13-69
-60        <activity
-60-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:49:9-51:72
-61            android:name="com.example.myapplication.views.LoginActivity"
-61-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:50:13-48
-62            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-62-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:51:13-69
-63        <activity
-63-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:24:9-31:50
-64            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-64-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:25:13-85
-65            android:excludeFromRecents="true"
-65-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:26:13-46
-66            android:exported="true"
-66-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:27:13-36
-67            android:launchMode="singleTask"
-67-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:28:13-44
-68            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-68-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:29:13-102
-69            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-69-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:30:13-72
-70
-71        <service
-71-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:33:9-39:19
-72            android:name="com.google.firebase.components.ComponentDiscoveryService"
-72-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:34:13-84
-73            android:directBootAware="true"
-73-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-74            android:exported="false" >
-74-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:35:13-37
-75            <meta-data
-75-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:36:13-38:85
-76                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-76-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:37:17-109
-77                android:value="com.google.firebase.components.ComponentRegistrar" />
-77-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:38:17-82
-78            <meta-data
-78-->[com.google.firebase:firebase-database:19.3.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\227f78203b0b12a1d5db88f7e5b8d4d8\jetified-firebase-database-19.3.1\AndroidManifest.xml:32:13-34:85
-79                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-79-->[com.google.firebase:firebase-database:19.3.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\227f78203b0b12a1d5db88f7e5b8d4d8\jetified-firebase-database-19.3.1\AndroidManifest.xml:33:17-109
-80                android:value="com.google.firebase.components.ComponentRegistrar" />
-80-->[com.google.firebase:firebase-database:19.3.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\227f78203b0b12a1d5db88f7e5b8d4d8\jetified-firebase-database-19.3.1\AndroidManifest.xml:34:17-82
-81            <meta-data
-81-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
-82                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-82-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
-83                android:value="com.google.firebase.components.ComponentRegistrar" />
-83-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
-84            <meta-data
-84-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\aee5905e3b36f3b29067cb6b798e3d80\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:30:13-32:85
-85                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-85-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\aee5905e3b36f3b29067cb6b798e3d80\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:31:17-139
-86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\aee5905e3b36f3b29067cb6b798e3d80\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:32:17-82
-87            <meta-data
-87-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\4d2d6e18a23e71677122246f9e56e667\jetified-firebase-installations-16.3.2\AndroidManifest.xml:17:13-19:85
-88                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-88-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\4d2d6e18a23e71677122246f9e56e667\jetified-firebase-installations-16.3.2\AndroidManifest.xml:18:17-127
-89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\4d2d6e18a23e71677122246f9e56e667\jetified-firebase-installations-16.3.2\AndroidManifest.xml:19:17-82
-90        </service>
-91
-92        <receiver
-92-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:29:9-33:20
-93            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-93-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:30:13-85
-94            android:enabled="true"
-94-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:31:13-35
-95            android:exported="false" >
-95-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:32:13-37
-96        </receiver>
-97
-98        <service
-98-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:35:9-38:40
-99            android:name="com.google.android.gms.measurement.AppMeasurementService"
-99-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:36:13-84
-100            android:enabled="true"
-100-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:37:13-35
-101            android:exported="false" />
-101-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:38:13-37
-102        <service
-102-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:39:9-43:72
-103            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-103-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:40:13-87
-104            android:enabled="true"
-104-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:41:13-35
-105            android:exported="false"
-105-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:42:13-37
-106            android:permission="android.permission.BIND_JOB_SERVICE" />
-106-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:43:13-69
-107
-108        <activity
-108-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-109            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-109-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-110            android:exported="false"
-110-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-111            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-111-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-112
-113        <provider
-113-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-114            android:name="com.google.firebase.provider.FirebaseInitProvider"
-114-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-115            android:authorities="com.example.myapplication.firebaseinitprovider"
-115-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-116            android:exported="false"
-116-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-117            android:initOrder="100" />
-117-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-118
-119        <meta-data
-119-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-120            android:name="com.google.android.gms.version"
-120-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-121            android:value="@integer/google_play_services_version" />
-121-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-122
-123        <provider
-123-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\fbb45a1792cf0e97ccf5507b087b63b1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-124            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-124-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\fbb45a1792cf0e97ccf5507b087b63b1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-125            android:authorities="com.example.myapplication.lifecycle-process"
-125-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\fbb45a1792cf0e97ccf5507b087b63b1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-126            android:exported="false"
-126-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\fbb45a1792cf0e97ccf5507b087b63b1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-127            android:multiprocess="true" />
-127-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\fbb45a1792cf0e97ccf5507b087b63b1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-128    </application>
+28        <activity
+28-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:18:9-20:71
+29            android:name="com.example.myapplication.content.professor.DetalhesDuvidaConteudoActivity"
+29-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:19:13-77
+30            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+30-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:20:13-69
+31        <activity
+31-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:22:9-24:71
+32            android:name="com.example.myapplication.content.professor.DetalhesDuvidasAtividadeActivity"
+32-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:23:13-79
+33            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+33-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:24:13-69
+34        <activity
+34-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:25:9-27:71
+35            android:name="com.example.myapplication.content.professor.DetalhesAtividadesRecebidasAlunoActivity"
+35-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:26:13-87
+36            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+36-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:27:13-69
+37        <activity
+37-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:28:9-30:72
+38            android:name="com.example.myapplication.content.aluno.DetalhesConteudoActivity"
+38-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:29:13-67
+39            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+39-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:30:13-69
+40        <activity
+40-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:31:9-33:72
+41            android:name="com.example.myapplication.content.aluno.DetalhesAtividadeActivity"
+41-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:32:13-68
+42            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+42-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:33:13-69
+43        <activity
+43-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:34:9-38:76
+44            android:name="com.example.myapplication.content.aluno.MainAlunoContentActivity"
+44-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:35:13-67
+45            android:label="@string/title_activity_main_aluno_content"
+45-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:36:13-70
+46            android:theme="@style/AppTheme.NoActionBar"
+46-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:37:13-56
+47            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+47-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:38:13-73
+48        <activity
+48-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:39:9-42:59
+49            android:name="com.example.myapplication.content.professor.MainProfessorContentActivity"
+49-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:40:13-75
+50            android:label="@string/title_activity_main_professor_content"
+50-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:41:13-74
+51            android:theme="@style/AppTheme.NoActionBar" />
+51-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:42:13-56
+52        <activity
+52-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:43:9-51:20
+53            android:name="com.example.myapplication.splash.SplashScreenHomeSchoolActivity"
+53-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:44:13-66
+54            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+54-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:45:13-69
+55            <intent-filter>
+55-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:46:13-50:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:47:17-69
+56-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:47:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:49:17-77
+58-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:49:27-74
+59            </intent-filter>
+60        </activity>
+61        <activity
+61-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:52:9-54:72
+62            android:name="com.example.myapplication.views.RecuperarSenhaActivity"
+62-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:53:13-57
+63            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+63-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:54:13-69
+64        <activity
+64-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:55:9-57:72
+65            android:name="com.example.myapplication.views.CadastroActivity"
+65-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:56:13-51
+66            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+66-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:57:13-69
+67        <activity
+67-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:58:9-60:72
+68            android:name="com.example.myapplication.views.LoginActivity"
+68-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:59:13-48
+69            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+69-->C:\Users\ander\OneDrive\AndroidStudioProjects\Login_Firebase-Login\app\src\main\AndroidManifest.xml:60:13-69
+70        <activity
+70-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:24:9-31:50
+71            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+71-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:25:13-85
+72            android:excludeFromRecents="true"
+72-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:26:13-46
+73            android:exported="true"
+73-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:27:13-36
+74            android:launchMode="singleTask"
+74-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:28:13-44
+75            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+75-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:29:13-102
+76            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+76-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:30:13-72
+77
+78        <service
+78-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:33:9-39:19
+79            android:name="com.google.firebase.components.ComponentDiscoveryService"
+79-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:34:13-84
+80            android:directBootAware="true"
+80-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+81            android:exported="false" >
+81-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:35:13-37
+82            <meta-data
+82-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:36:13-38:85
+83                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+83-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:37:17-109
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:38:17-82
+85            <meta-data
+85-->[com.google.firebase:firebase-database:19.3.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\227f78203b0b12a1d5db88f7e5b8d4d8\jetified-firebase-database-19.3.1\AndroidManifest.xml:32:13-34:85
+86                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+86-->[com.google.firebase:firebase-database:19.3.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\227f78203b0b12a1d5db88f7e5b8d4d8\jetified-firebase-database-19.3.1\AndroidManifest.xml:33:17-109
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[com.google.firebase:firebase-database:19.3.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\227f78203b0b12a1d5db88f7e5b8d4d8\jetified-firebase-database-19.3.1\AndroidManifest.xml:34:17-82
+88            <meta-data
+88-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
+89                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+89-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+91            <meta-data
+91-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\aee5905e3b36f3b29067cb6b798e3d80\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:30:13-32:85
+92                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+92-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\aee5905e3b36f3b29067cb6b798e3d80\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:31:17-139
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\aee5905e3b36f3b29067cb6b798e3d80\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:32:17-82
+94            <meta-data
+94-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\4d2d6e18a23e71677122246f9e56e667\jetified-firebase-installations-16.3.2\AndroidManifest.xml:17:13-19:85
+95                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+95-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\4d2d6e18a23e71677122246f9e56e667\jetified-firebase-installations-16.3.2\AndroidManifest.xml:18:17-127
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\4d2d6e18a23e71677122246f9e56e667\jetified-firebase-installations-16.3.2\AndroidManifest.xml:19:17-82
+97        </service>
+98
+99        <receiver
+99-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:29:9-33:20
+100            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+100-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:30:13-85
+101            android:enabled="true"
+101-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:31:13-35
+102            android:exported="false" >
+102-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:32:13-37
+103        </receiver>
+104
+105        <service
+105-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:35:9-38:40
+106            android:name="com.google.android.gms.measurement.AppMeasurementService"
+106-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:36:13-84
+107            android:enabled="true"
+107-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:37:13-35
+108            android:exported="false" />
+108-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:38:13-37
+109        <service
+109-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:39:9-43:72
+110            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+110-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:40:13-87
+111            android:enabled="true"
+111-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:41:13-35
+112            android:exported="false"
+112-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:42:13-37
+113            android:permission="android.permission.BIND_JOB_SERVICE" />
+113-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f3a33ad86e72ec0d49a4f57f6d1744c7\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:43:13-69
+114
+115        <activity
+115-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+116            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+116-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+117            android:exported="false"
+117-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+118            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+118-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+119
+120        <provider
+120-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+121            android:name="com.google.firebase.provider.FirebaseInitProvider"
+121-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+122            android:authorities="com.example.myapplication.firebaseinitprovider"
+122-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+123            android:exported="false"
+123-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+124            android:initOrder="100" />
+124-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+125
+126        <meta-data
+126-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+127            android:name="com.google.android.gms.version"
+127-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+128            android:value="@integer/google_play_services_version" />
+128-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 129
-130</manifest>
+130        <provider
+130-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\fbb45a1792cf0e97ccf5507b087b63b1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+131            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+131-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\fbb45a1792cf0e97ccf5507b087b63b1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+132            android:authorities="com.example.myapplication.lifecycle-process"
+132-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\fbb45a1792cf0e97ccf5507b087b63b1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+133            android:exported="false"
+133-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\fbb45a1792cf0e97ccf5507b087b63b1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+134            android:multiprocess="true" />
+134-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ander\.gradle\caches\transforms-2\files-2.1\fbb45a1792cf0e97ccf5507b087b63b1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+135    </application>
+136
+137</manifest>

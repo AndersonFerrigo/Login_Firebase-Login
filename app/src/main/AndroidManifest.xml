@@ -14,8 +14,17 @@
         android:roundIcon="@mipmap/ic_homeschool_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
-        <activity android:name=".content.professor.DetalhesDuvidasConteudoAtividadeActivity"></activity>
-        <activity android:name=".content.professor.DetalhesAtividadesRecebidasAlunoActivity" />
+
+        <activity
+            android:name=".content.professor.DetalhesDuvidaConteudoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity
+            android:name=".content.professor.DetalhesDuvidasAtividadeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".content.professor.DetalhesAtividadesRecebidasAlunoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
             android:name=".content.aluno.DetalhesConteudoActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

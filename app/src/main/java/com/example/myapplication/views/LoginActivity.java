@@ -1,13 +1,14 @@
 package com.example.myapplication.views;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -19,28 +20,37 @@ import android.widget.Toast;
 import com.example.myapplication.R;
 import com.example.myapplication.content.aluno.MainAlunoContentActivity;
 import com.example.myapplication.content.professor.MainProfessorContentActivity;
-import com.example.myapplication.model.CadastroNovoUsuario;
-import com.example.myapplication.model.Login;
-import com.google.firebase.database.ChildEventListener;
+import com.example.myapplication.model.login.CadastroNovoUsuario;
+import com.example.myapplication.model.login.Login;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
 
     /***
-     * @since 2020
-     * ok
+     * @since 22/09/2020
+     *
      */
+    private boolean login;
+
     private Login loginUsuario;
+
     private EditText editEmail;
     private EditText editSenha;
+    private TextView txtResetSenha;
+
     private Button btnLogar;
     private Button btnCadastro;
-    private TextView txtResetSenha;
+
+    private AlertDialog dialog;
+
     private DatabaseReference databaseReference;
     private FirebaseDatabase buscarLogin;
+
+    private CadastroNovoUsuario novoUsuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,17 +63,18 @@ public class LoginActivity extends AppCompatActivity {
             w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
 
-        databaseReference = buscarLogin.getInstance().getReference().child("users");
+        editEmail = findViewById(R.id.editEmail_Login);
+        editSenha = findViewById(R.id.editSenha_Login);
+        btnLogar = findViewById(R.id.btn_Logar);
+        btnCadastro = findViewById(R.id.btn_cadastrar);
+        txtResetSenha = findViewById(R.id.textEsqueciaSenha);
+
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        editEmail = (EditText) findViewById(R.id.editEmail_Login);
-        editSenha = (EditText) findViewById(R.id.editSenha_Login);
-        btnLogar = (Button) findViewById(R.id.btn_Logar);
-        btnCadastro = (Button) findViewById(R.id.btn_cadastrar);
-        txtResetSenha = (TextView) findViewById(R.id.textEsqueciaSenha);
+        databaseReference = buscarLogin.getInstance().getReference().child("users");
     }
 
     @Override
@@ -73,84 +84,105 @@ public class LoginActivity extends AppCompatActivity {
         btnCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), CadastroActivity.class);
-                startActivity(i);
-            }
-        });
-
-        btnLogar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            if((editEmail.getText().toString().equals("")) && (editSenha.getText().toString().equals(""))){
-                    Toast.makeText(getApplicationContext(), "Email e senha devem ser preenchidos!", Toast.LENGTH_LONG).show();
-            }else{
-
-                loginUsuario = new Login();
-                loginUsuario.setEmail(editEmail.getText().toString());
-                loginUsuario.setSenha(editSenha.getText().toString());
-
-                databaseReference.addChildEventListener(new ChildEventListener() {
-                    @Override
-                    public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                        CadastroNovoUsuario cadastroNovoUsuario = snapshot.getValue(CadastroNovoUsuario.class);
-                        assert cadastroNovoUsuario != null;
-
-                        if ((loginUsuario.getEmail().equals(cadastroNovoUsuario.getEmail())) &&
-                                    loginUsuario.getSenha().equals(cadastroNovoUsuario.getSenha())) {
-
-                            if (cadastroNovoUsuario.getPerfil().equals("Aluno")) {
-                                cadastroNovoUsuario.getNome();
-                                cadastroNovoUsuario.getEmail();
-                                cadastroNovoUsuario.getTurma();
-
-                                Intent intentMainAlunoContent = new Intent(getApplicationContext(), MainAlunoContentActivity.class);
-                                intentMainAlunoContent.putExtra("aluno", cadastroNovoUsuario);
-                                startActivity(intentMainAlunoContent);
-                                limparDados();
-                            }
-                            if (cadastroNovoUsuario.getPerfil().equals("Professor")) {
-
-                                cadastroNovoUsuario.getNome();
-                                cadastroNovoUsuario.getEmail();
-                                cadastroNovoUsuario.getMateria();
-
-                                Intent intentMainProfessorContent = new Intent(getApplicationContext(), MainProfessorContentActivity.class);
-                                intentMainProfessorContent.putExtra("professor", cadastroNovoUsuario);
-                                startActivity(intentMainProfessorContent);
-                                limparDados();
-                            }
-                            if (cadastroNovoUsuario.getPerfil().isEmpty()){
-                                Toast.makeText(getApplicationContext(), "Email ou senha incorretos", Toast.LENGTH_LONG).show();
-                            }
-                        }
-                    }
-
-                    @Override
-                    public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {}
-
-                    @Override
-                    public void onChildRemoved(@NonNull DataSnapshot snapshot) {}
-
-                    @Override
-                    public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {}
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) { }
-                });
-            }
+                Intent cadastroNovoUsuarioIntent = new Intent(getApplicationContext(), CadastroActivity.class);
+                startActivity(cadastroNovoUsuarioIntent);
+                LoginActivity.this.finish();
             }
         });
 
         txtResetSenha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(LoginActivity.this, RecuperarSenhaActivity.class);
-                startActivity(i);
+                Intent recuperarSenhaUsuarioIntent = new Intent(LoginActivity.this, RecuperarSenhaActivity.class);
+                startActivity(recuperarSenhaUsuarioIntent);
+                LoginActivity.this.finish();
+            }
+        });
+
+        btnLogar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            if ((editEmail.getText().toString().equals("")) && (editSenha.getText().toString().equals(""))) {
+                    Toast.makeText(getApplicationContext(), "Email e senha devem ser preenchidos!", Toast.LENGTH_LONG).show();
+            }
+            else {
+                loginUsuario = new Login();
+                loginUsuario.setEmail(editEmail.getText().toString());
+                loginUsuario.setSenha(editSenha.getText().toString());
+
+                databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                            novoUsuario = dataSnapshot.getValue(CadastroNovoUsuario.class);
+
+                            if ((loginUsuario.getEmail().equals(novoUsuario.getEmail())) &&
+                                    loginUsuario.getSenha().equals(novoUsuario.getSenha())&&
+                                    novoUsuario.getPerfil().equals("Aluno")) {
+
+                                Intent intentMainAlunoContent = new Intent(getApplicationContext(), MainAlunoContentActivity.class);
+                                intentMainAlunoContent.putExtra("aluno", novoUsuario);
+                                startActivity(intentMainAlunoContent);
+                                login = true;
+                                LoginActivity.this.finish();
+                            }
+                                if ((loginUsuario.getEmail().equals(novoUsuario.getEmail())) &&
+                                    loginUsuario.getSenha().equals(novoUsuario.getSenha())&&
+                                    novoUsuario.getPerfil().equals("Professor")) {
+
+                                    Intent intentMainProfessorContent = new Intent(getApplicationContext(), MainProfessorContentActivity.class);
+                                    intentMainProfessorContent.putExtra("professor", novoUsuario);
+                                    startActivity(intentMainProfessorContent);
+                                    login = true;
+                                    LoginActivity.this.finish();
+                                }
+                        }
+
+                        if(!login){
+                            Toast.makeText(getApplicationContext(), "Usuário não cadastrado", Toast.LENGTH_LONG).show();
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+                        Toast.makeText(getApplicationContext(), "Não foi possível recuperar usuario, tente novamente. ", Toast.LENGTH_LONG).show();
+                        }
+                    });
+                }
             }
         });
     }
 
-    public void limparDados(){
-        editEmail.setText("");
-        editSenha.setText("");
-    }}
+    @Override
+    public void onBackPressed() {
+        showDialog();
+    }
+
+    public Dialog showDialog(){
+        final AlertDialog.Builder  builder =  new AlertDialog.Builder(LoginActivity.this);
+        LayoutInflater inflater = getLayoutInflater();
+        View view = inflater.inflate(R.layout.sair_aplicacao_dialog, null);
+        view.findViewById(R.id.btn_fechar_dialog).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    dialog.dismiss();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                }
+            }
+        });
+
+        view.findViewById(R.id.btn_sair_homeschool).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                LoginActivity.this.finish();
+            }
+        });
+
+        builder.setView(view);
+        dialog = builder.create();
+        dialog.show();
+        return dialog;
+    }
+}

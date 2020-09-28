@@ -1,23 +1,26 @@
 package com.example.myapplication.content.adapters.aluno;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
 import com.example.myapplication.content.aluno.DetalhesConteudoActivity;
-import com.example.myapplication.model.ListarAtividadeConteudo;
+import com.example.myapplication.model.conteudo.ListarAtividadeConteudo;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
 public class AdapterConteudosRecebidoProfessor extends FirebaseRecyclerAdapter<ListarAtividadeConteudo , AdapterConteudosRecebidoProfessor.MyHolder> {
+
+    /**
+     * @since 22/09/2020
+     * @param options
+     */
 
     public AdapterConteudosRecebidoProfessor(@NonNull FirebaseRecyclerOptions<ListarAtividadeConteudo> options) {
         super(options);
@@ -33,23 +36,21 @@ public class AdapterConteudosRecebidoProfessor extends FirebaseRecyclerAdapter<L
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-            // Logica para recuperar uma atividade especifica do banco de dados
-            Intent intentDetalhesConteudo = new Intent(v.getContext(), DetalhesConteudoActivity.class);
-            intentDetalhesConteudo.putExtra("conteudo", listarAtividadeConteudo);
-            v.getContext().startActivity(intentDetalhesConteudo);
+
+                Intent intentDetalhesConteudo = new Intent(v.getContext(), DetalhesConteudoActivity.class);
+                intentDetalhesConteudo.putExtra("conteudo", listarAtividadeConteudo);
+                v.getContext().startActivity(intentDetalhesConteudo);
             }
         });
     }
 
     @Override
     public AdapterConteudosRecebidoProfessor.MyHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.recycler_nova_tarefa_aluno, parent, false);
 
         return new AdapterConteudosRecebidoProfessor.MyHolder(view);
     }
-
 
     public class MyHolder extends RecyclerView.ViewHolder{
 
@@ -64,8 +65,6 @@ public class AdapterConteudosRecebidoProfessor extends FirebaseRecyclerAdapter<L
             materiaConteudoRecebido = v.findViewById(R.id.materia_novo_conteudo);
         }
     }
-
-
 }
 
 

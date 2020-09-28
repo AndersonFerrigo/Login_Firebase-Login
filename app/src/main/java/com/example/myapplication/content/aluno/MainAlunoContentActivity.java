@@ -1,6 +1,5 @@
 package com.example.myapplication.content.aluno;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,34 +16,26 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.myapplication.R;
-import com.example.myapplication.model.CadastroNovoUsuario;
+import com.example.myapplication.model.login.CadastroNovoUsuario;
 import com.example.myapplication.views.LoginActivity;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 public class MainAlunoContentActivity extends AppCompatActivity {
-
     /**
-     * @since 2020
+     * @since 22/09/2020
      */
-
     private AppBarConfiguration mAppBarConfiguration;
     private NavigationView navigationViewAluno;
-    private View headerViewAluno;
-    private CadastroNovoUsuario alunoUsuario;
 
-    private String recebeNomeBundle;
-    private String recebeTurmaBundle;
-    private String recebeEmailBundle;
+    private View headerViewAluno;
+
+    private CadastroNovoUsuario alunoUsuario;
 
     private TextView txtAlunoNome;
     private TextView txtAlunoTurma;
@@ -55,14 +46,17 @@ public class MainAlunoContentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_aluno_content);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            Window w = getWindow();
+            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        }
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout_aluno);
         NavigationView navigationView = findViewById(R.id.nav_view_aluno);
-
         navigationViewAluno = findViewById(R.id.nav_view_aluno);
 
         Toolbar toolbar = findViewById(R.id.toolbar_aluno);
         setSupportActionBar(toolbar);
-
 
         headerViewAluno = navigationViewAluno.getHeaderView(0);
         txtAlunoNome  = headerViewAluno.findViewById(R.id.nav_header_perfil_aluno_usuario);
@@ -79,12 +73,6 @@ public class MainAlunoContentActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_aluno);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationViewAluno, navController);
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            Window w = getWindow();
-            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        }
-
     }
 
     @Override
@@ -95,24 +83,20 @@ public class MainAlunoContentActivity extends AppCompatActivity {
         super.onResume();
 
         Bundle aluno = getIntent().getExtras();
-        if(aluno.isEmpty()){
-            Toast.makeText(getApplicationContext(), "Erro ao recuperar informações do aluno", Toast.LENGTH_LONG).show();
-        }else {
+        if(aluno != null){
             alunoUsuario = aluno.getParcelable("aluno");
-            recebeNomeBundle = alunoUsuario.getNome();
-            recebeTurmaBundle = alunoUsuario.getTurma();
-            recebeEmailBundle = alunoUsuario.getEmail();
+            txtAlunoNome.setText(alunoUsuario.getNome());
+            txtAlunoTurma.setText(alunoUsuario.getTurma());
+            txtAlunoEmail.setText(alunoUsuario.getEmail());
+        }else {
+            Toast.makeText(getApplicationContext(), R.string.erro_informacoes_aluno_bundle, Toast.LENGTH_LONG).show();
         }
-        txtAlunoNome.setText(recebeNomeBundle);
-        txtAlunoTurma.setText(recebeTurmaBundle);
-        txtAlunoEmail.setText(recebeEmailBundle);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_aluno_content, menu);
-
         return true;
     }
 
@@ -121,10 +105,6 @@ public class MainAlunoContentActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.log_out_aluno:
                 logOutAluno();
-                return true;
-
-            case R.id.menu_perfil_aluno:
-                perfil();
                 return true;
 
             default:
@@ -142,12 +122,9 @@ public class MainAlunoContentActivity extends AppCompatActivity {
     private void logOutAluno() {
         Intent intentLogOut = new Intent(getApplicationContext(), LoginActivity.class);
         startActivity(intentLogOut);
+        MainAlunoContentActivity.this.finish();
     }
-
-    private void perfil() { }
 
     @Override
-    public void onBackPressed() {
-
-    }
+    public void onBackPressed() {}
 }
