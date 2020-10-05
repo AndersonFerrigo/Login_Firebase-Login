@@ -1941,7 +1941,6 @@ id nome_materia_atividade
 id nome_materia_atividade_duvida
 id nome_materia_atividade_recebida
 id nome_materia_conteudo
-id nome_materia_conteudo_duvida
 id nome_professor_detalhes_nova_atividade
 id nome_professor_detalhes_novo_conteudo
 id none
@@ -1965,6 +1964,7 @@ id progress_circular
 id progress_horizontal
 id progressbar_informa_upload
 id radio
+id recycler_view_conteudo_aluno
 id recycler_view_duvidas_aluno_conteudo
 id recycler_view_duvidas_aluno_tarefas
 id recycler_view_tarefas_aluno
@@ -2464,7 +2464,6 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
-string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string informa_download_arquivo

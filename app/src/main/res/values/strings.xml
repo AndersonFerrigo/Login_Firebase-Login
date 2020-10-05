@@ -219,9 +219,6 @@
     <string name="descricao_duvida_conteudo">Descrever suas duvidas sobre conteudo</string>
     <string name="recebe_arquivo_conteudo_duvida">Nenhum conteudo com duvida adicionado</string>
     <string name="enviar_conteudo_duvida">Enviar</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
 
     <!-- Detalhes Atividade-->
     <string name="detalhes_atividade">Detalhes Atividade</string>

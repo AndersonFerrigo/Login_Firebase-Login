@@ -31,7 +31,7 @@
 
 
         <TextView
-            android:id="@+id/nome_do_aluno_ativ_recebida"
+            android:id="@+id/nome_do_professor_ativ_recebida"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"

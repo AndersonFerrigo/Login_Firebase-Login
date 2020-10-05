@@ -7,7 +7,7 @@
     android:layout_marginBottom="2dp"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
-    android:background="@drawable/nova_atividade_shape">
+    android:background="@drawable/side_nav_bar">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/titulo_conteudo_duvida_aluno"

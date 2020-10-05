@@ -74,12 +74,12 @@ public class CadastroActivity extends AppCompatActivity {
             Window w = getWindow();
             w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
-        dbReferenceCadastroNovoUsuario = FirebaseDatabase.getInstance().getReference().child("users");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+        dbReferenceCadastroNovoUsuario = FirebaseDatabase.getInstance().getReference().child("users");
 
         // Carrega o conteudo do spinner perfil
         ArrayAdapter adapterPerfilUsuario = ArrayAdapter.createFromResource(getApplicationContext(),

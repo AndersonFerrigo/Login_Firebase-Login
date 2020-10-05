@@ -65,10 +65,13 @@ public class DuvidasAlunosAtividadesFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+        /*
         final ArrayAdapter adapterMateriaProfessor = ArrayAdapter.createFromResource(getContext(),
                 R.array.materias_escola, R.layout.spinner_text_adapter);
         adapterMateriaProfessor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spnMateriaProfessor.setAdapter(adapterMateriaProfessor);
+
+         */
     }
 
 

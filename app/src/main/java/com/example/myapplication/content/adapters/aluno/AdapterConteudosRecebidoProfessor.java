@@ -47,7 +47,7 @@ public class AdapterConteudosRecebidoProfessor extends FirebaseRecyclerAdapter<L
     @Override
     public AdapterConteudosRecebidoProfessor.MyHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.recycler_nova_tarefa_aluno, parent, false);
+                .inflate(R.layout.recycler_novo_conteudo_aluno, parent, false);
 
         return new AdapterConteudosRecebidoProfessor.MyHolder(view);
     }

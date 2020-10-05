@@ -16,7 +16,6 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
 public class AdapterAtividadesConcluidasAluno extends FirebaseRecyclerAdapter<ListarDuvidasAlunoAtividadeConteudo, AdapterAtividadesConcluidasAluno.MyHolder> {
-
     /**
      * @since 18/09/2020
      * @param options
@@ -27,7 +26,6 @@ public class AdapterAtividadesConcluidasAluno extends FirebaseRecyclerAdapter<Li
 
     @Override
     protected void onBindViewHolder(@NonNull MyHolder holder, int position, @NonNull final ListarDuvidasAlunoAtividadeConteudo alunoAtividadeConteudo) {
-
         holder.txtTituloAtividadeConcluida.setText(alunoAtividadeConteudo.getTitulo());
         holder.txtNomeAlunoAtividadeConcluida.setText(alunoAtividadeConteudo.getAluno());
         holder.txtTurmaAtividadeConcluida.setText(alunoAtividadeConteudo.getTurma());
@@ -44,7 +42,6 @@ public class AdapterAtividadesConcluidasAluno extends FirebaseRecyclerAdapter<Li
 
     @Override
     public AdapterAtividadesConcluidasAluno.MyHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
         final View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.recycler_atividades_concluidas_aluno, parent, false);
 

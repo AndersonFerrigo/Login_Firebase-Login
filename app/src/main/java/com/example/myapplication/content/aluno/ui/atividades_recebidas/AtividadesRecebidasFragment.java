@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -67,10 +69,13 @@ public class AtividadesRecebidasFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+    /*
         ArrayAdapter adapterMateriaProfessor = ArrayAdapter.createFromResource(getContext(),
                 R.array.materias_escola, R.layout.spinner_text_adapter);
         adapterMateriaProfessor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spnMateriaProfessor.setAdapter(adapterMateriaProfessor);
+
+     */
     }
 
     @Override

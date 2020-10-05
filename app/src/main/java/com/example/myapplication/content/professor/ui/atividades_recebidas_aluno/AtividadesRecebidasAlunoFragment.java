@@ -56,7 +56,7 @@ public class AtividadesRecebidasAlunoFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         viewAtividadesConcluidasAluno =  inflater.inflate(R.layout.fragment_atividades_recebidas_aluno, container, false);
 
-        spnMateriaProfessor = viewAtividadesConcluidasAluno.findViewById(R.id.spn_materia_professor);
+       // spnMateriaProfessor = viewAtividadesConcluidasAluno.findViewById(R.id.spn_materia_professor);
         recyclerViewAtividadesConcluidasAluno = viewAtividadesConcluidasAluno.findViewById(R.id.recycler_view_tarefas_recebidas);
         imgNotificacaoSemAtividadesConcluidas = viewAtividadesConcluidasAluno.findViewById(R.id.img_notifica_sem_atividade_concluida);
         txtInformaNotificacaoSemAtividadeConcluida = viewAtividadesConcluidasAluno.findViewById(R.id.txt_informa_sem_atividade_concluida);
@@ -67,10 +67,13 @@ public class AtividadesRecebidasAlunoFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+        /*
         final ArrayAdapter adapterMateriaProfessor = ArrayAdapter.createFromResource(getContext(),
                 R.array.materias_escola, R.layout.spinner_text_adapter);
         adapterMateriaProfessor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spnMateriaProfessor.setAdapter(adapterMateriaProfessor);
+
+         */
     }
 
     @Override

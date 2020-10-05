@@ -8,6 +8,7 @@
     android:background="@drawable/side_nav_bar"
     tools:context=".content.aluno.ui.conteudos_recebidos.ConteudosRecebidosFragment">
 
+    <!--
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,15 +36,17 @@
             android:layout_marginRight="30dp"/>
 
     </RelativeLayout>
+
+    -->
     <RelativeLayout
         android:id="@+id/content_novo_conteudo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view_tarefas_aluno"
+            android:id="@+id/recycler_view_conteudo_aluno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </androidx.recyclerview.widget.RecyclerView>

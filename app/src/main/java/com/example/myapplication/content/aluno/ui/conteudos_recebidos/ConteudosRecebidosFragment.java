@@ -56,7 +56,7 @@ public class ConteudosRecebidosFragment extends Fragment {
         viewConteudosRecebidos = inflater.inflate(R.layout.fragment_conteudo_recebido, container, false);
 
         spnMateriaProfessor = viewConteudosRecebidos.findViewById(R.id.spn_materia_professor);
-        recyclerViewNovosConteudos = viewConteudosRecebidos.findViewById(R.id.recycler_view_tarefas_aluno);
+        recyclerViewNovosConteudos = viewConteudosRecebidos.findViewById(R.id.recycler_view_conteudo_aluno);
         imgNotificacaoSemNovosConteudosRecebidos = viewConteudosRecebidos.findViewById(R.id.img_notifica_sem_novos_conteudos);
         txtInformaNotificacaoSemNovosConteudosRecebidos = viewConteudosRecebidos.findViewById(R.id.txt_informa_sem_novos_conteudos);
 
@@ -66,10 +66,13 @@ public class ConteudosRecebidosFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+        /*
         ArrayAdapter arrayAdapterMateriaProfessor = ArrayAdapter.createFromResource(getContext(),
                 R.array.materias_escola, R.layout.spinner_text_adapter);
         arrayAdapterMateriaProfessor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spnMateriaProfessor.setAdapter(arrayAdapterMateriaProfessor);
+
+         */
     }
 
     @Override

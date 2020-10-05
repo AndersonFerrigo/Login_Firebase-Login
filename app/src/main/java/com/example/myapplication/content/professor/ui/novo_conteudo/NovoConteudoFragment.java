@@ -144,6 +144,7 @@ public class NovoConteudoFragment extends Fragment {
                     Toast.makeText(getContext(), R.string.campos_obrigatorios_novo_conteudo, Toast.LENGTH_LONG).show();
 
             }else {
+
                 informaUploadArquivo.setVisibility(View.VISIBLE);
                 desabilitarComponentes();
                 cadastroConteudo = new CadastroNovoConteudo();

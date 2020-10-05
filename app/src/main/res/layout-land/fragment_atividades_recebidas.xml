@@ -8,6 +8,7 @@
     android:background="@drawable/side_nav_bar"
     tools:context=".content.aluno.ui.atividades_recebidas.AtividadesRecebidasFragment">
 
+    <!--
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,11 +36,12 @@
             android:layout_marginRight="100dp"/>
 
     </RelativeLayout>
+    -->
     <RelativeLayout
         android:id="@+id/content_nova_atividade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp">
 
         <androidx.recyclerview.widget.RecyclerView
